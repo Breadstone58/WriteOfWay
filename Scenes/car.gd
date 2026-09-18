@@ -9,12 +9,15 @@ extends CharacterBody2D
 var rotation_direction = 0
 var oil_line = Line2D
 
+var drawing_active = true
+
 func _ready(): 
 	oil_line = Line2D.new()
 	oil_line.width = 6
 	oil_line.default_color = Color.BLACK
 	oil_line.antialiased = true
-	get_parent().add_child.call_deferred(oil_line)
+	#oil_line.set_point_position(0, Vector2($Marker2D.global_position.x,$Marker2D.global_position.y))
+	get_parent().get_child(0).add_child.call_deferred(oil_line)
 
 func get_input():
 	rotation_direction = Input.get_axis("turn_left", "turn_right")
@@ -32,7 +35,12 @@ func get_input():
 
 func _physics_process(delta):
 	get_input()
-	rotation += rotation_direction * rotation_speed * delta
-	move_and_slide()
 	if Input.is_action_pressed("oil"):
+		drawing_active = false
+	if Input.is_action_pressed("backward"):
+		rotation += rotation_direction * rotation_speed * delta * -1
+	else:
+		rotation += rotation_direction * rotation_speed * delta
+	move_and_slide()
+	if drawing_active:
 		oil_line.add_point(global_position)

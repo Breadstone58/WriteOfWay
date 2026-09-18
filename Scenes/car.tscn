@@ -10,6 +10,9 @@ size = Vector2(14, 21)
 scale = Vector2(3, 3)
 script = ExtResource("1_go66d")
 
+[node name="Marker2D" type="Marker2D" parent="." unique_id=547863482]
+position = Vector2(1, 7)
+
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1154406391]
 texture = ExtResource("1_wqo35")
 

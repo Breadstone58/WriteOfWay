@@ -47,4 +47,4 @@ rotation = 3.1415927
 shape = SubResource("WorldBoundaryShape2D_4xhwt")
 
 [node name="Car" parent="." unique_id=236793703 instance=ExtResource("1_y8ppt")]
-position = Vector2(659, 329)
+position = Vector2(590, 463)
