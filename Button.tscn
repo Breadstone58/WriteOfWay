@@ -20,3 +20,5 @@ texture = ExtResource("1_nhor4")
 position = Vector2(186.25, 163.75)
 shape = SubResource("RectangleShape2D_b5gi6")
 debug_color = Color(0.40831462, 0.46611893, 1, 0.41960785)
+
+[connection signal="body_shape_entered" from="Area2D" to="Area2D" method="_on_body_shape_entered"]
