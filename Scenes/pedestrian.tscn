@@ -10,10 +10,10 @@ radius = 65.85
 collision_mask = 2
 script = ExtResource("1_epmes")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1694048881]
-shape = SubResource("CircleShape2D_oyyby")
-
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1038021492]
 texture = ExtResource("1_y5q06")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1694048881]
+shape = SubResource("CircleShape2D_oyyby")
 
 [connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
