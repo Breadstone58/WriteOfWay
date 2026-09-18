@@ -8,6 +8,3 @@ script = ExtResource("1_y2dy0")
 
 [node name="Line2D" type="Line2D" parent="." unique_id=1256573888]
 default_color = Color(0, 0, 0, 1)
-
-[node name="Marker2D" type="Marker2D" parent="." unique_id=1457195172]
-position = Vector2(100, 100)

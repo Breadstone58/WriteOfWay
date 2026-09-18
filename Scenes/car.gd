@@ -16,7 +16,7 @@ func _ready():
 	oil_line.width = 12
 	oil_line.default_color = Color.BLACK
 	oil_line.antialiased = true
-	#oil_line.set_point_position(0, Vector2($Marker2D.global_position.x,$Marker2D.global_position.y))
+	oil_line.z_index = -1
 	get_parent().add_child.call_deferred(oil_line)
 
 func get_input():

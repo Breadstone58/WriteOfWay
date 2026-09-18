@@ -12,6 +12,7 @@
 anchor_mode = 0
 
 [node name="Road" type="ColorRect" parent="Camera2D" unique_id=1130595915]
+z_index = -1000
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5

@@ -12,3 +12,4 @@ func _process(delta: float) -> void:
 
 func _on_line_export(point_array: PackedVector2Array):
 	Line2D.points = point_array
+	
