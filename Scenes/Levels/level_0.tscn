@@ -17,9 +17,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 324.0
-offset_right = 972.0
-offset_bottom = 648.0
+offset_left = 648.0
+offset_right = 1944.0
+offset_bottom = 1296.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 8
@@ -30,9 +30,11 @@ color = Color(0.38, 0.38, 0.38, 1)
 position = Vector2(648, 648)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/Road/DrivingArea" unique_id=1815559565]
+position = Vector2(648, 648)
 shape = SubResource("WorldBoundaryShape2D_q3bbs")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Camera2D/Road/DrivingArea" unique_id=827089248]
+position = Vector2(648, 648)
 rotation = -1.5707964
 shape = SubResource("WorldBoundaryShape2D_q3bbs")
 
@@ -47,4 +49,4 @@ rotation = 3.1415927
 shape = SubResource("WorldBoundaryShape2D_4xhwt")
 
 [node name="Car" parent="." unique_id=236793703 instance=ExtResource("1_y8ppt")]
-position = Vector2(590, 463)
+position = Vector2(998, 687)

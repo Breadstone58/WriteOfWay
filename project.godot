@@ -17,12 +17,13 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-LineEval="*uid://d2lfhkg3bwcf7"
+LineConv="*uid://d2lfhkg3bwcf7"
 SignalBus="*uid://def5ua5lqfgmk"
 
 [display]
 
-window/size/viewport_width=972
+window/size/viewport_width=1944
+window/size/viewport_height=1296
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 

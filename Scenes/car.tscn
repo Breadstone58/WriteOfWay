@@ -7,7 +7,7 @@
 size = Vector2(14, 21)
 
 [node name="Car" type="CharacterBody2D" unique_id=236793703]
-scale = Vector2(3, 3)
+scale = Vector2(6, 6)
 script = ExtResource("1_go66d")
 
 [node name="Marker2D" type="Marker2D" parent="." unique_id=547863482]

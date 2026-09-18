@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 
-@export var max_speed = 200
-@export var rotation_speed = 2.5
+@export var max_speed = 400
+@export var rotation_speed = 1.5
 @export var acceleration = 600
 @export var friction = 500
 
@@ -13,11 +13,11 @@ var drawing_active = true
 
 func _ready(): 
 	oil_line = Line2D.new()
-	oil_line.width = 6
+	oil_line.width = 12
 	oil_line.default_color = Color.BLACK
 	oil_line.antialiased = true
 	#oil_line.set_point_position(0, Vector2($Marker2D.global_position.x,$Marker2D.global_position.y))
-	get_parent().get_child(0).add_child.call_deferred(oil_line)
+	get_parent().add_child.call_deferred(oil_line)
 
 func get_input():
 	rotation_direction = Input.get_axis("turn_left", "turn_right")
@@ -37,10 +37,15 @@ func _physics_process(delta):
 	get_input()
 	if Input.is_action_pressed("oil"):
 		drawing_active = false
+		#SignalBus.export_line.emit(oil_line.points)
+		var point_array = oil_line.points
+		for i in range(point_array.size()):
+			point_array[i].x -= 648
+		print(point_array)
 	if Input.is_action_pressed("backward"):
 		rotation += rotation_direction * rotation_speed * delta * -1
 	else:
 		rotation += rotation_direction * rotation_speed * delta
 	move_and_slide()
 	if drawing_active:
-		oil_line.add_point(global_position)
+		oil_line.add_point($Marker2D.global_position)

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://d2lfhkg3bwcf7"]
+
+[ext_resource type="Script" uid="uid://depc48s12m1uu" path="res://Autoloads/Scenes/line_converter.gd" id="1_y2dy0"]
+
+[node name="LineEval" type="SubViewport" unique_id=1809580380]
+size = Vector2i(648, 648)
+script = ExtResource("1_y2dy0")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=1256573888]
+default_color = Color(0, 0, 0, 1)
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1457195172]
+position = Vector2(100, 100)
