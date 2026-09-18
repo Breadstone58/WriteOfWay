@@ -4,14 +4,15 @@ extends CharacterBody2D
 @export var max_speed = 300
 @export var rotation_speed = 2
 @export var acceleration = 300
-@export var friction = 700
+@export var friction = 1000
 
 var rotation_direction = 0
 var oil_line = Line2D
 
 var drawing_active = true
 
-func _ready(): 
+func _ready():
+	set_collision_layer_value(2,true)
 	oil_line = Line2D.new()
 	oil_line.width = 12
 	oil_line.default_color = Color.BLACK
@@ -34,25 +35,28 @@ func get_input():
 		velocity = velocity.normalized() * speed
 
 func _physics_process(delta):
-	get_input()
-	if Input.is_action_just_pressed("oil"):
-		drawing_active = false
-		var point_array: PackedVector2Array = oil_line.points.duplicate()
-		for i in range(point_array.size()):
-			var pt: Vector2 = point_array[i]
-			pt.x -= 648.0
-			point_array[i] = pt
-		SignalBus.export_line.emit(point_array)
-	if Input.is_action_pressed("backward"):
-		rotation += rotation_direction * rotation_speed * delta * -1
-	else:
-		rotation += rotation_direction * rotation_speed * delta
-	move_and_slide()
-	if drawing_active:
-		oil_line.add_point($Marker2D.global_position)
-	if Input.is_action_pressed("increase_speed"):
-		max_speed = 400
-		acceleration = 600
-	else:
-		max_speed = 300
-		acceleration = 300
+	if drawing_active or true:
+		get_input()
+		if Input.is_action_just_pressed("oil"):
+			drawing_active = false
+			visible = false
+			set_collision_layer_value(2, false)
+			var point_array: PackedVector2Array = oil_line.points.duplicate()
+			for i in range(point_array.size()):
+				var pt: Vector2 = point_array[i]
+				pt.x -= 648.0
+				point_array[i] = pt
+			SignalBus.export_line.emit(point_array)
+		if Input.is_action_pressed("backward"):
+			rotation += rotation_direction * rotation_speed * delta * -1
+		else:
+			rotation += rotation_direction * rotation_speed * delta
+		move_and_slide()
+		if drawing_active:
+			oil_line.add_point($Marker2D.global_position)
+		if Input.is_action_pressed("increase_speed"):
+			max_speed = 500
+			acceleration = 600
+		else:
+			max_speed = 300
+			acceleration = 300

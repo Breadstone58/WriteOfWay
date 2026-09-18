@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bm7tdulkjascq"]
 
-[ext_resource type="Texture2D" uid="uid://ov5feb5ytcdy" path="res://Assets/Levels/level_0.png" id="1_ic72l"]
+[ext_resource type="Texture2D" uid="uid://bph14ml2sdlv4" path="res://Assets/Levels/level_0.png" id="1_ic72l"]
+[ext_resource type="Texture2D" uid="uid://b82kd1t7kwun6" path="res://Assets/road.png" id="1_um5o3"]
 [ext_resource type="PackedScene" uid="uid://b1hf1a4452c42" path="res://Scenes/car.tscn" id="1_y8ppt"]
 [ext_resource type="PackedScene" uid="uid://2sno2themyi6" path="res://Scenes/pedestrian.tscn" id="2_2iktx"]
 [ext_resource type="Script" uid="uid://3wha3t74yl7n" path="res://Scenes/Levels/show_track.gd" id="2_r74qd"]
@@ -90,16 +91,20 @@ position = Vector2(-648, -648)
 rotation = 3.1415927
 shape = SubResource("WorldBoundaryShape2D_4xhwt")
 
-[node name="Sprite2D" type="Sprite2D" parent="Camera2D/Road/DrivingArea" unique_id=192361189]
+[node name="Track" type="Sprite2D" parent="Camera2D/Road/DrivingArea" unique_id=192361189]
 modulate = Color(1, 1, 1, 0.33333334)
 z_index = 1000
 z_as_relative = false
 texture = ExtResource("1_ic72l")
 script = ExtResource("2_r74qd")
 
+[node name="RoadBack" type="Sprite2D" parent="Camera2D/Road" unique_id=1624573364]
+position = Vector2(648, 648)
+texture = ExtResource("1_um5o3")
+
 [node name="Car" parent="." unique_id=236793703 instance=ExtResource("1_y8ppt")]
-position = Vector2(1035, 455)
-rotation = 3.3894293
+position = Vector2(1070.0001, 950.0001)
+rotation = 1.3247049
 
 [node name="Pedestrian" parent="." unique_id=1425713004 instance=ExtResource("2_2iktx")]
 position = Vector2(1356, 877)
