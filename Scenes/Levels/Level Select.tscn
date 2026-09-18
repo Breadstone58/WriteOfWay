@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://k80nn6yfiywo"]
+
+[ext_resource type="Script" uid="uid://cpl36tnahhh1r" path="res://button.gd" id="1_f8cyu"]
+
+[node name="level select" type="Node2D" unique_id=1976467842]
+script = ExtResource("1_f8cyu")
+
+[node name="Button" type="Button" parent="." unique_id=769250547]
+offset_left = 638.0
+offset_top = 449.0
+offset_right = 1370.0
+offset_bottom = 804.0
+theme_override_font_sizes/font_size = 164
+text = "Level 0"
