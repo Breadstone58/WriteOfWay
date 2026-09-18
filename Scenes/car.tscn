@@ -12,13 +12,13 @@ collision_layer = 2
 script = ExtResource("1_go66d")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1154406391]
-position = Vector2(0, -59.999992)
+position = Vector2(0, -98.75)
 texture = ExtResource("2_go66d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=47072763]
-position = Vector2(0, -54.33332)
+position = Vector2(0, -104.33333)
 shape = SubResource("RectangleShape2D_ogd8f")
 
 [node name="Marker2D" type="Marker2D" parent="." unique_id=547863482]
-position = Vector2(0, 37.5)
+position = Vector2(0, 4.7683716e-07)
 scale = Vector2(0.99999994, 0.99999994)

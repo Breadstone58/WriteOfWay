@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bm7tdulkjascq"]
 
-[ext_resource type="Texture2D" uid="uid://ov5feb5ytcdy" path="res://Assets/Levels/level0track.png" id="1_ic72l"]
+[ext_resource type="Texture2D" uid="uid://ov5feb5ytcdy" path="res://Assets/Levels/level_0.png" id="1_ic72l"]
 [ext_resource type="PackedScene" uid="uid://b1hf1a4452c42" path="res://Scenes/car.tscn" id="1_y8ppt"]
 [ext_resource type="PackedScene" uid="uid://2sno2themyi6" path="res://Scenes/pedestrian.tscn" id="2_2iktx"]
 [ext_resource type="Script" uid="uid://3wha3t74yl7n" path="res://Scenes/Levels/show_track.gd" id="2_r74qd"]

@@ -1,11 +1,48 @@
 [gd_scene format=3 uid="uid://2sno2themyi6"]
 
 [ext_resource type="Script" uid="uid://de8od3sdeq5sy" path="res://Scenes/pedestrian.gd" id="1_epmes"]
-[ext_resource type="Texture2D" uid="uid://djsthupk0mhuw" path="res://icon.svg" id="1_y5q06"]
+[ext_resource type="Texture2D" uid="uid://dhxjnuy61j5ag" path="res://Assets/ped_walk.png" id="2_1h25g"]
 [ext_resource type="AudioStream" uid="uid://mq4t00fb4ivi" path="res://Assets/Sounds/Scream1.wav" id="3_1h25g"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_oyyby"]
-radius = 65.85
+[sub_resource type="AtlasTexture" id="AtlasTexture_yqvb5"]
+atlas = ExtResource("2_1h25g")
+region = Rect2(250, 0, 250, 366)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cl0mi"]
+atlas = ExtResource("2_1h25g")
+region = Rect2(0, 366, 250, 366)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nk33y"]
+atlas = ExtResource("2_1h25g")
+region = Rect2(250, 366, 250, 366)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ejkm5"]
+atlas = ExtResource("2_1h25g")
+region = Rect2(0, 0, 250, 366)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ogd8f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yqvb5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cl0mi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nk33y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ejkm5")
+}],
+"loop": 1,
+"name": &"walk",
+"speed": 12.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0vuf8"]
+radius = 57.0
+height = 304.0
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_q3bbs"]
 playback_mode = 1
@@ -13,16 +50,20 @@ streams_count = 1
 stream_0/stream = ExtResource("3_1h25g")
 
 [node name="Pedestrian" type="Area2D" unique_id=1425713004]
+scale = Vector2(0.5, 0.5)
 collision_mask = 2
 script = ExtResource("1_epmes")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1038021492]
-texture = ExtResource("1_y5q06")
+[node name="Anim" type="AnimatedSprite2D" parent="." unique_id=377729487]
+sprite_frames = SubResource("SpriteFrames_ogd8f")
+animation = &"walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1694048881]
-shape = SubResource("CircleShape2D_oyyby")
+position = Vector2(0, 26)
+shape = SubResource("CapsuleShape2D_0vuf8")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=581082305]
+position = Vector2(31, 15)
 stream = SubResource("AudioStreamRandomizer_q3bbs")
 
 [connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]

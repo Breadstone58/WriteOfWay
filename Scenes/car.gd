@@ -4,7 +4,7 @@ extends CharacterBody2D
 @export var max_speed = 300
 @export var rotation_speed = 2
 @export var acceleration = 300
-@export var friction = 500
+@export var friction = 700
 
 var rotation_direction = 0
 var oil_line = Line2D

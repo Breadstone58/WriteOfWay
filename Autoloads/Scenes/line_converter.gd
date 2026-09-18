@@ -16,3 +16,4 @@ func _on_line_export(point_array: PackedVector2Array):
 	await RenderingServer.frame_post_draw
 	var image: Image = get_texture().get_image()
 	image.save_png("res://drawn_path.png")
+	SignalBus.eval_path.emit()
