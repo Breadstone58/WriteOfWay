@@ -35,13 +35,14 @@ func get_input():
 
 func _physics_process(delta):
 	get_input()
-	if Input.is_action_pressed("oil"):
+	if Input.is_action_just_pressed("oil"):
 		drawing_active = false
-		#SignalBus.export_line.emit(oil_line.points)
-		var point_array = oil_line.points
+		var point_array: PackedVector2Array = oil_line.points.duplicate()
 		for i in range(point_array.size()):
-			point_array[i].x -= 648
-		print(point_array)
+			var pt: Vector2 = point_array[i]
+			pt.x -= 648.0
+			point_array[i] = pt
+		SignalBus.export_line.emit(point_array)
 	if Input.is_action_pressed("backward"):
 		rotation += rotation_direction * rotation_speed * delta * -1
 	else:

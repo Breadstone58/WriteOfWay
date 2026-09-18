@@ -2,9 +2,19 @@
 
 [ext_resource type="Script" uid="uid://depc48s12m1uu" path="res://Autoloads/Scenes/line_converter.gd" id="1_y2dy0"]
 
-[node name="LineEval" type="SubViewport" unique_id=1809580380]
-size = Vector2i(648, 648)
+[node name="SubViewportContainer" type="SubViewportContainer" unique_id=1812720904]
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LineEval" type="SubViewport" parent="." unique_id=1809580380]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1296, 1296)
+render_target_update_mode = 4
 script = ExtResource("1_y2dy0")
 
-[node name="Line2D" type="Line2D" parent="." unique_id=1256573888]
-default_color = Color(0, 0, 0, 1)
+[node name="Line2D" type="Line2D" parent="LineEval" unique_id=1256573888]
+points = PackedVector2Array(0, 0)
+width = 12.0
+default_color = Color(1, 0, 0, 1)

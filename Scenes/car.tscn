@@ -1,21 +1,22 @@
 [gd_scene format=3 uid="uid://b1hf1a4452c42"]
 
 [ext_resource type="Script" uid="uid://dybnmhv61iprl" path="res://Scenes/car.gd" id="1_go66d"]
-[ext_resource type="Texture2D" uid="uid://drpwiimjcstcp" path="res://Assets/placeholder_car.png" id="1_wqo35"]
+[ext_resource type="Texture2D" uid="uid://d1xomrsnjit1n" path="res://Assets/car.png" id="2_go66d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ogd8f"]
-size = Vector2(14, 21)
+size = Vector2(132.66667, 192.16667)
 
 [node name="Car" type="CharacterBody2D" unique_id=236793703]
-scale = Vector2(6, 6)
+scale = Vector2(0.8, 0.8)
 script = ExtResource("1_go66d")
 
-[node name="Marker2D" type="Marker2D" parent="." unique_id=547863482]
-position = Vector2(1, 7)
-
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1154406391]
-texture = ExtResource("1_wqo35")
+texture = ExtResource("2_go66d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=47072763]
-position = Vector2(1, -3.5)
+position = Vector2(0, 4.416664)
 shape = SubResource("RectangleShape2D_ogd8f")
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=547863482]
+position = Vector2(0, 60)
+scale = Vector2(0.99999994, 0.99999994)
