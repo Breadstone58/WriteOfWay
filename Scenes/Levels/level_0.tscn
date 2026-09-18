@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bm7tdulkjascq"]
 
 [ext_resource type="PackedScene" uid="uid://b1hf1a4452c42" path="res://Scenes/car.tscn" id="1_y8ppt"]
+[ext_resource type="PackedScene" uid="uid://2sno2themyi6" path="res://Scenes/pedestrian.tscn" id="2_2iktx"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q3bbs"]
 
@@ -50,4 +51,7 @@ rotation = 3.1415927
 shape = SubResource("WorldBoundaryShape2D_4xhwt")
 
 [node name="Car" parent="." unique_id=236793703 instance=ExtResource("1_y8ppt")]
-position = Vector2(1308, 876)
+position = Vector2(998, 687)
+
+[node name="Pedestrian" parent="." unique_id=1425713004 instance=ExtResource("2_2iktx")]
+position = Vector2(1356, 877)

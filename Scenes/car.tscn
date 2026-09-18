@@ -8,6 +8,7 @@ size = Vector2(132.66667, 192.16667)
 
 [node name="Car" type="CharacterBody2D" unique_id=236793703]
 scale = Vector2(0.8, 0.8)
+collision_layer = 2
 script = ExtResource("1_go66d")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1154406391]
