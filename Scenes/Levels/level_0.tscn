@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://bm7tdulkjascq"]
+
+[ext_resource type="PackedScene" uid="uid://b1hf1a4452c42" path="res://Scenes/car.tscn" id="1_y8ppt"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q3bbs"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_4xhwt"]
+
+[node name="Level0" type="Node2D" unique_id=2136935647]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=101754359]
+anchor_mode = 0
+
+[node name="Road" type="ColorRect" parent="Camera2D" unique_id=1130595915]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 324.0
+offset_right = 972.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+color = Color(0.38, 0.38, 0.38, 1)
+
+[node name="DrivingArea" type="StaticBody2D" parent="Camera2D/Road" unique_id=1970694854]
+position = Vector2(648, 648)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/Road/DrivingArea" unique_id=1815559565]
+shape = SubResource("WorldBoundaryShape2D_q3bbs")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Camera2D/Road/DrivingArea" unique_id=827089248]
+rotation = -1.5707964
+shape = SubResource("WorldBoundaryShape2D_q3bbs")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Camera2D/Road/DrivingArea" unique_id=2046841133]
+position = Vector2(-648, -648)
+rotation = 1.5707964
+shape = SubResource("WorldBoundaryShape2D_4xhwt")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Camera2D/Road/DrivingArea" unique_id=1325215302]
+position = Vector2(-648, -648)
+rotation = 3.1415927
+shape = SubResource("WorldBoundaryShape2D_4xhwt")
+
+[node name="Car" parent="." unique_id=236793703 instance=ExtResource("1_y8ppt")]
+position = Vector2(659, 329)
