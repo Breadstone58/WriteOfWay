@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtgmn6jakhpxu"
-path="res://.godot/imported/THE PENTAGON.webp-81931b00b2863a7b6190df3fdf3b9f6c.ctex"
+uid="uid://dnh4ap0wacb4g"
+path="res://.godot/imported/cone_guy_glasses.webp-5bd60b342ba6361fe05e6c48a4fc73cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Levels/THE PENTAGON.webp"
-dest_files=["res://.godot/imported/THE PENTAGON.webp-81931b00b2863a7b6190df3fdf3b9f6c.ctex"]
+source_file="res://Assets/Images/cone_guy_glasses.webp"
+dest_files=["res://.godot/imported/cone_guy_glasses.webp-5bd60b342ba6361fe05e6c48a4fc73cd.ctex"]
 
 [params]
 

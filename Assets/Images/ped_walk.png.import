@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhhgm4dv4d10"
-path="res://.godot/imported/Spiral.webp-a257bff150f05ecd21d68072000a645e.ctex"
+uid="uid://dhxjnuy61j5ag"
+path="res://.godot/imported/ped_walk.png-964c6f88e03c3050abbd12daba5bfe36.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Levels/Spiral.webp"
-dest_files=["res://.godot/imported/Spiral.webp-a257bff150f05ecd21d68072000a645e.ctex"]
+source_file="res://Assets/Images/ped_walk.png"
+dest_files=["res://.godot/imported/ped_walk.png-964c6f88e03c3050abbd12daba5bfe36.ctex"]
 
 [params]
 

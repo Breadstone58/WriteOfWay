@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cawgsbenf2p3f"
-path="res://.godot/imported/Car.webp-5443671ca4e34727192cf2ea10fdefa2.ctex"
+path="res://.godot/imported/Car.webp-2e66c57af3606f2e10dae47aef737916.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Car.webp"
-dest_files=["res://.godot/imported/Car.webp-5443671ca4e34727192cf2ea10fdefa2.ctex"]
+source_file="res://Assets/Images/Car.webp"
+dest_files=["res://.godot/imported/Car.webp-2e66c57af3606f2e10dae47aef737916.ctex"]
 
 [params]
 

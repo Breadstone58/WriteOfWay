@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://cg3ye6554n7oa"]
 
-[ext_resource type="Texture2D" uid="uid://diepn0cemxhj0" path="res://Assets/Levels/Square.webp" id="1_8qsmg"]
+[ext_resource type="Texture2D" uid="uid://dv43rerw6hpwu" path="res://Assets/Levels/square.png" id="1_pnnky"]
 [ext_resource type="Script" uid="uid://3wha3t74yl7n" path="res://Scenes/Levels/show_track.gd" id="2_fphuk"]
-[ext_resource type="Texture2D" uid="uid://b82kd1t7kwun6" path="res://Assets/road.png" id="3_pnnky"]
-[ext_resource type="Texture2D" uid="uid://v20jcfnklsih" path="res://Assets/crosswalks_tiles.webp" id="4_blpqv"]
-[ext_resource type="Texture2D" uid="uid://bq4u7f3703twk" path="res://Assets/signs.webp" id="4_pnnky"]
+[ext_resource type="Texture2D" uid="uid://b82kd1t7kwun6" path="res://Assets/Images/road.png" id="3_pnnky"]
+[ext_resource type="Texture2D" uid="uid://bi6ssowh6r36h" path="res://Assets/Images/border.png" id="4_1jlnc"]
+[ext_resource type="Texture2D" uid="uid://v20jcfnklsih" path="res://Assets/Images/crosswalks_tiles.webp" id="4_blpqv"]
+[ext_resource type="Texture2D" uid="uid://bq4u7f3703twk" path="res://Assets/Images/signs.webp" id="4_pnnky"]
 [ext_resource type="PackedScene" uid="uid://b1hf1a4452c42" path="res://Scenes/car.tscn" id="5_1jlnc"]
-[ext_resource type="Texture2D" uid="uid://xteq1fyxlqfk" path="res://Assets/grass.webp" id="5_blpqv"]
+[ext_resource type="Texture2D" uid="uid://xteq1fyxlqfk" path="res://Assets/Images/grass.webp" id="5_blpqv"]
 [ext_resource type="PackedScene" uid="uid://2sno2themyi6" path="res://Scenes/pedestrian.tscn" id="6_u40f0"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q3bbs"]
@@ -590,7 +591,7 @@ _data = {
 anchor_mode = 0
 
 [node name="Road" type="ColorRect" parent="Camera2D" unique_id=1130595915]
-z_index = -1000
+z_as_relative = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -629,14 +630,19 @@ shape = SubResource("WorldBoundaryShape2D_4xhwt")
 
 [node name="Sprite2D" type="Sprite2D" parent="Camera2D/Road/DrivingArea" unique_id=192361189]
 modulate = Color(1, 1, 1, 0.33333334)
-z_index = 1000
+z_index = 1
 z_as_relative = false
-texture = ExtResource("1_8qsmg")
+texture = ExtResource("1_pnnky")
 script = ExtResource("2_fphuk")
 
 [node name="Sprite2D" type="Sprite2D" parent="Camera2D/Road" unique_id=1573863391]
 position = Vector2(647, 648)
 texture = ExtResource("3_pnnky")
+
+[node name="Sprite2D" type="Sprite2D" parent="Camera2D/Road/Sprite2D" unique_id=35375691]
+z_index = 1
+z_as_relative = false
+texture = ExtResource("4_1jlnc")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1514255537]
 position = Vector2(648.0001, 0)

@@ -1,10 +1,10 @@
 extends Node
 
 var layout_dictionary = {
-	"level_0": "level_0.png",
-	"level_1": "Line.webp",
-	"level_2": "Square.webp",
-	"level_3": "Spiral.webp"
+	"level_0": "mona_lisa.png",
+	"level_1": "line.png",
+	"level_2": "square.png",
+	"level_3": "spiral.png"
 }
 
 # Called when the node enters the scene tree for the first time.
@@ -35,4 +35,7 @@ func _on_path_eval():
 	#print(drawing_pixels)
 	#print(1-Percent_Error)
 	#print(same_pixels / path_pixels)
-	print(min(1-Percent_Error,same_pixels/path_pixels))
+	var raw_score = min(1-Percent_Error,same_pixels/path_pixels)
+	var base_score = clamp(int(round(raw_score * 1000)),0,1000)
+	print(base_score)
+	SignalBus.results.emit(base_score)

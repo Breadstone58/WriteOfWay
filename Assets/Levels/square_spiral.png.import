@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drpwiimjcstcp"
-path="res://.godot/imported/placeholder_car.png-75c11f7310b62fcb7701f1ffc6e8a8be.ctex"
+uid="uid://dum5qp0ngteky"
+path="res://.godot/imported/square_spiral.png-f195c8d1786c428b54cf7b68219edda5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/placeholder_car.png"
-dest_files=["res://.godot/imported/placeholder_car.png-75c11f7310b62fcb7701f1ffc6e8a8be.ctex"]
+source_file="res://Assets/Levels/square_spiral.png"
+dest_files=["res://.godot/imported/square_spiral.png-f195c8d1786c428b54cf7b68219edda5.ctex"]
 
 [params]
 

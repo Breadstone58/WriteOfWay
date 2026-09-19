@@ -6,6 +6,8 @@ var alive = true
 func _ready() -> void:
 	anim.animation = "walk"
 	anim.play()
+	z_index = 5
+	SignalBus.reset_kills.emit()
 
 func _process(_delta: float) -> void:
 	pass
@@ -14,8 +16,10 @@ func _on_body_shape_entered(_body_rid: RID, _body: Node2D, _body_shape_index: in
 	if alive == true:
 		alive = false
 		print("killed a guy")
+		SignalBus.person_killed.emit()
 		anim.animation = "death"
 		anim.play()
+		z_index = 2
 		anim.scale = Vector2(2,2)
 		$AnimationPlayer.speed_scale = 0
 		$AudioStreamPlayer2D.play()

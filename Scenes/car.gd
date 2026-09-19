@@ -17,7 +17,8 @@ func _ready():
 	oil_line.width = 12
 	oil_line.default_color = Color.BLACK
 	oil_line.antialiased = true
-	oil_line.z_index = -1
+	oil_line.z_index = 3
+	oil_line.z_as_relative = false
 	get_parent().add_child.call_deferred(oil_line)
 
 func get_input():
@@ -60,3 +61,8 @@ func _physics_process(delta):
 		else:
 			max_speed = 300
 			acceleration = 300
+		if Input.is_action_just_pressed("reset"):
+			get_tree().reload_current_scene()
+	if Input.is_action_just_pressed("menu"):
+		get_tree().change_scene_to_file("res://Scenes/Levels/Level Select.tscn")
+		

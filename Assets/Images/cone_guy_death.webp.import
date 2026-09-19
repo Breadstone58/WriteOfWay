@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://v20jcfnklsih"
-path="res://.godot/imported/crosswalks_tiles.webp-266b14b7cf0fc16071802ad4b869ee85.ctex"
+uid="uid://7ek42k12v6qn"
+path="res://.godot/imported/cone_guy_death.webp-e8ae2ac7112b20b0c1264721fb4b687e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/crosswalks_tiles.webp"
-dest_files=["res://.godot/imported/crosswalks_tiles.webp-266b14b7cf0fc16071802ad4b869ee85.ctex"]
+source_file="res://Assets/Images/cone_guy_death.webp"
+dest_files=["res://.godot/imported/cone_guy_death.webp-e8ae2ac7112b20b0c1264721fb4b687e.ctex"]
 
 [params]
 

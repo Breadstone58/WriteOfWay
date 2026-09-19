@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cduttde0f5jol"
-path="res://.godot/imported/zogzag.webp-930542b74ee4bcb60f548a3148e4bf71.ctex"
+uid="uid://bi6ssowh6r36h"
+path="res://.godot/imported/border.png-e9070a175655a8c989c4336c6fa419a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Levels/zogzag.webp"
-dest_files=["res://.godot/imported/zogzag.webp-930542b74ee4bcb60f548a3148e4bf71.ctex"]
+source_file="res://Assets/Images/border.png"
+dest_files=["res://.godot/imported/border.png-e9070a175655a8c989c4336c6fa419a6.ctex"]
 
 [params]
 
