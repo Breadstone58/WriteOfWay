@@ -3,6 +3,9 @@
 [ext_resource type="Script" uid="uid://4veqstnlv2l3" path="res://Scenes/Levels/button.gd" id="2_2dc3q"]
 [ext_resource type="Texture2D" uid="uid://djsthupk0mhuw" path="res://icon.svg" id="2_dg6ua"]
 [ext_resource type="PackedScene" uid="uid://b1hf1a4452c42" path="res://Scenes/car.tscn" id="2_gxket"]
+[ext_resource type="Script" uid="uid://b3jmt0qdh2w6k" path="res://Scenes/Levels/Level_1_Button.gd" id="3_2dc3q"]
+[ext_resource type="Script" uid="uid://c7envhka7ylm8" path="res://Scenes/Levels/level_2.gd" id="4_btrm8"]
+[ext_resource type="Script" uid="uid://vu101vf2bkj7" path="res://Scenes/Levels/level_3.gd" id="5_ev01q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oyyby"]
 size = Vector2(113, 114.5)
@@ -21,8 +24,47 @@ texture = ExtResource("2_dg6ua")
 position = Vector2(219.5, 170.75)
 shape = SubResource("RectangleShape2D_oyyby")
 
+[node name="Area2D2" type="Area2D" parent="." unique_id=1380377504]
+collision_mask = 2
+script = ExtResource("3_2dc3q")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D2" unique_id=90994158]
+position = Vector2(564, 173)
+texture = ExtResource("2_dg6ua")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" unique_id=1479885961]
+position = Vector2(564, 172)
+shape = SubResource("RectangleShape2D_oyyby")
+
+[node name="Area2D3" type="Area2D" parent="." unique_id=265559862]
+collision_mask = 2
+script = ExtResource("4_btrm8")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D3" unique_id=2138737228]
+position = Vector2(878, 175)
+texture = ExtResource("2_dg6ua")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3" unique_id=699476440]
+position = Vector2(880, 174)
+shape = SubResource("RectangleShape2D_oyyby")
+
+[node name="Area2D4" type="Area2D" parent="." unique_id=311051792]
+collision_mask = 2
+script = ExtResource("5_ev01q")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D4" unique_id=1042232633]
+position = Vector2(1207, 173)
+texture = ExtResource("2_dg6ua")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4" unique_id=1534978100]
+position = Vector2(1207, 176)
+shape = SubResource("RectangleShape2D_oyyby")
+
 [node name="Car" parent="." unique_id=236793703 instance=ExtResource("2_gxket")]
 position = Vector2(1144.9999, 907)
 collision_mask = 5
 
 [connection signal="body_shape_entered" from="Area2D" to="Area2D" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="Area2D2" to="Area2D2" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="Area2D3" to="Area2D3" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="Area2D4" to="Area2D4" method="_on_body_shape_entered"]

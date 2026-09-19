@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bv6jlaowvvrxs"
-path="res://.godot/imported/drawn_path.png-3dafb1f3393c5437607d779f255bbc48.ctex"
+uid="uid://dhhgm4dv4d10"
+path="res://.godot/imported/Spiral.webp-8386fad0cf0b5b38ca9ff2a579ad4ae7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://drawn_path.png"
-dest_files=["res://.godot/imported/drawn_path.png-3dafb1f3393c5437607d779f255bbc48.ctex"]
+source_file="res://Assets/Spiral.webp"
+dest_files=["res://.godot/imported/Spiral.webp-8386fad0cf0b5b38ca9ff2a579ad4ae7.ctex"]
 
 [params]
 

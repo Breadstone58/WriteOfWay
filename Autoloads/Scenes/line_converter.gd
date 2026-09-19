@@ -12,8 +12,13 @@ func _process(_delta: float) -> void:
 
 func _on_line_export(point_array: PackedVector2Array):
 	print("Export Ran")
+	$Line2D.width = 12
 	$Line2D.points = point_array
 	await RenderingServer.frame_post_draw
 	var image: Image = get_texture().get_image()
-	image.save_png("res://drawn_path.png")
+	image.save_png("user://drawn_path.png")
+	$Line2D.width = 50
+	await RenderingServer.frame_post_draw
+	var image_2 = get_texture().get_image()
+	image_2.save_png("user://drawn_path_big.png")
 	SignalBus.eval_path.emit()

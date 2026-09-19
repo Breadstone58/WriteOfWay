@@ -35,9 +35,9 @@ func get_input():
 		velocity = velocity.normalized() * speed
 
 func _physics_process(delta):
-	if drawing_active or true:
+	if drawing_active:
 		get_input()
-		if Input.is_action_just_pressed("oil"):
+		if Input.is_action_just_pressed("oil") and get_tree().current_scene.name != "level select":
 			drawing_active = false
 			visible = false
 			set_collision_layer_value(2, false)
