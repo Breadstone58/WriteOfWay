@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dplbuitrafh0d"]
 
-[ext_resource type="Script" uid="uid://ijj8pvyvran0" path="res://Button_press.gd" id="1_lc4xp"]
+[ext_resource type="Script" uid="uid://ijj8pvyvran0" path="res://Scenes/Button_press.gd" id="1_lc4xp"]
 [ext_resource type="Texture2D" uid="uid://djsthupk0mhuw" path="res://icon.svg" id="1_nhor4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b5gi6"]

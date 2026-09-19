@@ -3,3 +3,6 @@ extends Node
 
 signal export_line(point_array: PackedVector2Array)
 signal eval_path()
+signal reset_kills()
+signal person_killed()
+signal results(base_score : float)

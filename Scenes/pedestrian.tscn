@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://2sno2themyi6"]
 
 [ext_resource type="Script" uid="uid://de8od3sdeq5sy" path="res://Scenes/pedestrian.gd" id="1_epmes"]
-[ext_resource type="Texture2D" uid="uid://7ek42k12v6qn" path="res://Assets/cone_guy_death.webp" id="2_cl0mi"]
-[ext_resource type="Texture2D" uid="uid://dnh4ap0wacb4g" path="res://Assets/cone_guy_glasses.webp" id="2_yqvb5"]
+[ext_resource type="Texture2D" uid="uid://7ek42k12v6qn" path="res://Assets/Images/cone_guy_death.webp" id="2_cl0mi"]
+[ext_resource type="Texture2D" uid="uid://dnh4ap0wacb4g" path="res://Assets/Images/cone_guy_glasses.webp" id="2_yqvb5"]
 [ext_resource type="AudioStream" uid="uid://mq4t00fb4ivi" path="res://Assets/Sounds/Scream1.wav" id="3_1h25g"]
 [ext_resource type="AudioStream" uid="uid://ccxg8bpphldc" path="res://Assets/Sounds/Scream2.wav" id="4_yqvb5"]
 
@@ -261,7 +261,7 @@ stream_0/stream = ExtResource("3_1h25g")
 stream_1/stream = ExtResource("4_yqvb5")
 
 [node name="Pedestrian" type="Area2D" unique_id=1425713004]
-z_index = 1
+z_index = 5
 z_as_relative = false
 scale = Vector2(0.5, 0.5)
 collision_mask = 2

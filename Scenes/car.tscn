@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://b1hf1a4452c42"]
 
 [ext_resource type="Script" uid="uid://dybnmhv61iprl" path="res://Scenes/car.gd" id="1_go66d"]
-[ext_resource type="Texture2D" uid="uid://cawgsbenf2p3f" path="res://Assets/Car.webp" id="2_go66d"]
+[ext_resource type="Texture2D" uid="uid://cawgsbenf2p3f" path="res://Assets/Images/Car.webp" id="2_go66d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ogd8f"]
 size = Vector2(132.66667, 192.16667)
 
 [node name="Car" type="CharacterBody2D" unique_id=236793703]
+z_index = 4
+z_as_relative = false
 scale = Vector2(0.8, 0.8)
 collision_layer = 2
 script = ExtResource("1_go66d")

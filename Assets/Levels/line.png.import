@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7ek42k12v6qn"
-path="res://.godot/imported/cone_guy_death.webp-5970266359981362fba858f58a2befdc.ctex"
+uid="uid://cjx0qjcw8bvp"
+path="res://.godot/imported/line.png-0f2f22a98bc455fbbf2ee7ba1398dce7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/cone_guy_death.webp"
-dest_files=["res://.godot/imported/cone_guy_death.webp-5970266359981362fba858f58a2befdc.ctex"]
+source_file="res://Assets/Levels/line.png"
+dest_files=["res://.godot/imported/line.png-0f2f22a98bc455fbbf2ee7ba1398dce7.ctex"]
 
 [params]
 

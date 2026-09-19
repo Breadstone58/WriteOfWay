@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhhgm4dv4d10"
-path="res://.godot/imported/Spiral.webp-8386fad0cf0b5b38ca9ff2a579ad4ae7.ctex"
+uid="uid://cujm6jwh65jip"
+path="res://.godot/imported/spiral.png-9ace72d36b4125091dfb41e7c181dda7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Spiral.webp"
-dest_files=["res://.godot/imported/Spiral.webp-8386fad0cf0b5b38ca9ff2a579ad4ae7.ctex"]
+source_file="res://Assets/Levels/spiral.png"
+dest_files=["res://.godot/imported/spiral.png-9ace72d36b4125091dfb41e7c181dda7.ctex"]
 
 [params]
 

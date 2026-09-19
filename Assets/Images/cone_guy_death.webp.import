@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cawgsbenf2p3f"
-path="res://.godot/imported/Car.webp-5443671ca4e34727192cf2ea10fdefa2.ctex"
+uid="uid://7ek42k12v6qn"
+path="res://.godot/imported/cone_guy_death.webp-e8ae2ac7112b20b0c1264721fb4b687e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Car.webp"
-dest_files=["res://.godot/imported/Car.webp-5443671ca4e34727192cf2ea10fdefa2.ctex"]
+source_file="res://Assets/Images/cone_guy_death.webp"
+dest_files=["res://.godot/imported/cone_guy_death.webp-e8ae2ac7112b20b0c1264721fb4b687e.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://v20jcfnklsih"
-path="res://.godot/imported/crosswalks_tiles.webp-266b14b7cf0fc16071802ad4b869ee85.ctex"
+uid="uid://cdp4rg1jc24d3"
+path="res://.godot/imported/pentagon.png-db4564316d0cf9b7f161570b778c7b3f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/crosswalks_tiles.webp"
-dest_files=["res://.godot/imported/crosswalks_tiles.webp-266b14b7cf0fc16071802ad4b869ee85.ctex"]
+source_file="res://Assets/Levels/pentagon.png"
+dest_files=["res://.godot/imported/pentagon.png-db4564316d0cf9b7f161570b778c7b3f.ctex"]
 
 [params]
 

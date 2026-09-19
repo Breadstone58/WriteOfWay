@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bq4u7f3703twk"
-path="res://.godot/imported/signs.webp-21e458994baa2f72dce04b24a555d012.ctex"
+uid="uid://d2gxohx6fwf81"
+path="res://.godot/imported/zig_zag.png-4b0141d38d3cf4c7a17fe2577a5fecd9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/signs.webp"
-dest_files=["res://.godot/imported/signs.webp-21e458994baa2f72dce04b24a555d012.ctex"]
+source_file="res://Assets/Levels/zig_zag.png"
+dest_files=["res://.godot/imported/zig_zag.png-4b0141d38d3cf4c7a17fe2577a5fecd9.ctex"]
 
 [params]
 

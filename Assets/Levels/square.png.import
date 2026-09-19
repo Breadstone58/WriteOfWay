@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnh4ap0wacb4g"
-path="res://.godot/imported/cone_guy_glasses.webp-a4a7d9c439a50767547b9ac3e525a74a.ctex"
+uid="uid://dv43rerw6hpwu"
+path="res://.godot/imported/square.png-3df7e666b74b51e51913e24d0a5f5d7a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/cone_guy_glasses.webp"
-dest_files=["res://.godot/imported/cone_guy_glasses.webp-a4a7d9c439a50767547b9ac3e525a74a.ctex"]
+source_file="res://Assets/Levels/square.png"
+dest_files=["res://.godot/imported/square.png-3df7e666b74b51e51913e24d0a5f5d7a.ctex"]
 
 [params]
 

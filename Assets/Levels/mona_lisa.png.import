@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8unseaamrhj2"
-path="res://.godot/imported/Sidewalk.webp-d72d4d64de0a3035b49e1ba4fcd45696.ctex"
+uid="uid://b5qeuph045xfw"
+path="res://.godot/imported/mona_lisa.png-2a694e2ff911c145b892234c2f35eb2c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sidewalk.webp"
-dest_files=["res://.godot/imported/Sidewalk.webp-d72d4d64de0a3035b49e1ba4fcd45696.ctex"]
+source_file="res://Assets/Levels/mona_lisa.png"
+dest_files=["res://.godot/imported/mona_lisa.png-2a694e2ff911c145b892234c2f35eb2c.ctex"]
 
 [params]
 

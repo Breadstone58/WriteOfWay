@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b82kd1t7kwun6"
-path="res://.godot/imported/road.png-c3c47e2cc8c90beae2ad5c8a3bb2c3ca.ctex"
+uid="uid://8unseaamrhj2"
+path="res://.godot/imported/Sidewalk.webp-6ba9ebdc1d7a6b8bc07d81b2e5d28723.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/road.png"
-dest_files=["res://.godot/imported/road.png-c3c47e2cc8c90beae2ad5c8a3bb2c3ca.ctex"]
+source_file="res://Assets/Images/Sidewalk.webp"
+dest_files=["res://.godot/imported/Sidewalk.webp-6ba9ebdc1d7a6b8bc07d81b2e5d28723.ctex"]
 
 [params]
 

@@ -1,6 +1,5 @@
 extends SubViewport
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	SignalBus.export_line.connect(_on_line_export)

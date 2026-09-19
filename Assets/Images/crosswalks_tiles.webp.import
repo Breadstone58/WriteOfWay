@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cduttde0f5jol"
-path="res://.godot/imported/zogzag.webp-1dad0b081dce72ca76bb649494ffbeba.ctex"
+uid="uid://v20jcfnklsih"
+path="res://.godot/imported/crosswalks_tiles.webp-c456731aec2a4479e7148e66cbcaf527.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/zogzag.webp"
-dest_files=["res://.godot/imported/zogzag.webp-1dad0b081dce72ca76bb649494ffbeba.ctex"]
+source_file="res://Assets/Images/crosswalks_tiles.webp"
+dest_files=["res://.godot/imported/crosswalks_tiles.webp-c456731aec2a4479e7148e66cbcaf527.ctex"]
 
 [params]
 

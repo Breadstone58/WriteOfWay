@@ -1,12 +1,19 @@
 extends Node
 
+var layout_dictionary = {
+	"level_0": "mona_lisa.png",
+	"level_1": "line.png",
+	"level_2": "square.png",
+	"level_3": "spiral.png"
+}
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	SignalBus.eval_path.connect(_on_path_eval)
 	
 func _on_path_eval():
-	print("Signal Called")
-	var path: Image = load("res://Assets/Levels/Level_0.png").get_image()
+	var path_pattern = layout_dictionary[get_tree().current_scene.name]
+	var path: Image = load("res://Assets/Levels/"+path_pattern).get_image()
 	var drawing: Image = Image.load_from_file("user://drawn_path.png")
 	var drawing_big: Image = Image.load_from_file("user://drawn_path_big.png")
 	
@@ -28,4 +35,7 @@ func _on_path_eval():
 	#print(drawing_pixels)
 	#print(1-Percent_Error)
 	#print(same_pixels / path_pixels)
-	print(min(1-Percent_Error,same_pixels/path_pixels))
+	var raw_score = min(1-Percent_Error,same_pixels/path_pixels)
+	var base_score = clamp(int(round(raw_score * 1000)),0,1000)
+	print(base_score)
+	SignalBus.results.emit(base_score)
