@@ -6,35 +6,26 @@ func _ready() -> void:
 	
 func _on_path_eval():
 	print("Signal Called")
-	var path: Image = load("res://Assets/Levels/level_0.png").get_image()
-	var drawing: Image = load("res://drawn_path.png").get_image()
+	var path: Image = load("res://Assets/Levels/Level_0.png").get_image()
+	var drawing: Image = Image.load_from_file("user://drawn_path.png")
+	var drawing_big: Image = Image.load_from_file("user://drawn_path_big.png")
 	
-	var total_path_pixels: float = 0.0
-	var accurate_player_pixels: float = 0.0
-	var stray_player_pixels: float = 0.0
-
-	for y in range(1296):
-		for x in range(1296):
-			var path_alpha = path.get_pixel(x, y).a
-			var player_alpha = drawing.get_pixel(x, y).a
-			
-			var is_path_solid = path_alpha > 0.1
-			var is_player_solid = player_alpha > 0.1
-
-			if is_path_solid:
-				total_path_pixels += 1.0
-				
-				if is_player_solid:
-					accurate_player_pixels += 1.0
-			
-			elif is_player_solid:
-				stray_player_pixels += 1.0
-
-	var coverage_score = accurate_player_pixels / total_path_pixels
-	var stray_penalty = stray_player_pixels / total_path_pixels
-	stray_penalty = 0
-	var raw_score = (coverage_score - stray_penalty) * 100.0
-	var final_accuracy = clamp(raw_score, 0.0, 100.0)
-	print(coverage_score)
-	print(stray_penalty)
-	print(final_accuracy)
+	var path_pixels: float = 0.0
+	var drawing_pixels: float = 0.0
+	var same_pixels: float = 0.0
+	
+	for x in range(1296):
+		for y in range(1296):
+			if path.get_pixel(x,y) == Color(0,0,0):
+				path_pixels += 1
+			if drawing.get_pixel(x,y) == Color(0,0,0):
+				drawing_pixels += 1
+			if path.get_pixel(x,y) == Color(0,0,0) and drawing_big.get_pixel(x,y) == Color(0,0,0):
+				same_pixels += 1
+	
+	var Percent_Error: float = (abs(path_pixels - drawing_pixels)/drawing_pixels)
+	#print(path_pixels)
+	#print(drawing_pixels)
+	#print(1-Percent_Error)
+	#print(same_pixels / path_pixels)
+	print(min(1-Percent_Error,same_pixels/path_pixels))
