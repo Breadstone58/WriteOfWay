@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bmlqm7bdpx45q"]
+
+[ext_resource type="AudioStream" uid="uid://c51mmrvv0rri0" path="res://Assets/Sounds/This Truly Was Our Write of Way.wav" id="1_y8xiv"]
+[ext_resource type="Script" uid="uid://l6gjdomie872" path="res://Autoloads/Scenes/music_player.gd" id="2_1f6r0"]
+
+[node name="MusicPlayer" type="AudioStreamPlayer" unique_id=1498353498]
+stream = ExtResource("1_y8xiv")
+autoplay = true
+script = ExtResource("2_1f6r0")

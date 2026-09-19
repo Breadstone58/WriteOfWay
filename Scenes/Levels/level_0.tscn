@@ -257,4 +257,4 @@ position = Vector2(1356, 877)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian" unique_id=913902090]
 libraries/ = SubResource("AnimationLibrary_r74qd")
-autoplay = &"Move"
+autoplay = &"RESET"

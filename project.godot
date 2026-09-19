@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 LineConv="*uid://d2lfhkg3bwcf7"
 SignalBus="*uid://def5ua5lqfgmk"
 PathEvaluator="*uid://dub7gdeooy58p"
+MusicPlayer="*uid://bmlqm7bdpx45q"
 
 [display]
 
