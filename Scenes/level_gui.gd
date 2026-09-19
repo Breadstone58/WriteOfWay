@@ -15,13 +15,18 @@ var fade_alpha = 0
 
 @onready var clip: Sprite2D = $Clipboard
 @onready var fade_box: ColorRect = $FadeBox
+@onready var timer_disp: RichTextLabel = $Display/TimerDisp
+@onready var time_goal: RichTextLabel = $Display/TimeGoalDisp
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	SignalBus.level_start.emit()
 	SignalBus.results.connect(_on_results)
 	clip.visible = false
-
+	if goal_times[get_tree().current_scene.name] != INF:
+		time_goal.text = "Goal: "+str(int(goal_times[get_tree().current_scene.name]/60)) + ":" + str(int(goal_times[get_tree().current_scene.name]) % 60).pad_zeros(2)
+	else:
+		time_goal.text = "Goal: Finish"
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if !stop_count:
@@ -29,9 +34,13 @@ func _process(delta: float) -> void:
 	if fade_out:
 		fade_alpha = clamp(fade_alpha+delta, 0, 0.75)
 		fade_box.color = Color(0,0,0,fade_alpha)
+	timer_disp.text = str(int(time_elapsed/60)) + ":" + str(int(time_elapsed) % 60).pad_zeros(2)
+	if int(time_elapsed) > goal_times[get_tree().current_scene.name]:
+		time_goal.self_modulate = Color(0,0,0,0.35)
 	
 func _on_results(base_score: int):
 	fade_out = true
+	stop_count = true
 	var ped_deduct = GlobVar.kills * 50
 	if int(time_elapsed) > goal_times[get_tree().current_scene.name]:
 		time_bonus = 0
