@@ -22,12 +22,15 @@ var time_bonus = 100
 var rank = ""
 var fade_out = false
 var fade_alpha = 0
+var spawn_text = false
+var spawn_text_speed_mult = 1
 
 @onready var clip: Sprite2D = $Clipboard
 @onready var fade_box: ColorRect = $FadeBox
 @onready var timer_disp: RichTextLabel = $Display/TimerDisp
 @onready var time_goal: RichTextLabel = $Display/TimeGoalDisp
 @onready var level_name_disp: RichTextLabel = $Display/LevelNameDisp
+@onready var clipboard_disp: RichTextLabel = $"Clipboard/Score Calc Disp"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -39,6 +42,7 @@ func _ready() -> void:
 	else:
 		time_goal.text = "Goal: Finish"
 	level_name_disp.text = level_name[get_tree().current_scene.name]
+	clipboard_disp.visible_ratio = 0.0
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -50,12 +54,15 @@ func _process(delta: float) -> void:
 	timer_disp.text = str(int(time_elapsed/60)) + ":" + str(int(time_elapsed) % 60).pad_zeros(2)
 	if int(time_elapsed) > goal_times[get_tree().current_scene.name]:
 		time_goal.self_modulate = Color(0,0,0,0.35)
+	if spawn_text:
+		clipboard_disp.visible_ratio += delta/spawn_text_speed_mult
+		
 	
 func _on_results(base_score: int):
 	fade_out = true
 	stop_count = true
 	var ped_deduct = GlobVar.kills * 50
-	if int(time_elapsed) > goal_times[get_tree().current_scene.name]:
+	if int(time_elapsed) > goal_times[get_tree().current_scene.name] or goal_times[get_tree().current_scene.name] == INF:
 		time_bonus = 0
 	var final_score = clamp(base_score - ped_deduct + time_bonus, 0, 1000)
 	if final_score == 1000 and ped_deduct == 0 and time_bonus == 100:
@@ -75,4 +82,20 @@ func _on_results(base_score: int):
 	print(final_score)
 	print(rank)
 	
+	#clipboard
+	clip.visible = true
+	$"Clipboard/Final Score Disp".visible = false
+	$"Clipboard/Rank Disp".visible = false
+	clipboard_disp.text = "[u]Accuracy:[/u]\n" + str(base_score / 10.0) + "%\n" + str(base_score) + " points\n"
+	if GlobVar.kills > 0:
+		spawn_text_speed_mult += 1
+		if GlobVar.kills == 1:
+			clipboard_disp.text += "[color=red][u]" + str(GlobVar.kills) + "  Pedestrian Killed[/u]\n" + str(GlobVar.kills * -50) + " points[/color]\n"
+		else:
+			clipboard_disp.text += "[color=red][u]" + str(GlobVar.kills) + "  Pedestrians Killed[/u]\n" + str(GlobVar.kills * -50) + " points[/color]\n"
+	if time_bonus == 100:
+		spawn_text_speed_mult += 1
+		clipboard_disp.text += "[color=#93C572][u]Time Bonus[/u]\n+100 points[/color]"
+	spawn_text = true
+	await clipboard_disp.visible_ratio == 1.0
 	

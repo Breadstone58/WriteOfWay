@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://bs6t6mxbwivf8" path="res://Assets/GUI/clipboard.png" id="5_vnik3"]
 [ext_resource type="FontFile" uid="uid://dygjxuuo2ohr2" path="res://Assets/Fonts/Seven Segment.ttf" id="6_2ft1l"]
 [ext_resource type="FontFile" uid="uid://d3h0xqvxgr2cq" path="res://Assets/Fonts/HWYGCOND.TTF" id="7_37ty5"]
+[ext_resource type="FontFile" uid="uid://bybfa3axv1p6d" path="res://Assets/Fonts/Ballpoint Signature.otf" id="9_4220r"]
+[ext_resource type="Texture2D" uid="uid://capj2c5xn8e53" path="res://Assets/GUI/ranks_text.png" id="10_3lmge"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2ft1l"]
 atlas = ExtResource("5_if1ad")
@@ -75,6 +77,56 @@ _data = {
 &"RESET": SubResource("Animation_if1ad"),
 &"bobbing": SubResource("Animation_2ft1l")
 }
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4e718"]
+atlas = ExtResource("10_3lmge")
+region = Rect2(0, 0, 410, 410)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mjq3"]
+atlas = ExtResource("10_3lmge")
+region = Rect2(410, 0, 410, 410)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ihb4f"]
+atlas = ExtResource("10_3lmge")
+region = Rect2(820, 0, 410, 410)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ghhut"]
+atlas = ExtResource("10_3lmge")
+region = Rect2(1230, 0, 410, 410)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5s6on"]
+atlas = ExtResource("10_3lmge")
+region = Rect2(1640, 0, 410, 410)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nqlt1"]
+atlas = ExtResource("10_3lmge")
+region = Rect2(2050, 0, 410, 410)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ogd8f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4e718")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4mjq3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ihb4f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ghhut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5s6on")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nqlt1")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 0.0
+}]
 
 [node name="Level GUI" type="Node2D" unique_id=467917947]
 position = Vector2(319, 361)
@@ -148,5 +200,33 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Clipboard" type="Sprite2D" parent="." unique_id=1067593176]
+z_index = 7
+z_as_relative = false
 position = Vector2(962, 283)
 texture = ExtResource("5_vnik3")
+
+[node name="Score Calc Disp" type="RichTextLabel" parent="Clipboard" unique_id=417688665]
+offset_left = -274.0
+offset_top = -391.0
+offset_right = 257.0
+offset_bottom = 278.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = -3
+theme_override_fonts/normal_font = ExtResource("9_4220r")
+theme_override_font_sizes/normal_font_size = 70
+bbcode_enabled = true
+text = "a
+a
+a
+a
+a
+a
+a"
+horizontal_alignment = 1
+
+[node name="Final Score Disp" type="RichTextLabel" parent="Clipboard" unique_id=473300782]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Rank Disp" type="AnimatedSprite2D" parent="Clipboard" unique_id=1889311485]
+sprite_frames = SubResource("SpriteFrames_ogd8f")
