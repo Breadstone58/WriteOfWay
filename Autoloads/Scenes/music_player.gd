@@ -17,10 +17,10 @@ func _level_select_entered():
 
 func play_song():
 	if playing == false:
-		stream = tracks[1]
+		stream = tracks[0]
 		play()
 		await finished
-		stream = tracks[2]
+		stream = tracks[1]
 		play()
 		
 func _level_start():

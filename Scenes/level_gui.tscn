@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://chu4ybbqeh4md" path="res://Assets/GUI/JohnWriteOfWay.png" id="12_3sqbi"]
 [ext_resource type="Script" uid="uid://cryq8lu2c0q8i" path="res://Scenes/john_write_of_way.gd" id="13_p1nyl"]
 [ext_resource type="AudioStream" uid="uid://c51mmrvv0rri0" path="res://Assets/Sounds/This Truly Was Our Write of Way.wav" id="20_ulgpf"]
+[ext_resource type="AudioStream" uid="uid://dg7t75c5mou4i" path="res://Assets/Sounds/writing_sound_effect.wav" id="21_nxwe8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p1nyl"]
 atlas = ExtResource("12_3sqbi")
@@ -351,9 +352,10 @@ z_index = 10
 z_as_relative = false
 position = Vector2(189, 18)
 sprite_frames = SubResource("SpriteFrames_0q1l0")
-animation = &"forward"
+animation = &"left"
 autoplay = "idle"
-frame_progress = 0.06776359
+frame = 1
+frame_progress = 0.08607311
 script = ExtResource("13_p1nyl")
 
 [node name="Display" type="AnimatedSprite2D" parent="." unique_id=1659944236]
@@ -450,3 +452,6 @@ volume_db = 10.0
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1021695599]
 stream = ExtResource("20_ulgpf")
 autoplay = true
+
+[node name="Scrawl" type="AudioStreamPlayer" parent="." unique_id=468966538]
+stream = ExtResource("21_nxwe8")

@@ -14,14 +14,14 @@ func _process(delta: float) -> void:
 	if GlobVar.results == false:
 		if murder > 0:
 			animation = "murder"
-		elif Input.is_action_pressed("increase_speed"):
-			animation = "forward"
 		elif Input.is_action_pressed("backward"):
 			animation = "back"
 		elif Input.is_action_pressed("turn_right"):
 			animation = "right"
 		elif Input.is_action_pressed("turn_left"):
 			animation = "left"
+		elif Input.is_action_pressed("increase_speed"):
+			animation = "forward"
 		else:
 			animation = "idle"
 	else:
