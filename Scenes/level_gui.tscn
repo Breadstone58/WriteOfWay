@@ -351,9 +351,10 @@ z_index = 10
 z_as_relative = false
 position = Vector2(189, 18)
 sprite_frames = SubResource("SpriteFrames_0q1l0")
-animation = &"forward"
+animation = &"left"
 autoplay = "idle"
-frame_progress = 0.06776359
+frame = 1
+frame_progress = 0.08607311
 script = ExtResource("13_p1nyl")
 
 [node name="Display" type="AnimatedSprite2D" parent="." unique_id=1659944236]

@@ -92,6 +92,8 @@ var final_score = 0
 @onready var level_name_disp: RichTextLabel = $Display/LevelNameDisp
 @onready var clipboard_disp: RichTextLabel = $"Clipboard/Score Calc Disp"
 
+@onready var audio_player: AudioStreamPlayer = $AudioStreamPlayer
+
 
 @export var rank_audio: Array[AudioStream] = []
 
@@ -134,6 +136,10 @@ func _process(delta: float) -> void:
 	GlobVar.rank_displayed = $"Clipboard/Rank Disp".visible
 	
 func _on_results(base_score: int):
+	var tween = create_tween()
+	tween.tween_property(audio_player, "volume_db", -80.0, 2.0)
+	tween.tween_callback(audio_player.stop)
+	
 	GlobVar.results = true
 	fade_out = true
 	stop_count = true
