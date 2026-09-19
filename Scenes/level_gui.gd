@@ -150,11 +150,11 @@ func _on_results(base_score: int):
 	final_score = clamp(base_score - ped_deduct + time_bonus, 0, 1000)
 	if final_score == 1000 and ped_deduct == 0 and time_bonus == 100:
 		rank = 0
-	elif final_score >= 900 and base_score >= 900:
+	elif final_score >= 900 and base_score >= 850:
 		rank = 1
-	elif final_score >= 850:
-		rank = 2
 	elif final_score >= 800:
+		rank = 2
+	elif final_score >= 700:
 		rank = 3
 	elif final_score >= 600:
 		rank = 4
