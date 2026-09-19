@@ -22,6 +22,8 @@ func _ready():
 	get_parent().add_child.call_deferred(oil_line)
 	if get_tree().current_scene.name == "level select":
 		SignalBus.level_select.emit()
+	$Ping.scale.x = 3
+	$Ping.scale.y = 3
 
 func get_input():
 	rotation_direction = Input.get_axis("turn_left", "turn_right")
@@ -38,6 +40,8 @@ func get_input():
 		velocity = velocity.normalized() * speed
 
 func _physics_process(delta):
+	$Ping.scale.x = clamp($Ping.scale.x-7*delta,0,INF)
+	$Ping.scale.y = clamp($Ping.scale.y-7*delta,0,INF)
 	if drawing_active:
 		get_input()
 		if Input.is_action_just_pressed("oil") and get_tree().current_scene.name != "level select":
