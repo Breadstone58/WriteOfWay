@@ -12,7 +12,18 @@ var goal_times = {
 	"level_8": 10,
 	"level_9": 50,
 	"level_10": 60,
+	"level_11": 0,
+	"level_12": 0,
+	"level_13": 0,
+	"level_14": 0,
+	"level_15": 0,
+	"level_16": 0,
+	"level_17": 0,
+	"level_18": 0,
+	"level_19": 0,
+	"level_20": 0,
 }
+
 var level_name = {
 	"level_0": "Mona Lisa",
 	"level_1": "Level 1: Yield to Pedestrians",
@@ -25,7 +36,18 @@ var level_name = {
 	"level_8": "Jaywalkers",
 	"level_9": "",
 	"level_10": "",
+	"level_11": "",
+	"level_12": "",
+	"level_13": "",
+	"level_14": "",
+	"level_15": "",
+	"level_16": "",
+	"level_17": "",
+	"level_18": "",
+	"level_19": "",
+	"level_20": "",
 }
+
 
 var title_size = {
 	"level_0": 73,
@@ -39,6 +61,16 @@ var title_size = {
 	"level_8": 50,
 	"level_9": 50,
 	"level_10": 50,
+	"level_11": 0,
+	"level_12": 0,
+	"level_13": 0,
+	"level_14": 0,
+	"level_15": 0,
+	"level_16": 0,
+	"level_17": 0,
+	"level_18": 0,
+	"level_19": 0,
+	"level_20": 0,
 }
 
 
