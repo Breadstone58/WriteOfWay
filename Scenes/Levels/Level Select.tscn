@@ -10,10 +10,33 @@
 [ext_resource type="Script" uid="uid://cnan67f8blpn6" path="res://Scenes/Levels/level_5_button.gd" id="7_g4y4g"]
 [ext_resource type="Script" uid="uid://dsmvkaehy6bx1" path="res://Scenes/Levels/level_6_button.gd" id="8_o6thy"]
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ogd8f"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q3bbs"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oyyby"]
 size = Vector2(113, 114.5)
 
 [node name="level select" type="Node2D" unique_id=1976467842]
+
+[node name="Driving Area" type="StaticBody2D" parent="." unique_id=521366687]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Driving Area" unique_id=2065663535]
+rotation = 1.5707964
+shape = SubResource("WorldBoundaryShape2D_ogd8f")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Driving Area" unique_id=1897751559]
+rotation = 3.1415927
+shape = SubResource("WorldBoundaryShape2D_ogd8f")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Driving Area" unique_id=443056631]
+position = Vector2(1944, 1296)
+shape = SubResource("WorldBoundaryShape2D_q3bbs")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Driving Area" unique_id=1518147025]
+position = Vector2(1944, 1296)
+rotation = -1.5707964
+shape = SubResource("WorldBoundaryShape2D_q3bbs")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1284910507]
 visible = false

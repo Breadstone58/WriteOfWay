@@ -82,6 +82,8 @@ func _process(delta: float) -> void:
 		$"Clipboard/Final Score Disp".visible_ratio += delta
 		if $"Clipboard/Rank Disp".visible == false and $"Clipboard/Final Score Disp".visible_ratio >= 1.0:
 			display_rank()
+	if Input.is_key_pressed(KEY_E):
+		get_tree().change_scene_to_file("res://Scenes/Levels/Level Select.tscn")
 	
 func _on_results(base_score: int):
 	GlobVar.results = true
