@@ -51,6 +51,9 @@ var final_score = 0
 @onready var level_name_disp: RichTextLabel = $Display/LevelNameDisp
 @onready var clipboard_disp: RichTextLabel = $"Clipboard/Score Calc Disp"
 
+
+@export var rank_audio: Array[AudioStream] = []
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	GlobVar.results = false
@@ -135,4 +138,6 @@ func calc_final_score():
 func display_rank():
 	$"Clipboard/Rank Disp".visible = true
 	$"Clipboard/Rank Disp".frame = rank
+	$RankAudio.stream = rank_audio[rank]
+	$RankAudio.play()
 	
