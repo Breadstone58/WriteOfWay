@@ -1,12 +1,19 @@
 extends Node
 
+var layout_dictionary = {
+	"level_0": "level_0.png",
+	"level_1": "Line.webp",
+	"level_2": "Square.webp",
+	"level_3": "Spiral.webp"
+}
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	SignalBus.eval_path.connect(_on_path_eval)
 	
 func _on_path_eval():
-	print("Signal Called")
-	var path: Image = load("res://Assets/Levels/Level_0.png").get_image()
+	var path_pattern = layout_dictionary[get_tree().current_scene.name]
+	var path: Image = load("res://Assets/Levels/"+path_pattern).get_image()
 	var drawing: Image = Image.load_from_file("user://drawn_path.png")
 	var drawing_big: Image = Image.load_from_file("user://drawn_path_big.png")
 	

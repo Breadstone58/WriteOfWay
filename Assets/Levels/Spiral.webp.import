@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtgmn6jakhpxu"
-path="res://.godot/imported/THE PENTAGON.webp-269b250b7948c067e38ec60b4b6de4f4.ctex"
+uid="uid://dhhgm4dv4d10"
+path="res://.godot/imported/Spiral.webp-a257bff150f05ecd21d68072000a645e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/THE PENTAGON.webp"
-dest_files=["res://.godot/imported/THE PENTAGON.webp-269b250b7948c067e38ec60b4b6de4f4.ctex"]
+source_file="res://Assets/Levels/Spiral.webp"
+dest_files=["res://.godot/imported/Spiral.webp-a257bff150f05ecd21d68072000a645e.ctex"]
 
 [params]
 

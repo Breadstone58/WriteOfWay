@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyo0xsm247vw6"
-path="res://.godot/imported/Square_Spiral.webp-cb0540e4c5f3ca0083cd64dd740d410f.ctex"
+uid="uid://cduttde0f5jol"
+path="res://.godot/imported/zogzag.webp-930542b74ee4bcb60f548a3148e4bf71.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Square_Spiral.webp"
-dest_files=["res://.godot/imported/Square_Spiral.webp-cb0540e4c5f3ca0083cd64dd740d410f.ctex"]
+source_file="res://Assets/Levels/zogzag.webp"
+dest_files=["res://.godot/imported/zogzag.webp-930542b74ee4bcb60f548a3148e4bf71.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://diepn0cemxhj0"
-path="res://.godot/imported/Square.webp-60c5ab87568cb3515c1574af9c55f328.ctex"
+uid="uid://cyo0xsm247vw6"
+path="res://.godot/imported/Square_Spiral.webp-e18d941ec0808d246928186e135eeb4d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Square.webp"
-dest_files=["res://.godot/imported/Square.webp-60c5ab87568cb3515c1574af9c55f328.ctex"]
+source_file="res://Assets/Levels/Square_Spiral.webp"
+dest_files=["res://.godot/imported/Square_Spiral.webp-e18d941ec0808d246928186e135eeb4d.ctex"]
 
 [params]
 

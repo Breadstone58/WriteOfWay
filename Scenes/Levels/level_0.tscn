@@ -188,7 +188,7 @@ _data = {
 &"RESET": SubResource("Animation_ic72l")
 }
 
-[node name="Level0" type="Node2D" unique_id=2136935647]
+[node name="level_0" type="Node2D" unique_id=2136935647]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=101754359]
 anchor_mode = 0
