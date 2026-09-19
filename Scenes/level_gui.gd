@@ -113,13 +113,13 @@ func _on_results(base_score: int):
 		rank = 0
 	elif final_score >= 900 and base_score >= 900:
 		rank = 1
-	elif final_score >= 900:
+	elif final_score >= 850:
 		rank = 2
 	elif final_score >= 800:
 		rank = 3
-	elif final_score >= 700:
-		rank = 4
 	elif final_score >= 600:
+		rank = 4
+	elif final_score >= 500:
 		rank = 5
 	else:
 		rank = 6

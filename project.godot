@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Write of Way"
-run/main_scene="uid://k80nn6yfiywo"
+run/main_scene="uid://igxdm7gssy05"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 

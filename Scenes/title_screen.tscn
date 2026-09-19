@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://igxdm7gssy05"]
+
+[ext_resource type="Texture2D" uid="uid://ceinxi3yto1t8" path="res://Assets/Images/write_of_way.png" id="1_klylv"]
+[ext_resource type="Script" uid="uid://br405rxjmyi1l" path="res://Scenes/title_screen.gd" id="1_p3fck"]
+
+[node name="Title_Screen" type="Node2D" unique_id=802357291]
+script = ExtResource("1_p3fck")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=729888305]
+position = Vector2(955.99994, 316.00003)
+scale = Vector2(0.8373174, 0.8373174)
+texture = ExtResource("1_klylv")
+
+[node name="Control" type="Control" parent="." unique_id=1675458193]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Control" unique_id=1121766748]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -3.05
+anchor_top = -0.625
+anchor_right = 10.95
+anchor_bottom = 4.175
+offset_left = 622.0
+offset_top = 709.0
+offset_right = 1016.0
+offset_bottom = 942.0
+theme_override_font_sizes/font_size = 164
+text = "Start"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]
