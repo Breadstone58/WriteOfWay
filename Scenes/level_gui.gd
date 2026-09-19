@@ -13,12 +13,14 @@ var rank = ""
 var fade_out = false
 var fade_alpha = 0
 
+@onready var clip: Sprite2D = $Clipboard
 @onready var fade_box: ColorRect = $FadeBox
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	SignalBus.level_start.emit()
 	SignalBus.results.connect(_on_results)
+	clip.visible = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -27,7 +29,6 @@ func _process(delta: float) -> void:
 	if fade_out:
 		fade_alpha = clamp(fade_alpha+delta, 0, 0.75)
 		fade_box.color = Color(0,0,0,fade_alpha)
-	
 	
 func _on_results(base_score: int):
 	fade_out = true
@@ -51,3 +52,5 @@ func _on_results(base_score: int):
 		rank = "F"
 	print(final_score)
 	print(rank)
+	
+	
