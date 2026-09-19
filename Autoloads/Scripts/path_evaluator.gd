@@ -10,6 +10,7 @@ var layout_dictionary = {
 	"level_6": "triangle.png",
 	"level_7": "pentagon.png",
 	"level_8": "curve.png",
+	"level_9": "wave.png",
 }
 
 # Called when the node enters the scene tree for the first time.
