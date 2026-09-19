@@ -10,32 +10,35 @@ var goal_times = {
 	"level_6": 30,
 	"level_7": 35,
 	"level_8": 10,
-	"level_9": 30,
+	"level_9": 50,
+	"level_10": 60,
 }
 var level_name = {
 	"level_0": "Mona Lisa",
 	"level_1": "Level 1: Yield to Pedestrians",
-	"level_2": "",
-	"level_3": "",
-	"level_4": "",
+	"level_2": "Don't Be a Square",
+	"level_3": "Round and Round We Go",
+	"level_4": "Write Angles",
 	"level_5": "",
 	"level_6": "The Perfect Angle",
-	"level_7": "",
-	"level_8": "",
+	"level_7": "The Pentagon",
+	"level_8": "Jaywalkers",
 	"level_9": "",
+	"level_10": "",
 }
 
 var title_size = {
 	"level_0": 73,
 	"level_1": 57,
-	"level_2": 0,
-	"level_3": 0,
-	"level_4": 0,
-	"level_5": 0,
+	"level_2": 50,
+	"level_3": 50,
+	"level_4": 50,
+	"level_5": 50,
 	"level_6": 50,
-	"level_7": 0,
-	"level_8": 0,
-	"level_9": 0,
+	"level_7": 50,
+	"level_8": 50,
+	"level_9": 50,
+	"level_10": 50,
 }
 
 

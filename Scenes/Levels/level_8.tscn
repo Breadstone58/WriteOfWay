@@ -533,6 +533,7 @@ rotation = 1.5707964
 
 [node name="Pedestrian" parent="." unique_id=1425713004 instance=ExtResource("11_wxeqx")]
 position = Vector2(1356, 877)
+jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian" unique_id=913902090]
 libraries/ = SubResource("AnimationLibrary_r74qd")

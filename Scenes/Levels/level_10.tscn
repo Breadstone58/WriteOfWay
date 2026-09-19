@@ -1,23 +1,23 @@
-[gd_scene format=3 uid="uid://ljdmymgsjds3"]
+[gd_scene format=3 uid="uid://c37dkfiubiukd"]
 
-[ext_resource type="PackedScene" uid="uid://qqrqhkeg2vty" path="res://Scenes/level_gui.tscn" id="1_bt86y"]
-[ext_resource type="Texture2D" uid="uid://dve0f5w0ign55" path="res://Assets/Levels/triangle.png" id="2_bt86y"]
-[ext_resource type="Script" uid="uid://3wha3t74yl7n" path="res://Scenes/Levels/show_track.gd" id="3_2khew"]
-[ext_resource type="Texture2D" uid="uid://b82kd1t7kwun6" path="res://Assets/Images/road.png" id="4_xab48"]
-[ext_resource type="Texture2D" uid="uid://bi6ssowh6r36h" path="res://Assets/Images/border.png" id="5_qoxtb"]
-[ext_resource type="Texture2D" uid="uid://bq4u7f3703twk" path="res://Assets/Images/signs.webp" id="6_a2hlh"]
-[ext_resource type="Texture2D" uid="uid://731oxyjw78x" path="res://Assets/Images/grass_sidewalk.png" id="7_b574l"]
-[ext_resource type="Texture2D" uid="uid://v20jcfnklsih" path="res://Assets/Images/crosswalks_tiles.webp" id="8_k2mii"]
-[ext_resource type="Texture2D" uid="uid://dkk7u6gncvkvy" path="res://Assets/Images/transition.png" id="9_sd7yl"]
-[ext_resource type="PackedScene" uid="uid://b1hf1a4452c42" path="res://Scenes/car.tscn" id="10_b4gvl"]
-[ext_resource type="PackedScene" uid="uid://2sno2themyi6" path="res://Scenes/pedestrian.tscn" id="11_rv145"]
+[ext_resource type="PackedScene" uid="uid://qqrqhkeg2vty" path="res://Scenes/level_gui.tscn" id="1_bla2a"]
+[ext_resource type="Texture2D" uid="uid://cn60jwdoi7heo" path="res://Assets/Levels/star.png" id="2_bla2a"]
+[ext_resource type="Script" uid="uid://3wha3t74yl7n" path="res://Scenes/Levels/show_track.gd" id="3_mucg7"]
+[ext_resource type="Texture2D" uid="uid://b82kd1t7kwun6" path="res://Assets/Images/road.png" id="4_tdopa"]
+[ext_resource type="Texture2D" uid="uid://bi6ssowh6r36h" path="res://Assets/Images/border.png" id="5_lwuu2"]
+[ext_resource type="Texture2D" uid="uid://bq4u7f3703twk" path="res://Assets/Images/signs.webp" id="6_g0bjd"]
+[ext_resource type="Texture2D" uid="uid://731oxyjw78x" path="res://Assets/Images/grass_sidewalk.png" id="7_kcuqi"]
+[ext_resource type="Texture2D" uid="uid://v20jcfnklsih" path="res://Assets/Images/crosswalks_tiles.webp" id="8_7b6f5"]
+[ext_resource type="Texture2D" uid="uid://dkk7u6gncvkvy" path="res://Assets/Images/transition.png" id="9_cqglu"]
+[ext_resource type="PackedScene" uid="uid://b1hf1a4452c42" path="res://Scenes/car.tscn" id="10_3rr02"]
+[ext_resource type="PackedScene" uid="uid://2sno2themyi6" path="res://Scenes/pedestrian.tscn" id="11_whtgd"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q3bbs"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_4xhwt"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4ahh4"]
-texture = ExtResource("6_a2hlh")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rb0md"]
+texture = ExtResource("6_g0bjd")
 texture_region_size = Vector2i(108, 108)
 2:0/0 = 0
 3:0/0 = 0
@@ -247,8 +247,8 @@ texture_region_size = Vector2i(108, 108)
 0:0/0 = 0
 1:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i5g5g"]
-texture = ExtResource("7_b574l")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hwvp3"]
+texture = ExtResource("7_kcuqi")
 texture_region_size = Vector2i(108, 108)
 0:0/0 = 0
 1:0/0 = 0
@@ -270,7 +270,7 @@ texture_region_size = Vector2i(108, 108)
 5:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1ih7c"]
-texture = ExtResource("8_k2mii")
+texture = ExtResource("8_7b6f5")
 texture_region_size = Vector2i(108, 108)
 0:0/0 = 0
 1:0/0 = 0
@@ -406,8 +406,8 @@ texture_region_size = Vector2i(108, 108)
 5:12/0 = 0
 6:12/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3osng"]
-texture = ExtResource("9_sd7yl")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_afv7b"]
+texture = ExtResource("9_cqglu")
 texture_region_size = Vector2i(108, 108)
 0:0/0 = 0
 1:0/0 = 0
@@ -417,13 +417,13 @@ texture_region_size = Vector2i(108, 108)
 [sub_resource type="TileSet" id="TileSet_oyyby"]
 tile_size = Vector2i(108, 108)
 sources/2 = SubResource("TileSetAtlasSource_1ih7c")
-sources/0 = SubResource("TileSetAtlasSource_4ahh4")
-sources/1 = SubResource("TileSetAtlasSource_i5g5g")
-sources/3 = SubResource("TileSetAtlasSource_3osng")
+sources/0 = SubResource("TileSetAtlasSource_rb0md")
+sources/1 = SubResource("TileSetAtlasSource_hwvp3")
+sources/3 = SubResource("TileSetAtlasSource_afv7b")
 
-[sub_resource type="Animation" id="Animation_2iktx"]
-resource_name = "Move"
-length = 10.033334
+[sub_resource type="Animation" id="Animation_bla2a"]
+resource_name = "2"
+length = 6.3333335
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -432,85 +432,133 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(-0.5, -0.03333333, 0, 5.5, 10.033334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 3.58),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(684, 610), Vector2(707, 623), Vector2(1297, 98), Vector2(1311, 1000), Vector2(1297, 98)]
+"values": [Vector2(833, 438), Vector2(1599, 704)]
 }
 
-[sub_resource type="Animation" id="Animation_ic72l"]
-length = 1.1333333
+[sub_resource type="Animation" id="Animation_du3l2"]
+resource_name = "3"
+length = 6.4666667
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Pedestrian3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.15),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1303, 103), Vector2(1307, 941)]
+}
+
+[sub_resource type="Animation" id="Animation_mucg7"]
+resource_name = "4"
+length = 6.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.93333334),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 3.08),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1356, 877)]
+"values": [Vector2(1579, 991), Vector2(1113, 327)]
+}
+
+[sub_resource type="Animation" id="Animation_tdopa"]
+resource_name = "5"
+length = 5.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Pedestrian5:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.97),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(989, 1003), Vector2(1501, 341)]
+}
+
+[sub_resource type="Animation" id="Animation_2iktx"]
+resource_name = "Move"
+length = 6.0333333
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.24),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1758, 447), Vector2(1000, 685)]
+}
+
+[sub_resource type="Animation" id="Animation_ic72l"]
+length = 5.9666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
 }
 tracks/1/type = "value"
 tracks/1/imported = false
-tracks/1/enabled = false
-tracks/1/path = NodePath(".:monitoring")
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Pedestrian3:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
-[sub_resource type="Animation" id="Animation_8qsmg"]
-resource_name = "ped_2"
-length = 11.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 4.68),
-"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(917, 495), Vector2(1784, 982)]
+"values": [Vector2(1303, 103)]
 }
-
-[sub_resource type="Animation" id="Animation_keyqw"]
-resource_name = "ped_3"
-length = 11.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 4.99),
-"transitions": PackedFloat32Array(1, 1),
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Pedestrian5:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(1738, 403), Vector2(808, 991)]
+"values": [Vector2(989, 1003)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_r74qd"]
 _data = {
+&"2": SubResource("Animation_bla2a"),
+&"3": SubResource("Animation_du3l2"),
+&"4": SubResource("Animation_mucg7"),
+&"5": SubResource("Animation_tdopa"),
 &"Move": SubResource("Animation_2iktx"),
-&"RESET": SubResource("Animation_ic72l"),
-&"ped_2": SubResource("Animation_8qsmg"),
-&"ped_3": SubResource("Animation_keyqw")
+&"RESET": SubResource("Animation_ic72l")
 }
 
-[node name="level_6" type="Node2D" unique_id=2136935647]
+[node name="level_10" type="Node2D" unique_id=2136935647]
 
-[node name="Level GUI" parent="." unique_id=467917947 instance=ExtResource("1_bt86y")]
+[node name="Level GUI" parent="." unique_id=467917947 instance=ExtResource("1_bla2a")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=101754359]
 anchor_mode = 0
@@ -557,48 +605,65 @@ shape = SubResource("WorldBoundaryShape2D_4xhwt")
 modulate = Color(1, 1, 1, 0.33333334)
 z_index = 1
 z_as_relative = false
-texture = ExtResource("2_bt86y")
-script = ExtResource("3_2khew")
+texture = ExtResource("2_bla2a")
+script = ExtResource("3_mucg7")
 
 [node name="Sprite2D" type="Sprite2D" parent="Camera2D/Road" unique_id=1573863391]
-position = Vector2(647, 648)
-texture = ExtResource("4_xab48")
+position = Vector2(648, 648)
+texture = ExtResource("4_tdopa")
 
-[node name="Sprite2D" type="Sprite2D" parent="Camera2D/Road/Sprite2D" unique_id=1879580612]
+[node name="Sprite2D" type="Sprite2D" parent="Camera2D/Road/Sprite2D" unique_id=309637237]
 z_index = 1
 z_as_relative = false
-texture = ExtResource("5_qoxtb")
+texture = ExtResource("5_lwuu2")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1514255537]
 position = Vector2(648.0001, 0)
 scale = Vector2(0.99999994, 0.99999994)
 tile_set = SubResource("TileSet_oyyby")
 format = 2
-layer_0/tile_data = PackedInt32Array(5242931, 458754, 6, 5242932, 524290, 6, 5242933, 589826, 6, 5242934, 655362, 6, 5242935, 720898, 6, 5242936, 786434, 6, 7, 262145, 1, 720903, 262145, 1, 327680, 262145, 1, 327691, 262145, 1, 0, 65537, 1, 65536, 65537, 1, 131072, 65537, 1, 196608, 65537, 1, 1, 65537, 1, 11, 65537, 1, 10, 65537, 1, 65547, 65537, 1, 131083, 65537, 1, 196619, 65537, 1, 720907, 65537, 1, 720906, 65537, 1, 589835, 65537, 1, 655371, 65537, 1, 524299, 65537, 1, 524288, 65537, 1, 589824, 65537, 1, 655360, 65537, 1, 720896, 65537, 1, 720897, 65537, 1, 458752, 65537, 1, 458763, 65537, 1, 393216, 262145, 1, 393227, 262145, 1, 262155, 262145, 1, 262144, 262145, 1, 2, 65537, 1, 3, 65537, 1, 4, 65537, 1, 5, 65537, 1, 6, 65537, 1, 8, 262145, 1, 9, 65537, 1, 720905, 65537, 1, 720904, 262145, 1, 720902, 262145, 1, 720901, 65537, 1, 720900, 65537, 1, 720899, 65537, 1, 720898, 65537, 1, 196617, 0, 0, 262153, 0, 1, 524289, 0, 0, 589825, 0, 1, 524298, 0, 0, 589834, 0, 1, 196610, 0, 0, 262146, 0, 1, 589830, 65538, 0, 655366, 65538, 0, 65542, 65538, 0, 65541, 65538, 0, 131078, 65538, 0, 131077, 65538, 0, 196613, 65538, 0, 196614, 65538, 0, 262150, 65538, 0, 262149, 65538, 0, 327685, 65538, 0, 327686, 65538, 0, 393222, 65538, 0, 393221, 65538, 0, 458757, 65538, 0, 458758, 65538, 0, 524294, 65538, 0, 524293, 65538, 0, 589829, 65538, 0, 655365, 65538, 0, 65543, 0, 2, 131079, 0, 3, 589831, 0, 2, 655367, 0, 3)
+layer_0/tile_data = PackedInt32Array(5, 65538, 0, 65541, 65538, 0, 65542, 65538, 0, 6, 65538, 0, 131078, 65538, 0, 196614, 65538, 0, 262150, 65538, 0, 327686, 2, 1, 131077, 65538, 0, 196613, 65538, 0, 262149, 65538, 0, 327685, 2, 1, 393221, 2, 1, 393222, 2, 1, 327687, 2, 0, 327688, 2, 0, 327689, 2, 0, 327690, 2, 0, 327691, 2, 0, 393223, 2, 0, 393224, 2, 0, 393225, 2, 0, 393226, 2, 0, 393227, 2, 0, 327684, 2, 0, 327683, 2, 0, 327682, 2, 0, 327681, 2, 0, 327680, 2, 0, 393216, 2, 0, 393217, 2, 0, 393218, 2, 0, 393219, 2, 0, 393220, 2, 0, 196615, 0, 0, 262151, 0, 1, 196612, 0, 0, 262148, 0, 1, 589833, 0, 2, 655369, 0, 3, 589826, 0, 2, 655362, 0, 3, 196609, 0, 2, 262145, 0, 3, 196618, 0, 2, 262154, 0, 3, 720900, 65537, 1, 720901, 65537, 1, 720902, 65537, 1, 720903, 65537, 1, 655364, 262145, 0, 655365, 262145, 0, 655366, 262145, 0, 655367, 262145, 0, 655368, 327681, 0, 720904, 327681, 1, 720899, 196609, 1, 655363, 196609, 0, 589824, 65537, 1342177281, 524288, 65537, 1342177281, 458753, 327681, 0, 458752, 262145, 0, 524289, 327681, 1, 589825, 327681, 1, 655361, 327681, 2, 655360, 262145, 2, 524298, 262145, 1342177282, 589834, 262145, 1342177282, 458762, 327681, 1610612736, 655370, 327681, 805306368, 655371, 327681, 1342177281, 458763, 327681, 1610612737, 524299, 65537, 1610612737, 589835, 65537, 1610612737)
 
-[node name="Car" parent="." unique_id=236793703 instance=ExtResource("10_b4gvl")]
-position = Vector2(1065, 1026)
-rotation = -2.7122416
+[node name="Car" parent="." unique_id=236793703 instance=ExtResource("10_3rr02")]
+position = Vector2(1203, 954.99994)
+rotation = 1.5707964
 
-[node name="Pedestrian" parent="." unique_id=1425713004 instance=ExtResource("11_rv145")]
-position = Vector2(1297, 98)
+[node name="Pedestrian" parent="." unique_id=1425713004 instance=ExtResource("11_whtgd")]
+position = Vector2(1758, 447)
+jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian" unique_id=913902090]
 libraries/ = SubResource("AnimationLibrary_r74qd")
 autoplay = &"Move"
 
-[node name="Pedestrian2" parent="." unique_id=1472590565 instance=ExtResource("11_rv145")]
-position = Vector2(917, 495)
+[node name="Pedestrian2" parent="." unique_id=707552712 instance=ExtResource("11_whtgd")]
+position = Vector2(833, 438)
 jaywalker = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian2" unique_id=811195326]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian2" unique_id=630405705]
 libraries/ = SubResource("AnimationLibrary_r74qd")
-autoplay = &"ped_2"
+autoplay = &"2"
 
-[node name="Pedestrian3" parent="." unique_id=780253433 instance=ExtResource("11_rv145")]
-position = Vector2(1738, 403)
+[node name="Pedestrian3" parent="." unique_id=1137896543 instance=ExtResource("11_whtgd")]
+position = Vector2(1303, 103)
 jaywalker = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian3" unique_id=595804076]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian3" unique_id=1159239293]
 libraries/ = SubResource("AnimationLibrary_r74qd")
-autoplay = &"ped_3"
+autoplay = &"3"
+
+[node name="Pedestrian4" parent="." unique_id=1051628933 instance=ExtResource("11_whtgd")]
+position = Vector2(1579, 991)
+jaywalker = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian4" unique_id=1764229782]
+libraries/ = SubResource("AnimationLibrary_r74qd")
+autoplay = &"4"
+
+[node name="Pedestrian5" parent="." unique_id=1103056480 instance=ExtResource("11_whtgd")]
+position = Vector2(989, 1003)
+jaywalker = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian5" unique_id=1315317133]
+libraries/ = SubResource("AnimationLibrary_r74qd")
+autoplay = &"5"
