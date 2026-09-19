@@ -5,6 +5,7 @@ var goal_times = {
 	"level_1": 6,
 	"level_2": 30,
 	"level_3": 90,
+	"level_4": 90,
 }
 var stop_count = false
 var time_elapsed: float = 0.0

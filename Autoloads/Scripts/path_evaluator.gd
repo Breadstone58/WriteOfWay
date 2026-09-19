@@ -4,7 +4,8 @@ var layout_dictionary = {
 	"level_0": "mona_lisa.png",
 	"level_1": "line.png",
 	"level_2": "square.png",
-	"level_3": "spiral.png"
+	"level_3": "spiral.png",
+	"level_4": "zig_zag.png"
 }
 
 # Called when the node enters the scene tree for the first time.
