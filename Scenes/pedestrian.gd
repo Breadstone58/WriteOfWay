@@ -25,8 +25,9 @@ func _on_body_shape_entered(_body_rid: RID, _body: Node2D, _body_shape_index: in
 			anim.animation = "death_blue"
 		else:
 			anim.animation = "death"
+			anim.scale = Vector2(2,2)
 		anim.play()
 		z_index = 2
-		anim.scale = Vector2(2,2)
+		
 		$AnimationPlayer.speed_scale = 0
 		$AudioStreamPlayer2D.play()

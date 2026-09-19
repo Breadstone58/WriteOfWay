@@ -515,9 +515,7 @@ script = ExtResource("1_epmes")
 
 [node name="Anim" type="AnimatedSprite2D" parent="." unique_id=377729487]
 sprite_frames = SubResource("SpriteFrames_ogd8f")
-animation = &"walk"
-frame = 6
-frame_progress = 0.50220793
+animation = &"walk_blue"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1694048881]
 position = Vector2(0, 82)
