@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dybnmhv61iprl" path="res://Scenes/car.gd" id="1_go66d"]
 [ext_resource type="Texture2D" uid="uid://cawgsbenf2p3f" path="res://Assets/Images/Car.webp" id="2_go66d"]
+[ext_resource type="Texture2D" uid="uid://w406ytks8o5n" path="res://Assets/Images/White Circle.png" id="3_1sfmx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ogd8f"]
 size = Vector2(132.66667, 192.16667)
@@ -24,3 +25,7 @@ shape = SubResource("RectangleShape2D_ogd8f")
 [node name="Marker2D" type="Marker2D" parent="." unique_id=547863482]
 position = Vector2(0, 4.7683716e-07)
 scale = Vector2(0.99999994, 0.99999994)
+
+[node name="Ping" type="Sprite2D" parent="." unique_id=704840464]
+position = Vector2(0, -103.74999)
+texture = ExtResource("3_1sfmx")

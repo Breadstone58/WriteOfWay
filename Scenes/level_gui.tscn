@@ -19,6 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://capj2c5xn8e53" path="res://Assets/GUI/ranks_text.png" id="10_3lmge"]
 [ext_resource type="Texture2D" uid="uid://chu4ybbqeh4md" path="res://Assets/GUI/JohnWriteOfWay.png" id="12_3sqbi"]
 [ext_resource type="Script" uid="uid://cryq8lu2c0q8i" path="res://Scenes/john_write_of_way.gd" id="13_p1nyl"]
+[ext_resource type="AudioStream" uid="uid://c51mmrvv0rri0" path="res://Assets/Sounds/This Truly Was Our Write of Way.wav" id="20_ulgpf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p1nyl"]
 atlas = ExtResource("12_3sqbi")
@@ -352,7 +353,7 @@ position = Vector2(189, 18)
 sprite_frames = SubResource("SpriteFrames_0q1l0")
 animation = &"forward"
 autoplay = "idle"
-frame_progress = 0.5990076
+frame_progress = 0.06776359
 script = ExtResource("13_p1nyl")
 
 [node name="Display" type="AnimatedSprite2D" parent="." unique_id=1659944236]
@@ -445,3 +446,7 @@ frame_progress = 0.8221093
 
 [node name="RankAudio" type="AudioStreamPlayer" parent="." unique_id=1505303402]
 volume_db = 10.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1021695599]
+stream = ExtResource("20_ulgpf")
+autoplay = true
