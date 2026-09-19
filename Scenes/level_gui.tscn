@@ -213,12 +213,13 @@ position = Vector2(962, 283)
 texture = ExtResource("5_vnik3")
 
 [node name="Score Calc Disp" type="RichTextLabel" parent="Clipboard" unique_id=417688665]
-offset_left = -274.0
-offset_top = -391.0
-offset_right = 257.0
-offset_bottom = 278.0
+offset_left = -280.0
+offset_top = -424.0
+offset_right = 283.0
+offset_bottom = 149.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_constants/line_separation = -3
+theme_override_constants/line_separation = -18
+theme_override_constants/shadow_outline_size = 1
 theme_override_fonts/normal_font = ExtResource("9_4220r")
 theme_override_font_sizes/normal_font_size = 70
 bbcode_enabled = true
@@ -232,17 +233,18 @@ a"
 horizontal_alignment = 1
 
 [node name="Final Score Disp" type="RichTextLabel" parent="Clipboard" unique_id=473300782]
-offset_left = -393.0
-offset_top = 355.0
-offset_right = 92.0
-offset_bottom = 533.0
+offset_left = -213.0
+offset_top = 134.0
+offset_right = 247.0
+offset_bottom = 295.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("9_4220r")
 theme_override_font_sizes/normal_font_size = 80
 text = "Score: 000/1000"
 
 [node name="Rank Disp" type="AnimatedSprite2D" parent="Clipboard" unique_id=1889311485]
-position = Vector2(279, 345)
+position = Vector2(19, 391)
+scale = Vector2(0.7097561, 0.7097561)
 sprite_frames = SubResource("SpriteFrames_ogd8f")
 frame = 6
 frame_progress = 0.8221093
