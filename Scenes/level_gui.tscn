@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://qqrqhkeg2vty"]
 
 [ext_resource type="Script" uid="uid://bqrxw00jl5nxr" path="res://Scenes/level_gui.gd" id="1_vvh8v"]
-[ext_resource type="AudioStream" uid="uid://dc7sfu6xu24gf" path="res://Assets/Sounds/Rankings/Perfect.wav" id="2_0q1l0"]
+[ext_resource type="AudioStream" uid="uid://rq4her5fx2xn" path="res://Assets/Sounds/Rankings/Perfect.wav" id="2_0q1l0"]
 [ext_resource type="Texture2D" uid="uid://h8lsp75su081" path="res://Assets/GUI/gui_back.png" id="2_eh1tm"]
 [ext_resource type="AudioStream" uid="uid://cl0xrxds2njvp" path="res://Assets/Sounds/Rankings/superb.wav" id="3_3sqbi"]
 [ext_resource type="Texture2D" uid="uid://dp4stfu44ccjb" path="res://Assets/GUI/car_front.png" id="3_ibeg1"]
@@ -12,13 +12,20 @@
 [ext_resource type="Texture2D" uid="uid://bs6t6mxbwivf8" path="res://Assets/GUI/clipboard.png" id="5_vnik3"]
 [ext_resource type="FontFile" uid="uid://dygjxuuo2ohr2" path="res://Assets/Fonts/Seven Segment.ttf" id="6_2ft1l"]
 [ext_resource type="AudioStream" uid="uid://dhbvqdlsj4nej" path="res://Assets/Sounds/Rankings/Ok.wav" id="6_nxwe8"]
-[ext_resource type="AudioStream" uid="uid://c5ju0ku5s5f21" path="res://Assets/Sounds/Rankings/I_guess_bro.wav" id="7_6krdj"]
+[ext_resource type="AudioStream" uid="uid://c6cq3yofu2hqa" path="res://Assets/Sounds/Rankings/I_guess_bro.wav" id="7_6krdj"]
 [ext_resource type="FontFile" uid="uid://d3h0xqvxgr2cq" path="res://Assets/Fonts/HWYGCOND.TTF" id="7_37ty5"]
 [ext_resource type="AudioStream" uid="uid://cwge2vjxts0nd" path="res://Assets/Sounds/Rankings/never_drive_again.wav" id="8_vfsgl"]
 [ext_resource type="FontFile" uid="uid://bybfa3axv1p6d" path="res://Assets/Fonts/Ballpoint Signature.otf" id="9_4220r"]
+[ext_resource type="AudioStream" uid="uid://b6e5wqc2lrb63" path="res://Assets/Sounds/RankSFX/p_rank.wav" id="9_tcvno"]
 [ext_resource type="Texture2D" uid="uid://capj2c5xn8e53" path="res://Assets/GUI/ranks_text.png" id="10_3lmge"]
+[ext_resource type="AudioStream" uid="uid://b6evuttm8qimd" path="res://Assets/Sounds/RankSFX/s_rank.wav" id="10_7va5q"]
+[ext_resource type="AudioStream" uid="uid://bfqll03vrx8kr" path="res://Assets/Sounds/RankSFX/a_rank.wav" id="11_4m01o"]
 [ext_resource type="Texture2D" uid="uid://chu4ybbqeh4md" path="res://Assets/GUI/JohnWriteOfWay.png" id="12_3sqbi"]
+[ext_resource type="AudioStream" uid="uid://dmbu6fxrlions" path="res://Assets/Sounds/RankSFX/b_rank.wav" id="12_q7ima"]
 [ext_resource type="Script" uid="uid://cryq8lu2c0q8i" path="res://Scenes/john_write_of_way.gd" id="13_p1nyl"]
+[ext_resource type="AudioStream" uid="uid://bcrv63a000ado" path="res://Assets/Sounds/RankSFX/c_rank.wav" id="13_uxl4x"]
+[ext_resource type="AudioStream" uid="uid://bhd4h48yoei0i" path="res://Assets/Sounds/RankSFX/d_rank.wav" id="14_4embk"]
+[ext_resource type="AudioStream" uid="uid://d1lhasjoiv2q1" path="res://Assets/Sounds/RankSFX/f_rank.wav" id="15_w6k3p"]
 [ext_resource type="AudioStream" uid="uid://c51mmrvv0rri0" path="res://Assets/Sounds/This Truly Was Our Write of Way.wav" id="20_ulgpf"]
 [ext_resource type="AudioStream" uid="uid://dg7t75c5mou4i" path="res://Assets/Sounds/writing_sound_effect.wav" id="21_nxwe8"]
 
@@ -321,6 +328,7 @@ animations = [{
 position = Vector2(319, 361)
 script = ExtResource("1_vvh8v")
 rank_audio = Array[AudioStream]([ExtResource("2_0q1l0"), ExtResource("3_3sqbi"), ExtResource("4_p1nyl"), ExtResource("5_ulgpf"), ExtResource("6_nxwe8"), ExtResource("7_6krdj"), ExtResource("8_vfsgl")])
+rank_sfx = Array[AudioStream]([ExtResource("9_tcvno"), ExtResource("10_7va5q"), ExtResource("11_4m01o"), ExtResource("12_q7ima"), ExtResource("13_uxl4x"), ExtResource("14_4embk"), ExtResource("15_w6k3p")])
 
 [node name="FadeBox" type="ColorRect" parent="." unique_id=520158766]
 z_index = 6
@@ -455,3 +463,5 @@ autoplay = true
 
 [node name="Scrawl" type="AudioStreamPlayer" parent="." unique_id=468966538]
 stream = ExtResource("21_nxwe8")
+
+[node name="RankSFX" type="AudioStreamPlayer" parent="." unique_id=886319716]

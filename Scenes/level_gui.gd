@@ -96,6 +96,7 @@ var final_score = 0
 
 
 @export var rank_audio: Array[AudioStream] = []
+@export var rank_sfx: Array[AudioStream] = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -189,5 +190,8 @@ func display_rank():
 	GlobVar.rank = rank
 	$"Clipboard/Rank Disp".frame = rank
 	$RankAudio.stream = rank_audio[rank]
+	$RankSFX.stream = rank_sfx[rank]
 	$RankAudio.play()
+	$RankSFX.play()
+	
 	

@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://rq4her5fx2xn"
-path="res://.godot/imported/perfect.wav-9030868501feb8aad7b7ea9f9c4f158d.sample"
+uid="uid://bhd4h48yoei0i"
+path="res://.godot/imported/d_rank.wav-dc0ec6d044cbe267a65d801f383566f9.sample"
 
 [deps]
 
-source_file="res://Assets/Sounds/Rankings/perfect.wav"
-dest_files=["res://.godot/imported/perfect.wav-9030868501feb8aad7b7ea9f9c4f158d.sample"]
+source_file="res://Assets/Sounds/RankSFX/d_rank.wav"
+dest_files=["res://.godot/imported/d_rank.wav-dc0ec6d044cbe267a65d801f383566f9.sample"]
 
 [params]
 
