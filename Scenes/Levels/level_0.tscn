@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bm7tdulkjascq"]
 
 [ext_resource type="Texture2D" uid="uid://b5qeuph045xfw" path="res://Assets/Levels/mona_lisa.png" id="1_1ih7c"]
+[ext_resource type="PackedScene" uid="uid://qqrqhkeg2vty" path="res://Scenes/level_gui.tscn" id="1_6kmi7"]
 [ext_resource type="PackedScene" uid="uid://b1hf1a4452c42" path="res://Scenes/car.tscn" id="1_y8ppt"]
 [ext_resource type="PackedScene" uid="uid://2sno2themyi6" path="res://Scenes/pedestrian.tscn" id="2_2iktx"]
 [ext_resource type="Script" uid="uid://3wha3t74yl7n" path="res://Scenes/Levels/show_track.gd" id="2_r74qd"]
@@ -190,6 +191,8 @@ _data = {
 }
 
 [node name="level_0" type="Node2D" unique_id=2136935647]
+
+[node name="Level GUI" parent="." unique_id=467917947 instance=ExtResource("1_6kmi7")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=101754359]
 anchor_mode = 0

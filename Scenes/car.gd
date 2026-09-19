@@ -20,6 +20,8 @@ func _ready():
 	oil_line.z_index = 3
 	oil_line.z_as_relative = false
 	get_parent().add_child.call_deferred(oil_line)
+	if get_tree().current_scene.name == "level select":
+		SignalBus.level_select.emit()
 
 func get_input():
 	rotation_direction = Input.get_axis("turn_left", "turn_right")

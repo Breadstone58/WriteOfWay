@@ -1,3 +1,13 @@
 [gd_scene format=3 uid="uid://qqrqhkeg2vty"]
 
+[ext_resource type="Script" uid="uid://bqrxw00jl5nxr" path="res://Scenes/level_gui.gd" id="1_vvh8v"]
+
 [node name="Level GUI" type="Node2D" unique_id=467917947]
+script = ExtResource("1_vvh8v")
+
+[node name="FadeBox" type="ColorRect" parent="." unique_id=520158766]
+z_index = 6
+z_as_relative = false
+offset_right = 1944.0
+offset_bottom = 1296.0
+color = Color(0, 0, 0, 0)

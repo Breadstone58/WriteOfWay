@@ -37,5 +37,5 @@ func _on_path_eval():
 	#print(same_pixels / path_pixels)
 	var raw_score = min(1-Percent_Error,same_pixels/path_pixels)
 	var base_score = clamp(int(round(raw_score * 1000)),0,1000)
-	print(base_score)
+	print(raw_score)
 	SignalBus.results.emit(base_score)

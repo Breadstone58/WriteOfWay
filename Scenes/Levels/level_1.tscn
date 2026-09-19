@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://5n78c1w7ttvc"]
 
+[ext_resource type="PackedScene" uid="uid://qqrqhkeg2vty" path="res://Scenes/level_gui.tscn" id="1_rb0md"]
 [ext_resource type="Texture2D" uid="uid://cjx0qjcw8bvp" path="res://Assets/Levels/line.png" id="1_xgxfi"]
 [ext_resource type="Script" uid="uid://3wha3t74yl7n" path="res://Scenes/Levels/show_track.gd" id="2_xgxfi"]
 [ext_resource type="Texture2D" uid="uid://b82kd1t7kwun6" path="res://Assets/Images/road.png" id="3_5f3p6"]
@@ -419,6 +420,8 @@ _data = {
 }
 
 [node name="level_1" type="Node2D" unique_id=2136935647]
+
+[node name="Level GUI" parent="." unique_id=467917947 instance=ExtResource("1_rb0md")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=101754359]
 anchor_mode = 0
