@@ -22,6 +22,8 @@ var fade_out = false
 var fade_alpha = 0
 var spawn_text = false
 var spawn_text_speed_mult = 1
+var spawn_score = false
+var final_score = 0
 
 @onready var clip: Sprite2D = $Clipboard
 @onready var fade_box: ColorRect = $FadeBox
@@ -41,7 +43,9 @@ func _ready() -> void:
 		time_goal.text = "Goal: Finish"
 	level_name_disp.text = level_name[get_tree().current_scene.name]
 	clipboard_disp.visible_ratio = 0.0
-
+	$"Clipboard/Final Score Disp".visible_ratio = 0.0
+	$"Clipboard/Rank Disp".visible = false
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if !stop_count:
@@ -54,7 +58,12 @@ func _process(delta: float) -> void:
 		time_goal.self_modulate = Color(0,0,0,0.35)
 	if spawn_text:
 		clipboard_disp.visible_ratio += delta/spawn_text_speed_mult
-		
+		if spawn_score == false and clipboard_disp.visible_ratio >= 1.0:
+			calc_final_score()
+	if spawn_score:
+		$"Clipboard/Final Score Disp".visible_ratio += delta
+		if $"Clipboard/Rank Disp".visible == false and $"Clipboard/Final Score Disp".visible_ratio >= 1.0:
+			display_rank()
 	
 func _on_results(base_score: int):
 	fade_out = true
@@ -62,28 +71,27 @@ func _on_results(base_score: int):
 	var ped_deduct = GlobVar.kills * 50
 	if int(time_elapsed) > goal_times[get_tree().current_scene.name] or goal_times[get_tree().current_scene.name] == INF:
 		time_bonus = 0
-	var final_score = clamp(base_score - ped_deduct + time_bonus, 0, 1000)
+	final_score = clamp(base_score - ped_deduct + time_bonus, 0, 1000)
 	if final_score == 1000 and ped_deduct == 0 and time_bonus == 100:
-		rank = "P"
+		rank = 0
 	elif final_score >= 900 and base_score >= 900:
-		rank = "S"
+		rank = 1
 	elif final_score >= 900:
-		rank = "A"
+		rank = 2
 	elif final_score >= 800:
-		rank = "B"
+		rank = 3
 	elif final_score >= 700:
-		rank = "C"
+		rank = 4
 	elif final_score >= 600:
-		rank = "D"
+		rank = 5
 	else:
-		rank = "F"
+		rank = 6
 	print(final_score)
 	print(rank)
 	
 	#clipboard
 	clip.visible = true
-	$"Clipboard/Final Score Disp".visible = false
-	$"Clipboard/Rank Disp".visible = false
+	
 	clipboard_disp.text = "[u]Accuracy:[/u]\n" + str(base_score / 10.0) + "%\n" + str(base_score) + " points\n"
 	if GlobVar.kills > 0:
 		spawn_text_speed_mult += 1
@@ -95,5 +103,12 @@ func _on_results(base_score: int):
 		spawn_text_speed_mult += 1
 		clipboard_disp.text += "[color=#93C572][u]Time Bonus[/u]\n+100 points[/color]"
 	spawn_text = true
-	await clipboard_disp.visible_ratio == 1.0
+	
+func calc_final_score():
+	$"Clipboard/Final Score Disp".text = "Score: " + str(final_score)+"/1000"
+	spawn_score = true
+
+func display_rank():
+	$"Clipboard/Rank Disp".visible = true
+	$"Clipboard/Rank Disp".frame = rank
 	

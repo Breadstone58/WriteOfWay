@@ -78,33 +78,40 @@ _data = {
 &"bobbing": SubResource("Animation_2ft1l")
 }
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4e718"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_3lmge"]
 atlas = ExtResource("10_3lmge")
 region = Rect2(0, 0, 410, 410)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4mjq3"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_4e718"]
 atlas = ExtResource("10_3lmge")
 region = Rect2(410, 0, 410, 410)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ihb4f"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mjq3"]
 atlas = ExtResource("10_3lmge")
 region = Rect2(820, 0, 410, 410)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ghhut"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ihb4f"]
 atlas = ExtResource("10_3lmge")
 region = Rect2(1230, 0, 410, 410)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5s6on"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ghhut"]
 atlas = ExtResource("10_3lmge")
 region = Rect2(1640, 0, 410, 410)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_nqlt1"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_5s6on"]
 atlas = ExtResource("10_3lmge")
 region = Rect2(2050, 0, 410, 410)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nqlt1"]
+atlas = ExtResource("10_3lmge")
+region = Rect2(2460, 0, 410, 410)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ogd8f"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3lmge")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_4e718")
 }, {
@@ -125,7 +132,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"default",
-"speed": 0.0
+"speed": 2.0
 }]
 
 [node name="Level GUI" type="Node2D" unique_id=467917947]
@@ -225,8 +232,17 @@ a"
 horizontal_alignment = 1
 
 [node name="Final Score Disp" type="RichTextLabel" parent="Clipboard" unique_id=473300782]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -393.0
+offset_top = 355.0
+offset_right = 92.0
+offset_bottom = 533.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("9_4220r")
+theme_override_font_sizes/normal_font_size = 80
+text = "Score: 000/1000"
 
 [node name="Rank Disp" type="AnimatedSprite2D" parent="Clipboard" unique_id=1889311485]
+position = Vector2(279, 345)
 sprite_frames = SubResource("SpriteFrames_ogd8f")
+frame = 6
+frame_progress = 0.8221093
