@@ -5,11 +5,12 @@
 [ext_resource type="Texture2D" uid="uid://cqu8x83dkxpoe" path="res://Assets/Images/parking_lot_border.png" id="2_6gg5s"]
 [ext_resource type="Texture2D" uid="uid://djsthupk0mhuw" path="res://icon.svg" id="2_dg6ua"]
 [ext_resource type="PackedScene" uid="uid://b1hf1a4452c42" path="res://Scenes/car.tscn" id="2_gxket"]
-[ext_resource type="Script" uid="uid://b3jmt0qdh2w6k" path="res://Scenes/Levels/Level_1_button.gd" id="3_2dc3q"]
+[ext_resource type="Script" uid="uid://b3jmt0qdh2w6k" path="res://Scenes/Levels/Level_1_Button.gd" id="3_2dc3q"]
 [ext_resource type="Script" uid="uid://c7envhka7ylm8" path="res://Scenes/Levels/level_2_button.gd" id="4_btrm8"]
 [ext_resource type="Script" uid="uid://vu101vf2bkj7" path="res://Scenes/Levels/level_3_button.gd" id="5_ev01q"]
 [ext_resource type="Script" uid="uid://c56ni0qkk34sw" path="res://Scenes/Levels/level_4_button.gd" id="6_mes4i"]
 [ext_resource type="Script" uid="uid://cnan67f8blpn6" path="res://Scenes/Levels/level_5_button.gd" id="7_g4y4g"]
+[ext_resource type="Texture2D" uid="uid://dtxe2xiese00d" path="res://Assets/level_icon.png" id="7_tibkv"]
 [ext_resource type="Script" uid="uid://dsmvkaehy6bx1" path="res://Scenes/Levels/level_6_button.gd" id="8_o6thy"]
 [ext_resource type="Script" uid="uid://6284ll5oemgy" path="res://Scenes/Levels/level_7_button.gd" id="9_5e3q4"]
 [ext_resource type="Script" uid="uid://70ntgcy71ce5" path="res://Scenes/Levels/level_8_button.gd" id="10_vss88"]
@@ -17,6 +18,7 @@
 [ext_resource type="Script" uid="uid://j8oth0sdk40u" path="res://Scenes/Levels/level_10_button.gd" id="12_vp670"]
 [ext_resource type="Script" uid="uid://w68wvg2pm7ep" path="res://Scenes/Levels/level_12_button.gd" id="15_6gg5s"]
 [ext_resource type="Script" uid="uid://cghm7qoc7m32k" path="res://Scenes/Levels/level_11_button.gd" id="16_5e7uy"]
+[ext_resource type="Script" uid="uid://beyxhtp2psms6" path="res://Scenes/Levels/level_13_button.gd" id="18_en283"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ogd8f"]
 
@@ -83,11 +85,12 @@ collision_mask = 2
 script = ExtResource("4_btrm8")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D3" unique_id=2138737228]
-position = Vector2(1011, 172)
-texture = ExtResource("2_dg6ua")
+position = Vector2(1009.99994, 179)
+scale = Vector2(0.108796306, 0.108796306)
+texture = ExtResource("7_tibkv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3" unique_id=699476440]
-position = Vector2(1011, 169)
+position = Vector2(1010, 179)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D4" type="Area2D" parent="." unique_id=311051792]
@@ -210,6 +213,18 @@ texture = ExtResource("2_dg6ua")
 position = Vector2(1007, 808)
 shape = SubResource("RectangleShape2D_oyyby")
 
+[node name="Area2D14" type="Area2D" parent="." unique_id=101658502]
+collision_mask = 2
+script = ExtResource("18_en283")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D14" unique_id=1918002122]
+position = Vector2(1269, 810)
+texture = ExtResource("2_dg6ua")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D14" unique_id=1046887415]
+position = Vector2(1270, 809)
+shape = SubResource("RectangleShape2D_oyyby")
+
 [node name="Car" parent="." unique_id=236793703 instance=ExtResource("2_gxket")]
 position = Vector2(203, 660)
 rotation = 1.5707964
@@ -228,3 +243,4 @@ collision_mask = 5
 [connection signal="body_shape_entered" from="Area2D11" to="Area2D11" method="_on_body_shape_entered"]
 [connection signal="body_shape_entered" from="Area2D12" to="Area2D12" method="_on_body_shape_entered"]
 [connection signal="body_shape_entered" from="Area2D13" to="Area2D13" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="Area2D14" to="Area2D14" method="_on_body_shape_entered"]
