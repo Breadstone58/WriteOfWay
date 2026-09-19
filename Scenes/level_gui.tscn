@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://qqrqhkeg2vty"]
 
 [ext_resource type="Script" uid="uid://bqrxw00jl5nxr" path="res://Scenes/level_gui.gd" id="1_vvh8v"]
+[ext_resource type="Texture2D" uid="uid://h8lsp75su081" path="res://Assets/GUI/gui_back.png" id="2_eh1tm"]
+[ext_resource type="Texture2D" uid="uid://dp4stfu44ccjb" path="res://Assets/GUI/car_front.png" id="3_ibeg1"]
+[ext_resource type="Texture2D" uid="uid://c7tmr8jjydtoc" path="res://Assets/GUI/car_seats.png" id="4_vnik3"]
 
 [node name="Level GUI" type="Node2D" unique_id=467917947]
 script = ExtResource("1_vvh8v")
@@ -8,6 +11,24 @@ script = ExtResource("1_vvh8v")
 [node name="FadeBox" type="ColorRect" parent="." unique_id=520158766]
 z_index = 6
 z_as_relative = false
+offset_left = 648.0
 offset_right = 1944.0
 offset_bottom = 1296.0
 color = Color(0, 0, 0, 0)
+
+[node name="Gui Back" type="Sprite2D" parent="." unique_id=454183755]
+position = Vector2(324, 648)
+texture = ExtResource("2_eh1tm")
+
+[node name="Car_Frame" type="Sprite2D" parent="." unique_id=1318790225]
+z_index = 1
+z_as_relative = false
+position = Vector2(324, 1003)
+texture = ExtResource("3_ibeg1")
+
+[node name="Car_Seats" type="Sprite2D" parent="Car_Frame" unique_id=1040439727]
+z_as_relative = false
+position = Vector2(0, -1)
+texture = ExtResource("4_vnik3")
+
+[node name="Clipboard" type="Sprite2D" parent="." unique_id=1067593176]
