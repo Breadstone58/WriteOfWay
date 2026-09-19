@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://b3jmt0qdh2w6k" path="res://Scenes/Levels/Level_1_Button.gd" id="3_2dc3q"]
 [ext_resource type="Script" uid="uid://c7envhka7ylm8" path="res://Scenes/Levels/level_2_button.gd" id="4_btrm8"]
 [ext_resource type="Script" uid="uid://vu101vf2bkj7" path="res://Scenes/Levels/level_3_button.gd" id="5_ev01q"]
+[ext_resource type="Script" uid="uid://c56ni0qkk34sw" path="res://Scenes/Levels/level_4_button.gd" id="6_mes4i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oyyby"]
 size = Vector2(113, 114.5)
@@ -45,7 +46,7 @@ position = Vector2(878, 175)
 texture = ExtResource("2_dg6ua")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3" unique_id=699476440]
-position = Vector2(880, 174)
+position = Vector2(878, 172)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D4" type="Area2D" parent="." unique_id=311051792]
@@ -53,15 +54,23 @@ collision_mask = 2
 script = ExtResource("5_ev01q")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D4" unique_id=1042232633]
-position = Vector2(1163, 173)
-texture = ExtResource("2_dg6ua")
-
-[node name="Sprite2D" type="Sprite2D" parent="Area2D4/Sprite2D" unique_id=218884948]
-position = Vector2(298, 2)
+position = Vector2(1161, 170)
 texture = ExtResource("2_dg6ua")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4" unique_id=1534978100]
-position = Vector2(1460, 172)
+position = Vector2(1162, 169)
+shape = SubResource("RectangleShape2D_oyyby")
+
+[node name="Area2D5" type="Area2D" parent="." unique_id=1716523043]
+collision_mask = 2
+script = ExtResource("6_mes4i")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D5" unique_id=1136051863]
+position = Vector2(1451, 172)
+texture = ExtResource("2_dg6ua")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5" unique_id=882211923]
+position = Vector2(1451, 172)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Car" parent="." unique_id=236793703 instance=ExtResource("2_gxket")]
@@ -72,3 +81,4 @@ collision_mask = 5
 [connection signal="body_shape_entered" from="Area2D2" to="Area2D2" method="_on_body_shape_entered"]
 [connection signal="body_shape_entered" from="Area2D3" to="Area2D3" method="_on_body_shape_entered"]
 [connection signal="body_shape_entered" from="Area2D4" to="Area2D4" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="Area2D5" to="Area2D5" method="_on_body_shape_entered"]
