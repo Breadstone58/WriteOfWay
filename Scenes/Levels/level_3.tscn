@@ -570,6 +570,7 @@ autoplay = &"Move"
 
 [node name="Pedestrian2" parent="." unique_id=1472590565 instance=ExtResource("6_osqx1")]
 position = Vector2(1570.4957, 342.35468)
+jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian2" unique_id=811195326]
 libraries/ = SubResource("AnimationLibrary_r74qd")
