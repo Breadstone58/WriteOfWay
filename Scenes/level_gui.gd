@@ -2,11 +2,11 @@ extends Node2D
 
 var goal_times = {
 	"level_0": INF,
-	"level_1": 6,
-	"level_2": 30,
-	"level_3": 90,
-	"level_4": 90,
-	"level_5": 45,
+	"level_1": 2,
+	"level_2": 20,
+	"level_3": 30,
+	"level_4": 30,
+	"level_5": 25,
 }
 var level_name = {
 	"level_0": "Mona Lisa",
@@ -16,6 +16,17 @@ var level_name = {
 	"level_4": "",
 	"level_5": "",
 }
+
+var title_size = {
+	"level_0": 73,
+	"level_1": 57,
+	"level_2": 0,
+	"level_3": 0,
+	"level_4": 0,
+	"level_5": 0,
+}
+
+
 var stop_count = false
 var time_elapsed: float = 0.0
 var time_bonus = 100
@@ -36,6 +47,7 @@ var final_score = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	GlobVar.results = false
 	SignalBus.level_start.emit()
 	SignalBus.results.connect(_on_results)
 	clip.visible = false
@@ -47,6 +59,7 @@ func _ready() -> void:
 	clipboard_disp.visible_ratio = 0.0
 	$"Clipboard/Final Score Disp".visible_ratio = 0.0
 	$"Clipboard/Rank Disp".visible = false
+	level_name_disp.add_theme_font_size_override("normal_font_size", title_size[get_tree().current_scene.name])
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -68,6 +81,7 @@ func _process(delta: float) -> void:
 			display_rank()
 	
 func _on_results(base_score: int):
+	GlobVar.results = true
 	fade_out = true
 	stop_count = true
 	var ped_deduct = GlobVar.kills * 50

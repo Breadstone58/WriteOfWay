@@ -6,6 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://mq4t00fb4ivi" path="res://Assets/Sounds/Scream1.wav" id="3_1h25g"]
 [ext_resource type="AudioStream" uid="uid://ccxg8bpphldc" path="res://Assets/Sounds/Scream2.wav" id="4_yqvb5"]
 [ext_resource type="AudioStream" uid="uid://b07iesn138q0b" path="res://Assets/Sounds/WilhelmScream.wav" id="6_nk33y"]
+[ext_resource type="AudioStream" uid="uid://bkemxqn6m6jjk" path="res://Assets/Sounds/Scream3.wav" id="7_ejkm5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_en6ea"]
 atlas = ExtResource("2_cl0mi")
@@ -256,10 +257,11 @@ radius = 57.0
 height = 188.0
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_q3bbs"]
-streams_count = 3
+streams_count = 4
 stream_0/stream = ExtResource("3_1h25g")
 stream_1/stream = ExtResource("4_yqvb5")
 stream_2/stream = ExtResource("6_nk33y")
+stream_3/stream = ExtResource("7_ejkm5")
 
 [node name="Pedestrian" type="Area2D" unique_id=1425713004]
 z_index = 5
