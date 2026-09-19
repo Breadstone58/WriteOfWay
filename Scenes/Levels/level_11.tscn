@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://33aejmf8xkqx"]
 
 [ext_resource type="PackedScene" uid="uid://qqrqhkeg2vty" path="res://Scenes/level_gui.tscn" id="1_aff08"]
-[ext_resource type="Texture2D" uid="uid://cn60jwdoi7heo" path="res://Assets/Levels/star.png" id="2_w3tbt"]
+[ext_resource type="Texture2D" uid="uid://bjosn5nv5vdqi" path="res://Assets/Levels/bricks.png" id="2_aff08"]
 [ext_resource type="Script" uid="uid://3wha3t74yl7n" path="res://Scenes/Levels/show_track.gd" id="3_maul3"]
 [ext_resource type="Texture2D" uid="uid://b82kd1t7kwun6" path="res://Assets/Images/road.png" id="4_oaj46"]
 [ext_resource type="Texture2D" uid="uid://bi6ssowh6r36h" path="res://Assets/Images/border.png" id="5_nx273"]
@@ -440,7 +440,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_du3l2"]
 resource_name = "3"
-length = 6.4666667
+length = 10.2
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -449,10 +449,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 3.15),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 2.8666666, 5.98, 7.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(1303, 103), Vector2(1307, 941)]
+"values": [Vector2(1680, 238), Vector2(1688, 1104), Vector2(759, 992), Vector2(812, 229)]
 }
 
 [sub_resource type="Animation" id="Animation_mucg7"]
@@ -466,10 +466,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 3.08),
+"times": PackedFloat32Array(0, 3.9100003),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1579, 991), Vector2(1113, 327)]
+"values": [Vector2(1579, 991), Vector2(829, 795)]
 }
 
 [sub_resource type="Animation" id="Animation_tdopa"]
@@ -483,10 +483,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2.97),
+"times": PackedFloat32Array(0, 3.11),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(989, 1003), Vector2(1501, 341)]
+"values": [Vector2(989, 1003), Vector2(1335, 359)]
 }
 
 [sub_resource type="Animation" id="Animation_2iktx"]
@@ -500,10 +500,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 3.24),
+"times": PackedFloat32Array(0, 2.97),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1758, 447), Vector2(1000, 685)]
+"values": [Vector2(1882, 589), Vector2(714, 573)]
 }
 
 [sub_resource type="Animation" id="Animation_ic72l"]
@@ -516,34 +516,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
-"update": 0,
-"values": []
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(1303, 103)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath(".:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(989, 1003)]
+"values": [Vector2(1680, 238)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_r74qd"]
@@ -605,7 +581,7 @@ shape = SubResource("WorldBoundaryShape2D_4xhwt")
 modulate = Color(1, 1, 1, 0.33333334)
 z_index = 1
 z_as_relative = false
-texture = ExtResource("2_w3tbt")
+texture = ExtResource("2_aff08")
 script = ExtResource("3_maul3")
 
 [node name="Sprite2D" type="Sprite2D" parent="Camera2D/Road" unique_id=1573863391]
@@ -622,30 +598,21 @@ position = Vector2(648.0001, 0)
 scale = Vector2(0.99999994, 0.99999994)
 tile_set = SubResource("TileSet_oyyby")
 format = 2
-layer_0/tile_data = PackedInt32Array(5, 65538, 0, 65541, 65538, 0, 65542, 65538, 0, 6, 65538, 0, 131078, 65538, 0, 196614, 65538, 0, 262150, 65538, 0, 327686, 2, 1, 131077, 65538, 0, 196613, 65538, 0, 262149, 65538, 0, 327685, 2, 1, 393221, 2, 1, 393222, 2, 1, 327687, 2, 0, 327688, 2, 0, 327689, 2, 0, 327690, 2, 0, 327691, 2, 0, 393223, 2, 0, 393224, 2, 0, 393225, 2, 0, 393226, 2, 0, 393227, 2, 0, 327684, 2, 0, 327683, 2, 0, 327682, 2, 0, 327681, 2, 0, 327680, 2, 0, 393216, 2, 0, 393217, 2, 0, 393218, 2, 0, 393219, 2, 0, 393220, 2, 0, 196615, 0, 0, 262151, 0, 1, 196612, 0, 0, 262148, 0, 1, 589833, 0, 2, 655369, 0, 3, 589826, 0, 2, 655362, 0, 3, 196609, 0, 2, 262145, 0, 3, 196618, 0, 2, 262154, 0, 3, 720900, 65537, 1, 720901, 65537, 1, 720902, 65537, 1, 720903, 65537, 1, 655364, 262145, 0, 655365, 262145, 0, 655366, 262145, 0, 655367, 262145, 0, 655368, 327681, 0, 720904, 327681, 1, 720899, 196609, 1, 655363, 196609, 0, 589824, 65537, 1342177281, 524288, 65537, 1342177281, 458753, 327681, 0, 458752, 262145, 0, 524289, 327681, 1, 589825, 327681, 1, 655361, 327681, 2, 655360, 262145, 2, 524298, 262145, 1342177282, 589834, 262145, 1342177282, 458762, 327681, 1610612736, 655370, 327681, 805306368, 655371, 327681, 1342177281, 458763, 327681, 1610612737, 524299, 65537, 1610612737, 589835, 65537, 1610612737)
+layer_0/tile_data = PackedInt32Array(327680, 2, 0, 327681, 2, 0, 327682, 2, 0, 327683, 2, 0, 327684, 2, 0, 327685, 2, 0, 327686, 2, 0, 327687, 2, 0, 327688, 2, 0, 327689, 2, 0, 327690, 2, 0, 327691, 2, 0, 393216, 2, 0, 393217, 2, 0, 393218, 2, 0, 393219, 2, 0, 393220, 2, 0, 393221, 2, 0, 393222, 2, 0, 393223, 2, 0, 393224, 2, 0, 393225, 2, 0, 393226, 2, 0, 393227, 2, 0, 524298, 196609, 0, 524299, 262145, 0, 589834, 196609, 1, 655370, 196609, 1, 720906, 196609, 2, 720907, 262145, 2, 655371, 65537, 1610612737, 589835, 65537, 1610612737, 655361, 262145, 0, 655362, 262145, 0, 655363, 262145, 0, 655364, 327681, 0, 720900, 327681, 1, 655360, 196609, 0, 720896, 1, 2, 720897, 65537, 1, 720898, 65537, 1, 720899, 65537, 1, 65537, 262145, 2, 65538, 262145, 2, 65539, 262145, 2, 65540, 262145, 2, 65541, 262145, 2, 65542, 262145, 2, 65543, 262145, 2, 65544, 262145, 2, 65545, 262145, 2, 65546, 262145, 2, 65547, 327681, 2, 65536, 196609, 2, 0, 196609, 1, 11, 327681, 1, 1, 65537, 805306369, 2, 65537, 805306369, 3, 65537, 805306369, 4, 65537, 805306369, 5, 65537, 805306369, 6, 65537, 805306369, 7, 65537, 805306369, 8, 65537, 805306369, 9, 65537, 805306369, 10, 65537, 805306369, 196614, 65536, 0, 262150, 65536, 1, 589829, 0, 0, 655365, 0, 1)
 
 [node name="Car" parent="." unique_id=236793703 instance=ExtResource("10_apg66")]
-position = Vector2(1203, 954.99994)
+position = Vector2(947, 318.99997)
 rotation = 1.5707964
 
 [node name="Pedestrian" parent="." unique_id=1425713004 instance=ExtResource("11_ck3xv")]
-position = Vector2(2292, 1106)
-jaywalker = true
+position = Vector2(1680, 238)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian" unique_id=913902090]
 libraries/ = SubResource("AnimationLibrary_r74qd")
 autoplay = &"Move"
 
-[node name="Pedestrian2" parent="." unique_id=707552712 instance=ExtResource("11_ck3xv")]
-position = Vector2(2292, 1106)
-jaywalker = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian2" unique_id=630405705]
-libraries/ = SubResource("AnimationLibrary_r74qd")
-autoplay = &"2"
-
 [node name="Pedestrian3" parent="." unique_id=1137896543 instance=ExtResource("11_ck3xv")]
-position = Vector2(2292, 1106)
+position = Vector2(1680, 238)
 jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian3" unique_id=1159239293]
@@ -653,7 +620,7 @@ libraries/ = SubResource("AnimationLibrary_r74qd")
 autoplay = &"3"
 
 [node name="Pedestrian4" parent="." unique_id=1051628933 instance=ExtResource("11_ck3xv")]
-position = Vector2(2292, 1106)
+position = Vector2(1680, 238)
 jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian4" unique_id=1764229782]
@@ -661,7 +628,7 @@ libraries/ = SubResource("AnimationLibrary_r74qd")
 autoplay = &"4"
 
 [node name="Pedestrian5" parent="." unique_id=1103056480 instance=ExtResource("11_ck3xv")]
-position = Vector2(2292, 1106)
+position = Vector2(1680, 238)
 jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian5" unique_id=1315317133]
