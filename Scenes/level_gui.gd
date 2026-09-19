@@ -6,6 +6,7 @@ var goal_times = {
 	"level_2": 30,
 	"level_3": 90,
 	"level_4": 90,
+	"level_5": 45,
 }
 var level_name = {
 	"level_0": "Mona Lisa",
@@ -13,6 +14,7 @@ var level_name = {
 	"level_2": "",
 	"level_3": "",
 	"level_4": "",
+	"level_5": "",
 }
 var stop_count = false
 var time_elapsed: float = 0.0
