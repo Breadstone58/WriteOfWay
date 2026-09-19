@@ -35,7 +35,7 @@ var level_name = {
 	"level_7": "The Pentagon",
 	"level_8": "Jaywalkers",
 	"level_9": "180",
-	"level_10": "A Drift is Move Your Car Makes",
+	"level_10": "A Drift is a Move Your Car Makes",
 	"level_11": "Bricked Up",
 	"level_12": "It's Raining, It's Pouring, the Driver is Turning",
 	"level_13": "",
