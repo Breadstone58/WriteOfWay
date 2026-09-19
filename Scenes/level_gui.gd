@@ -7,6 +7,13 @@ var goal_times = {
 	"level_3": 90,
 	"level_4": 90,
 }
+var level_name = {
+	"level_0": "Mona Lisa",
+	"level_1": "Level 1: Yield to Pedestrians",
+	"level_2": "",
+	"level_3": "",
+	"level_4": "",
+}
 var stop_count = false
 var time_elapsed: float = 0.0
 var time_bonus = 100
@@ -18,6 +25,7 @@ var fade_alpha = 0
 @onready var fade_box: ColorRect = $FadeBox
 @onready var timer_disp: RichTextLabel = $Display/TimerDisp
 @onready var time_goal: RichTextLabel = $Display/TimeGoalDisp
+@onready var level_name_disp: RichTextLabel = $Display/LevelNameDisp
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -28,6 +36,8 @@ func _ready() -> void:
 		time_goal.text = "Goal: "+str(int(goal_times[get_tree().current_scene.name]/60)) + ":" + str(int(goal_times[get_tree().current_scene.name]) % 60).pad_zeros(2)
 	else:
 		time_goal.text = "Goal: Finish"
+	level_name_disp.text = level_name[get_tree().current_scene.name]
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if !stop_count:

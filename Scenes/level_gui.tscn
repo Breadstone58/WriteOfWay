@@ -136,6 +136,17 @@ text = "Goal:"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="LevelNameDisp" type="RichTextLabel" parent="Display" unique_id=27774986]
+offset_left = -227.0
+offset_top = 87.0
+offset_right = 225.0
+offset_bottom = 169.0
+theme_override_fonts/normal_font = ExtResource("7_37ty5")
+theme_override_font_sizes/normal_font_size = 40
+text = "Level 1: Yield to Pedestrians"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Clipboard" type="Sprite2D" parent="." unique_id=1067593176]
 position = Vector2(962, 283)
 texture = ExtResource("5_vnik3")
