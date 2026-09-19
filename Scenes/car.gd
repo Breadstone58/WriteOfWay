@@ -35,7 +35,7 @@ func get_input():
 		velocity = velocity.normalized() * speed
 
 func _physics_process(delta):
-	if drawing_active or true:
+	if drawing_active and get_tree().current_scene.name != "Level Select":
 		get_input()
 		if Input.is_action_just_pressed("oil"):
 			drawing_active = false

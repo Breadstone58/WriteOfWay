@@ -5,6 +5,7 @@ func _ready() -> void:
 	SignalBus.eval_path.connect(_on_path_eval)
 	
 func _on_path_eval():
+	print("Signal Called")
 	var path: Image = load("res://Assets/Levels/level_0.png").get_image()
 	var drawing: Image = load("res://drawn_path.png").get_image()
 	
@@ -31,6 +32,9 @@ func _on_path_eval():
 
 	var coverage_score = accurate_player_pixels / total_path_pixels
 	var stray_penalty = stray_player_pixels / total_path_pixels
+	stray_penalty = 0
 	var raw_score = (coverage_score - stray_penalty) * 100.0
 	var final_accuracy = clamp(raw_score, 0.0, 100.0)
+	print(coverage_score)
+	print(stray_penalty)
 	print(final_accuracy)
