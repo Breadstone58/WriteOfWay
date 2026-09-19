@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://4veqstnlv2l3" path="res://Scenes/Levels/level_0_button.gd" id="1_ev01q"]
 [ext_resource type="Texture2D" uid="uid://djsthupk0mhuw" path="res://icon.svg" id="2_dg6ua"]
 [ext_resource type="PackedScene" uid="uid://b1hf1a4452c42" path="res://Scenes/car.tscn" id="2_gxket"]
-[ext_resource type="Script" uid="uid://b3jmt0qdh2w6k" path="res://Scenes/Levels/Level_1_Button.gd" id="3_2dc3q"]
+[ext_resource type="Script" uid="uid://b3jmt0qdh2w6k" path="res://Scenes/Levels/Level_1_button.gd" id="3_2dc3q"]
 [ext_resource type="Script" uid="uid://c7envhka7ylm8" path="res://Scenes/Levels/level_2_button.gd" id="4_btrm8"]
 [ext_resource type="Script" uid="uid://vu101vf2bkj7" path="res://Scenes/Levels/level_3_button.gd" id="5_ev01q"]
 [ext_resource type="Script" uid="uid://c56ni0qkk34sw" path="res://Scenes/Levels/level_4_button.gd" id="6_mes4i"]
@@ -15,6 +15,7 @@ size = Vector2(113, 114.5)
 [node name="level select" type="Node2D" unique_id=1976467842]
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1284910507]
+visible = false
 collision_mask = 2
 script = ExtResource("1_ev01q")
 
