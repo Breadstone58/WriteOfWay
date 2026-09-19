@@ -10,7 +10,7 @@ var goal_times = {
 	"level_6": 30,
 	"level_7": 35,
 	"level_8": 10,
-	"level_9": 50,
+	"level_9": 35,
 	"level_10": 60,
 	"level_11": 70,
 	"level_12": 60,
