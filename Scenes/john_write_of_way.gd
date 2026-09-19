@@ -33,7 +33,5 @@ func _process(delta: float) -> void:
 	play()
 		
 		
-		
-
 func _on_murder():
 	murder = 1.5

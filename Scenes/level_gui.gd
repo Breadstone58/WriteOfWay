@@ -193,5 +193,3 @@ func display_rank():
 	$RankSFX.stream = rank_sfx[rank]
 	$RankAudio.play()
 	$RankSFX.play()
-	
-	
