@@ -11,6 +11,7 @@ var goal_times = {
 	"level_7": 35,
 	"level_8": 10,
 	"level_9": 50,
+	"level_10": 60,
 }
 var level_name = {
 	"level_0": "Mona Lisa",
@@ -23,6 +24,7 @@ var level_name = {
 	"level_7": "The Pentagon",
 	"level_8": "Jaywalkers",
 	"level_9": "",
+	"level_10": "",
 }
 
 var title_size = {
@@ -36,6 +38,7 @@ var title_size = {
 	"level_7": 50,
 	"level_8": 50,
 	"level_9": 50,
+	"level_10": 50,
 }
 
 

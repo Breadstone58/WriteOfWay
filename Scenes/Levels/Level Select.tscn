@@ -12,6 +12,7 @@
 [ext_resource type="Script" uid="uid://6284ll5oemgy" path="res://Scenes/Levels/level_7_button.gd" id="9_5e3q4"]
 [ext_resource type="Script" uid="uid://70ntgcy71ce5" path="res://Scenes/Levels/level_8_button.gd" id="10_vss88"]
 [ext_resource type="Script" uid="uid://b50akj043jpje" path="res://Scenes/Levels/level_9_button.gd" id="11_f63m1"]
+[ext_resource type="Script" uid="uid://j8oth0sdk40u" path="res://Scenes/Levels/level_10_button.gd" id="12_vp670"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ogd8f"]
 
@@ -162,6 +163,18 @@ texture = ExtResource("2_dg6ua")
 position = Vector2(1159, 503)
 shape = SubResource("RectangleShape2D_oyyby")
 
+[node name="Area2D11" type="Area2D" parent="." unique_id=418041454]
+collision_mask = 2
+script = ExtResource("12_vp670")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D11" unique_id=1767961179]
+position = Vector2(1447, 505)
+texture = ExtResource("2_dg6ua")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D11" unique_id=1592328029]
+position = Vector2(1451, 504)
+shape = SubResource("RectangleShape2D_oyyby")
+
 [node name="Car" parent="." unique_id=236793703 instance=ExtResource("2_gxket")]
 position = Vector2(1144.9999, 907)
 collision_mask = 5
@@ -176,3 +189,4 @@ collision_mask = 5
 [connection signal="body_shape_entered" from="Area2D8" to="Area2D8" method="_on_body_shape_entered"]
 [connection signal="body_shape_entered" from="Area2D9" to="Area2D9" method="_on_body_shape_entered"]
 [connection signal="body_shape_entered" from="Area2D10" to="Area2D10" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="Area2D11" to="Area2D11" method="_on_body_shape_entered"]
