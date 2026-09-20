@@ -178,7 +178,7 @@ collision_mask = 2
 script = ExtResource("8_o6thy")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D7" unique_id=1279939240]
-position = Vector2(1520.25, 181.00003)
+position = Vector2(1520.0001, 175)
 scale = Vector2(0.11612655, 0.11458332)
 texture = ExtResource("16_ke3go")
 
@@ -204,12 +204,12 @@ collision_mask = 2
 script = ExtResource("10_vss88")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D9" unique_id=1606542130]
-position = Vector2(1265.0001, 180.00003)
+position = Vector2(1264, 174)
 scale = Vector2(0.111496896, 0.111496896)
 texture = ExtResource("20_y6q1m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D9" unique_id=1541140856]
-position = Vector2(1264, 179.00003)
+position = Vector2(1266, 171)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D10" type="Area2D" parent="." unique_id=2019147008]
@@ -230,8 +230,8 @@ collision_mask = 2
 script = ExtResource("12_vp670")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D11" unique_id=1767961179]
-position = Vector2(1261.125, 800.125)
-scale = Vector2(0.10204485, 0.10050154)
+position = Vector2(1261.125, 801)
+scale = Vector2(0.10204485, 0.101851836)
 texture = ExtResource("24_1hhj3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D11" unique_id=1592328029]
@@ -243,8 +243,8 @@ collision_mask = 2
 script = ExtResource("15_6gg5s")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D12" unique_id=1639892835]
-position = Vector2(1519, 797.99994)
-scale = Vector2(0.1024305, 0.100887395)
+position = Vector2(1519, 798.81244)
+scale = Vector2(0.1024305, 0.102141276)
 texture = ExtResource("26_yte0v")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D12" unique_id=742099912]
