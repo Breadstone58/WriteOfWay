@@ -21,7 +21,7 @@ var goal_times = {
 	"level_17": 35,
 	"level_18": 60,
 	"level_19": 60,
-	"level_20": 0,
+	"level_20": 90,
 }
 
 var level_name = {
@@ -70,7 +70,7 @@ var title_size = {
 	"level_17": 50,
 	"level_18": 50,
 	"level_19": 50,
-	"level_20": 0,
+	"level_20": 50,
 }
 
 
