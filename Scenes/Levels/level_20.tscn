@@ -432,15 +432,15 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 3.58),
+"times": PackedFloat32Array(0, 2.89),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(833, 438), Vector2(1599, 704)]
+"values": [Vector2(1194, 7), Vector2(1200, 1179)]
 }
 
 [sub_resource type="Animation" id="Animation_du3l2"]
 resource_name = "3"
-length = 6.4666667
+length = 6.9333334
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -449,15 +449,15 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 3.15),
+"times": PackedFloat32Array(0, 3.5333333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1303, 103), Vector2(1307, 941)]
+"values": [Vector2(712, 606), Vector2(1868, 598)]
 }
 
 [sub_resource type="Animation" id="Animation_mucg7"]
 resource_name = "4"
-length = 6.2
+length = 6.9
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -466,15 +466,15 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 3.08),
+"times": PackedFloat32Array(0, 3.6333334),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1579, 991), Vector2(1113, 327)]
+"values": [Vector2(783, 603), Vector2(1859, 603)]
 }
 
 [sub_resource type="Animation" id="Animation_tdopa"]
 resource_name = "5"
-length = 5.9
+length = 6.9
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -483,10 +483,61 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2.97),
+"times": PackedFloat32Array(0, 3.5666666),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(989, 1003), Vector2(1501, 341)]
+"values": [Vector2(844, 602), Vector2(1840, 594)]
+}
+
+[sub_resource type="Animation" id="Animation_le2pw"]
+resource_name = "6"
+length = 6.866667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4.16),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(859, 1032), Vector2(1881, 26)]
+}
+
+[sub_resource type="Animation" id="Animation_p0xib"]
+resource_name = "7"
+length = 9.533334
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Pedestrian7:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.98, 5.8, 9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1182, 1052), Vector2(1541, 627), Vector2(1323, 268), Vector2(996, 737)]
+}
+
+[sub_resource type="Animation" id="Animation_7xwes"]
+resource_name = "8"
+length = 8.933333
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.83, 4.9, 7.1666665),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1394, 1138), Vector2(749, 751), Vector2(1757, 595), Vector2(1180, 268)]
 }
 
 [sub_resource type="Animation" id="Animation_2iktx"]
@@ -500,10 +551,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 3.24),
+"times": PackedFloat32Array(0, 3.03),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1758, 447), Vector2(1000, 685)]
+"values": [Vector2(1730, 23), Vector2(1734, 1179)]
 }
 
 [sub_resource type="Animation" id="Animation_ic72l"]
@@ -545,6 +596,18 @@ tracks/2/keys = {
 "update": 0,
 "values": [Vector2(989, 1003)]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Pedestrian7:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1182, 1052)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_r74qd"]
 _data = {
@@ -552,6 +615,9 @@ _data = {
 &"3": SubResource("Animation_du3l2"),
 &"4": SubResource("Animation_mucg7"),
 &"5": SubResource("Animation_tdopa"),
+&"6": SubResource("Animation_le2pw"),
+&"7": SubResource("Animation_p0xib"),
+&"8": SubResource("Animation_7xwes"),
 &"Move": SubResource("Animation_2iktx"),
 &"RESET": SubResource("Animation_ic72l")
 }
@@ -622,15 +688,14 @@ position = Vector2(648.0001, 0)
 scale = Vector2(0.99999994, 0.99999994)
 tile_set = SubResource("TileSet_oyyby")
 format = 2
-layer_0/tile_data = PackedInt32Array(5, 65538, 0, 65541, 65538, 0, 65542, 65538, 0, 6, 65538, 0, 131078, 65538, 0, 196614, 65538, 0, 262150, 65538, 0, 327686, 2, 1, 131077, 65538, 0, 196613, 65538, 0, 262149, 65538, 0, 327685, 2, 1, 393221, 2, 1, 393222, 2, 1, 327687, 2, 0, 327688, 2, 0, 327689, 2, 0, 327690, 2, 0, 327691, 2, 0, 393223, 2, 0, 393224, 2, 0, 393225, 2, 0, 393226, 2, 0, 393227, 2, 0, 327684, 2, 0, 327683, 2, 0, 327682, 2, 0, 327681, 2, 0, 327680, 2, 0, 393216, 2, 0, 393217, 2, 0, 393218, 2, 0, 393219, 2, 0, 393220, 2, 0, 196615, 0, 0, 262151, 0, 1, 196612, 0, 0, 262148, 0, 1, 589833, 0, 2, 655369, 0, 3, 589826, 0, 2, 655362, 0, 3, 196609, 0, 2, 262145, 0, 3, 196618, 0, 2, 262154, 0, 3, 720900, 65537, 1, 720901, 65537, 1, 720902, 65537, 1, 720903, 65537, 1, 655364, 262145, 0, 655365, 262145, 0, 655366, 262145, 0, 655367, 262145, 0, 655368, 327681, 0, 720904, 327681, 1, 720899, 196609, 1, 655363, 196609, 0, 589824, 65537, 1342177281, 524288, 65537, 1342177281, 458753, 327681, 0, 458752, 262145, 0, 524289, 327681, 1, 589825, 327681, 1, 655361, 327681, 2, 655360, 262145, 2, 524298, 262145, 1342177282, 589834, 262145, 1342177282, 458762, 327681, 1610612736, 655370, 327681, 805306368, 655371, 327681, 1342177281, 458763, 327681, 1610612737, 524299, 65537, 1610612737, 589835, 65537, 1610612737)
+layer_0/tile_data = PackedInt32Array(327680, 2, 0, 327681, 2, 0, 327682, 2, 0, 327683, 2, 0, 327684, 2, 1, 327685, 2, 1, 327686, 2, 0, 327687, 2, 0, 327688, 2, 0, 327689, 2, 1, 327690, 2, 1, 327691, 2, 0, 393216, 2, 0, 393217, 2, 0, 393218, 2, 0, 393219, 2, 0, 393220, 2, 1, 393221, 2, 1, 393222, 2, 0, 393223, 2, 0, 393224, 2, 0, 393225, 2, 1, 393226, 2, 1, 393227, 2, 0, 9, 65538, 0, 65545, 65538, 0, 131081, 65538, 0, 196617, 65538, 0, 262153, 65538, 0, 458761, 65538, 0, 524297, 65538, 0, 589833, 65538, 0, 655369, 65538, 0, 720905, 65538, 0, 10, 65538, 0, 65546, 65538, 0, 131082, 65538, 0, 196618, 65538, 0, 262154, 65538, 0, 458762, 65538, 0, 524298, 65538, 0, 589834, 65538, 0, 655370, 65538, 0, 720906, 65538, 0, 4, 65538, 0, 65540, 65538, 0, 131076, 65538, 0, 196612, 65538, 0, 262148, 65538, 0, 458756, 65538, 0, 524292, 65538, 0, 589828, 65538, 0, 655364, 65538, 0, 720900, 65538, 0, 720901, 65538, 0, 655365, 65538, 0, 589829, 65538, 0, 524293, 65538, 0, 458757, 65538, 0, 262149, 65538, 0, 196613, 65538, 0, 131077, 65538, 0, 65541, 65538, 0, 5, 65538, 0, 720896, 65537, 1, 655361, 327681, 0, 720897, 327681, 1, 655360, 262145, 0, 65536, 262145, 1, 65537, 262145, 1, 65538, 262145, 1, 131074, 262145, 1, 131073, 262145, 1, 131072, 262145, 1, 131075, 327681, 1, 65539, 327681, 1, 3, 327681, 0, 196611, 327681, 2, 196610, 262145, 2, 196609, 262145, 2, 196608, 262145, 2, 2, 262145, 0, 1, 262145, 0, 0, 262145, 0, 65544, 0, 0, 131080, 0, 1, 524294, 0, 0, 589830, 0, 1, 196615, 0, 2, 262151, 0, 3, 524288, 65536, 2, 589824, 65536, 3, 655368, 65536, 0, 720904, 65536, 1)
 
 [node name="Car" parent="." unique_id=236793703 instance=ExtResource("10_rqi2t")]
-position = Vector2(1203, 954.99994)
+position = Vector2(784, 211.00002)
 rotation = 1.5707964
 
 [node name="Pedestrian" parent="." unique_id=1425713004 instance=ExtResource("11_v3tx4")]
 position = Vector2(2292, 1106)
-jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian" unique_id=913902090]
 libraries/ = SubResource("AnimationLibrary_r74qd")
@@ -638,7 +703,6 @@ autoplay = &"Move"
 
 [node name="Pedestrian2" parent="." unique_id=707552712 instance=ExtResource("11_v3tx4")]
 position = Vector2(2292, 1106)
-jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian2" unique_id=630405705]
 libraries/ = SubResource("AnimationLibrary_r74qd")
@@ -646,7 +710,6 @@ autoplay = &"2"
 
 [node name="Pedestrian3" parent="." unique_id=1137896543 instance=ExtResource("11_v3tx4")]
 position = Vector2(2292, 1106)
-jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian3" unique_id=1159239293]
 libraries/ = SubResource("AnimationLibrary_r74qd")
@@ -654,7 +717,6 @@ autoplay = &"3"
 
 [node name="Pedestrian4" parent="." unique_id=1051628933 instance=ExtResource("11_v3tx4")]
 position = Vector2(2292, 1106)
-jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian4" unique_id=1764229782]
 libraries/ = SubResource("AnimationLibrary_r74qd")
@@ -662,8 +724,23 @@ autoplay = &"4"
 
 [node name="Pedestrian5" parent="." unique_id=1103056480 instance=ExtResource("11_v3tx4")]
 position = Vector2(2292, 1106)
-jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian5" unique_id=1315317133]
 libraries/ = SubResource("AnimationLibrary_r74qd")
 autoplay = &"5"
+
+[node name="Pedestrian6" parent="." unique_id=1826713713 instance=ExtResource("11_v3tx4")]
+position = Vector2(2292, 1106)
+jaywalker = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian6" unique_id=1571149911]
+libraries/ = SubResource("AnimationLibrary_r74qd")
+autoplay = &"6"
+
+[node name="Pedestrian7" parent="." unique_id=2098872665 instance=ExtResource("11_v3tx4")]
+position = Vector2(1182, 1052)
+jaywalker = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian7" unique_id=1788884062]
+libraries/ = SubResource("AnimationLibrary_r74qd")
+autoplay = &"7"
