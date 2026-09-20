@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://coqp27xjtdlmw"
-path="res://.godot/imported/Pentagon_Icon.png-186de0b87ac514bf540e825005562a9f.ctex"
+uid="uid://cbhucldt3pik5"
+path="res://.godot/imported/Bricks_Icon.png-6eb3773e33f5249ab8b9d882c9d14eb8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pentagon_Icon.png"
-dest_files=["res://.godot/imported/Pentagon_Icon.png-186de0b87ac514bf540e825005562a9f.ctex"]
+source_file="res://Assets/Images/Level Icons/Bricks_Icon.png"
+dest_files=["res://.godot/imported/Bricks_Icon.png-6eb3773e33f5249ab8b9d882c9d14eb8.ctex"]
 
 [params]
 

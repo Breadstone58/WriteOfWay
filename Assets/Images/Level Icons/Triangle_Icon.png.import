@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drhmclh2pibb8"
-path="res://.godot/imported/Heart_icon.png-852b768b18f69dfeff154f25b5305eb0.ctex"
+uid="uid://bia6potdo7ci3"
+path="res://.godot/imported/Triangle_Icon.png-a71c8c36471e74b4a1d813753d954abd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Heart_icon.png"
-dest_files=["res://.godot/imported/Heart_icon.png-852b768b18f69dfeff154f25b5305eb0.ctex"]
+source_file="res://Assets/Images/Level Icons/Triangle_Icon.png"
+dest_files=["res://.godot/imported/Triangle_Icon.png-a71c8c36471e74b4a1d813753d954abd.ctex"]
 
 [params]
 

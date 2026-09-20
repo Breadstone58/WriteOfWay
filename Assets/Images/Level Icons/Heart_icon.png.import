@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ceyenanbg2wfi"
-path="res://.godot/imported/Spiral_Icon.png-d4cff55b0059d456030ed1a0b525e8a9.ctex"
+uid="uid://drhmclh2pibb8"
+path="res://.godot/imported/Heart_icon.png-bd8219e61eb26341eb5cb245aa5f3fc0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Spiral_Icon.png"
-dest_files=["res://.godot/imported/Spiral_Icon.png-d4cff55b0059d456030ed1a0b525e8a9.ctex"]
+source_file="res://Assets/Images/Level Icons/Heart_icon.png"
+dest_files=["res://.godot/imported/Heart_icon.png-bd8219e61eb26341eb5cb245aa5f3fc0.ctex"]
 
 [params]
 

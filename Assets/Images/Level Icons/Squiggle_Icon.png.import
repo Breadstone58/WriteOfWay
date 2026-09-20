@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bia6potdo7ci3"
-path="res://.godot/imported/Triangle_Icon.png-f5f436a0c55009948b17b066de8f76e4.ctex"
+uid="uid://uqpy7fky8pc3"
+path="res://.godot/imported/Squiggle_Icon.png-57a78cb0b1d7fb8d468bc7251605c107.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Triangle_Icon.png"
-dest_files=["res://.godot/imported/Triangle_Icon.png-f5f436a0c55009948b17b066de8f76e4.ctex"]
+source_file="res://Assets/Images/Level Icons/Squiggle_Icon.png"
+dest_files=["res://.godot/imported/Squiggle_Icon.png-57a78cb0b1d7fb8d468bc7251605c107.ctex"]
 
 [params]
 

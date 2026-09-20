@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4eoo08knfa5k"
-path="res://.godot/imported/Line_Icon.png-2f1a972bcfa630cfd414a47df48a14f0.ctex"
+uid="uid://ceyenanbg2wfi"
+path="res://.godot/imported/Spiral_Icon.png-ec924902edf9c56831bed828e4458a21.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Line_Icon.png"
-dest_files=["res://.godot/imported/Line_Icon.png-2f1a972bcfa630cfd414a47df48a14f0.ctex"]
+source_file="res://Assets/Images/Level Icons/Spiral_Icon.png"
+dest_files=["res://.godot/imported/Spiral_Icon.png-ec924902edf9c56831bed828e4458a21.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wd2ijcpodv6m"
-path="res://.godot/imported/Towers_icon.png-8f0a43d75b5be53d390df784c02f1a60.ctex"
+uid="uid://boamremer8ii0"
+path="res://.godot/imported/Umbrella_Icon.png-94342de209a1003ab0022cb1a35072ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Towers_icon.png"
-dest_files=["res://.godot/imported/Towers_icon.png-8f0a43d75b5be53d390df784c02f1a60.ctex"]
+source_file="res://Assets/Images/Level Icons/Umbrella_Icon.png"
+dest_files=["res://.godot/imported/Umbrella_Icon.png-94342de209a1003ab0022cb1a35072ac.ctex"]
 
 [params]
 
