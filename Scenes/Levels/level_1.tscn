@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://dkk7u6gncvkvy" path="res://Assets/Images/transition.png" id="9_hwvp3"]
 [ext_resource type="Texture2D" uid="uid://bmy1ca563shtw" path="res://Assets/Images/Tooltips/submit_tooltip.png" id="12_afv7b"]
 [ext_resource type="Texture2D" uid="uid://cc7u1vkl11ha6" path="res://Assets/Images/Tooltips/speed_tooltip.png" id="13_7r2dd"]
+[ext_resource type="Texture2D" uid="uid://c7c6mht0yn1l5" path="res://Assets/Images/Tooltips/goal_tooltip.png" id="14_k2mw1"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q3bbs"]
 
@@ -549,3 +550,8 @@ texture = ExtResource("12_afv7b")
 self_modulate = Color(0, 0, 0, 1)
 position = Vector2(1067, 1090)
 texture = ExtResource("13_7r2dd")
+
+[node name="Tooltip_goal" type="Sprite2D" parent="." unique_id=1561625110]
+position = Vector2(1670.3683, 865.125)
+scale = Vector2(0.8703003, 0.87030023)
+texture = ExtResource("14_k2mw1")
