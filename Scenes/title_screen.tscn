@@ -1,0 +1,180 @@
+[gd_scene format=3 uid="uid://igxdm7gssy05"]
+
+[ext_resource type="Script" uid="uid://br405rxjmyi1l" path="res://Scenes/title_screen.gd" id="1_p3fck"]
+[ext_resource type="Texture2D" uid="uid://bv5kgbxladmbk" path="res://Assets/Images/Main Menu/main_menu_back.png" id="2_0061g"]
+[ext_resource type="Texture2D" uid="uid://cfklj157rt67d" path="res://Assets/Images/Main Menu/cloud1.png" id="3_8mikk"]
+[ext_resource type="Texture2D" uid="uid://d1xl3ydtmolnq" path="res://Assets/Images/Main Menu/cloud2.png" id="4_sqelc"]
+[ext_resource type="Texture2D" uid="uid://chgy2qiy2y656" path="res://Assets/Images/Main Menu/cloud3.png" id="5_w5sh6"]
+[ext_resource type="Texture2D" uid="uid://owdjgd0q84e" path="res://Assets/Images/Main Menu/main_menu_building.png" id="6_o1e67"]
+[ext_resource type="Texture2D" uid="uid://ctlnsx3qogar5" path="res://Assets/Images/Main Menu/main_menu_john.png" id="7_ycay6"]
+[ext_resource type="Texture2D" uid="uid://5qk43aotin4s" path="res://Assets/Images/Main Menu/main_menu_logo.png" id="8_bsy20"]
+[ext_resource type="Texture2D" uid="uid://buccj3n1dr8p5" path="res://Assets/Images/Main Menu/main_menu_start.png" id="9_07cxn"]
+[ext_resource type="Texture2D" uid="uid://c2dachsmia5vv" path="res://Assets/Images/Main Menu/delete_save.png" id="10_8mikk"]
+[ext_resource type="Script" uid="uid://bn327oeo05va3" path="res://Scenes/delete_save.gd" id="11_o1e67"]
+[ext_resource type="Texture2D" uid="uid://blyl8iqik84iu" path="res://Assets/Images/Main Menu/save_warning.png" id="11_sqelc"]
+[ext_resource type="Script" uid="uid://cclum5jx3wo2r" path="res://Scenes/color_rect.gd" id="11_w5sh6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x2pfe"]
+atlas = ExtResource("7_ycay6")
+region = Rect2(0, 0, 350, 570)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1y01"]
+atlas = ExtResource("7_ycay6")
+region = Rect2(350, 0, 350, 570)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4blwa"]
+atlas = ExtResource("7_ycay6")
+region = Rect2(700, 0, 350, 570)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vqgqr"]
+atlas = ExtResource("7_ycay6")
+region = Rect2(1050, 0, 350, 570)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ogd8f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x2pfe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1y01")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4blwa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vqgqr")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="Title_Screen" type="Node2D" unique_id=802357291]
+script = ExtResource("1_p3fck")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=132021369]
+position = Vector2(972, 648)
+texture = ExtResource("2_0061g")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1655403208]
+repeat_size = Vector2(1944, 1296)
+autoscroll = Vector2(50, 0)
+follow_viewport = false
+
+[node name="Cloud1" type="Sprite2D" parent="Parallax2D" unique_id=2026914615]
+position = Vector2(972, 648)
+texture = ExtResource("3_8mikk")
+
+[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=1274920972]
+repeat_size = Vector2(1944, 1296)
+autoscroll = Vector2(130, 0)
+follow_viewport = false
+
+[node name="Cloud2" type="Sprite2D" parent="Parallax2D2" unique_id=984948736]
+position = Vector2(972, 648)
+texture = ExtResource("4_sqelc")
+
+[node name="Parallax2D3" type="Parallax2D" parent="." unique_id=680739288]
+repeat_size = Vector2(1944, 1296)
+autoscroll = Vector2(180, 0)
+follow_viewport = false
+
+[node name="Cloud3" type="Sprite2D" parent="Parallax2D3" unique_id=1143321146]
+position = Vector2(972, 648)
+texture = ExtResource("5_w5sh6")
+
+[node name="Building" type="Sprite2D" parent="." unique_id=1537171621]
+position = Vector2(972, 648)
+texture = ExtResource("6_o1e67")
+
+[node name="John" type="AnimatedSprite2D" parent="." unique_id=1736682461]
+position = Vector2(1402, 552.00006)
+scale = Vector2(0.8457144, 0.8457144)
+sprite_frames = SubResource("SpriteFrames_ogd8f")
+autoplay = "default"
+frame_progress = 0.046145707
+
+[node name="Logo" type="Sprite2D" parent="." unique_id=729888305]
+position = Vector2(596, 373.00003)
+scale = Vector2(0.8373174, 0.8373174)
+texture = ExtResource("8_bsy20")
+
+[node name="Sign" type="Sprite2D" parent="." unique_id=1027915895]
+position = Vector2(419, 1042)
+texture = ExtResource("9_07cxn")
+
+[node name="DeleteSave" type="Sprite2D" parent="." unique_id=1827619836]
+position = Vector2(418, 1324)
+texture = ExtResource("10_8mikk")
+script = ExtResource("11_o1e67")
+
+[node name="DeleteSaveButton" type="Button" parent="DeleteSave" unique_id=343461799]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -249.44397
+offset_top = -174.25256
+offset_right = 249.4437
+offset_bottom = -48.933838
+
+[node name="Control" type="Control" parent="." unique_id=1675458193]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Control" unique_id=1121766748]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -12.175
+anchor_top = 2.175
+anchor_right = -7.725
+anchor_bottom = 4.35
+offset_left = 622.0
+offset_top = 709.0
+offset_right = 1016.0
+offset_bottom = 942.0
+theme_override_font_sizes/font_size = 164
+text = "Start"
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=655365313]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1546.0
+offset_top = 35.0
+offset_right = -68.0
+offset_bottom = 740.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_scale = Vector2(4, 4)
+color = Color(0, 0, 0, 0.8352941)
+script = ExtResource("11_w5sh6")
+
+[node name="WarningBox" type="Sprite2D" parent="ColorRect" unique_id=1567533267]
+position = Vector2(771.0001, 369)
+scale = Vector2(2.4107141, 2.4107144)
+texture = ExtResource("11_sqelc")
+
+[node name="DeleteSave" type="Button" parent="ColorRect/WarningBox" unique_id=368613429]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -177.95563
+offset_top = 41.06664
+offset_right = -33.600067
+offset_bottom = 118.63701
+
+[node name="DontDeleteSave" type="Button" parent="ColorRect/WarningBox" unique_id=2071590567]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 34.01474
+offset_top = 41.06664
+offset_right = 178.37027
+offset_bottom = 118.22218
+
+[connection signal="button_down" from="DeleteSave/DeleteSaveButton" to="ColorRect" method="_on_delete_save_button_button_down"]
+[connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]
+[connection signal="button_down" from="ColorRect/WarningBox/DeleteSave" to="DeleteSave" method="_on_delete_save_button_down"]
+[connection signal="button_down" from="ColorRect/WarningBox/DeleteSave" to="ColorRect" method="_on_delete_save_button_down"]
+[connection signal="button_down" from="ColorRect/WarningBox/DontDeleteSave" to="ColorRect" method="_on_dont_delete_save_button_down"]

@@ -4,7 +4,24 @@ var layout_dictionary = {
 	"level_0": "mona_lisa.png",
 	"level_1": "line.png",
 	"level_2": "square.png",
-	"level_3": "spiral.png"
+	"level_3": "spiral.png",
+	"level_4": "zig_zag.png",
+	"level_5": "square_spiral.png",
+	"level_6": "triangle.png",
+	"level_7": "pentagon.png",
+	"level_8": "curve.png",
+	"level_9": "wave.png",
+	"level_10": "star.png",
+	"level_11": "bricks.png",
+	"level_12": "umbrella.png",
+	"level_13": "scribble.png",
+	"level_14": "man.png",
+	"level_15": "Verity.png",
+	"level_16": "Heart.png",
+	"level_17": "Pizza.png",
+	"level_18": "Towers.png",
+	"level_19": "Cube.png",
+	"level_20": "Final.png",
 }
 
 # Called when the node enters the scene tree for the first time.
@@ -37,5 +54,5 @@ func _on_path_eval():
 	#print(same_pixels / path_pixels)
 	var raw_score = min(1-Percent_Error,same_pixels/path_pixels)
 	var base_score = clamp(int(round(raw_score * 1000)),0,1000)
-	print(base_score)
+	print(raw_score)
 	SignalBus.results.emit(base_score)

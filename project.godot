@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="Write of Way"
-run/main_scene="uid://k80nn6yfiywo"
+run/main_scene="uid://igxdm7gssy05"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://d28hhx4cybknj"
 
 [autoload]
 
@@ -21,7 +21,7 @@ LineConv="*uid://d2lfhkg3bwcf7"
 SignalBus="*uid://def5ua5lqfgmk"
 MusicPlayer="*uid://bmlqm7bdpx45q"
 PathEvaluator="*uid://dub7gdeooy58p"
-GlobalVariables="*uid://s04ltpfl61bc"
+GlobVar="*uid://s04ltpfl61bc"
 
 [display]
 

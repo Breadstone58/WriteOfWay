@@ -8,7 +8,7 @@ func _ready() -> void:
 	z_as_relative = false
 	
 func _process(_delta: float) -> void:
-	if toggle_track_overlay:
+	if toggle_track_overlay and GlobVar.results == false:
 		z_index = 1000
 	else:
 		z_index = 1

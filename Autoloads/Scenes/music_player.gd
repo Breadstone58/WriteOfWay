@@ -1,11 +1,23 @@
 extends AudioStreamPlayer
 
-
+@export var tracks: Array[AudioStream] = []
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
-
+	play_song()
+	SignalBus.level_select.connect(_level_select_entered)
+	SignalBus.level_start.connect(_level_start)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _level_select_entered():
+	play_song()
+
+func play_song():
+	if playing == false:
+		stream = tracks[0]
+		play()
+		await finished
+		stream = tracks[1]
+		play()
+		
+func _level_start():
+	stop()

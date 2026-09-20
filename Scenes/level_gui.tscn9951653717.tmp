@@ -1,0 +1,251 @@
+[gd_scene format=3 uid="uid://qqrqhkeg2vty"]
+
+[ext_resource type="Script" uid="uid://bqrxw00jl5nxr" path="res://Scenes/level_gui.gd" id="1_vvh8v"]
+[ext_resource type="Texture2D" uid="uid://h8lsp75su081" path="res://Assets/GUI/gui_back.png" id="2_eh1tm"]
+[ext_resource type="Texture2D" uid="uid://dp4stfu44ccjb" path="res://Assets/GUI/car_front.png" id="3_ibeg1"]
+[ext_resource type="Texture2D" uid="uid://c7tmr8jjydtoc" path="res://Assets/GUI/car_seats.png" id="4_vnik3"]
+[ext_resource type="Texture2D" uid="uid://55oa22jyehok" path="res://Assets/GUI/display.png" id="5_if1ad"]
+[ext_resource type="Texture2D" uid="uid://bs6t6mxbwivf8" path="res://Assets/GUI/clipboard.png" id="5_vnik3"]
+[ext_resource type="FontFile" uid="uid://dygjxuuo2ohr2" path="res://Assets/Fonts/Seven Segment.ttf" id="6_2ft1l"]
+[ext_resource type="FontFile" uid="uid://d3h0xqvxgr2cq" path="res://Assets/Fonts/HWYGCOND.TTF" id="7_37ty5"]
+[ext_resource type="FontFile" uid="uid://bybfa3axv1p6d" path="res://Assets/Fonts/Ballpoint Signature.otf" id="9_4220r"]
+[ext_resource type="Texture2D" uid="uid://capj2c5xn8e53" path="res://Assets/GUI/ranks_text.png" id="10_3lmge"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ft1l"]
+atlas = ExtResource("5_if1ad")
+region = Rect2(0, 0, 510, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_37ty5"]
+atlas = ExtResource("5_if1ad")
+region = Rect2(510, 0, 510, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4220r"]
+atlas = ExtResource("5_if1ad")
+region = Rect2(1020, 0, 510, 700)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vnik3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ft1l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_37ty5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4220r")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 18.0
+}]
+
+[sub_resource type="Animation" id="Animation_if1ad"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(319, 361)]
+}
+
+[sub_resource type="Animation" id="Animation_2ft1l"]
+resource_name = "bobbing"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -15), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_37ty5"]
+_data = {
+&"RESET": SubResource("Animation_if1ad"),
+&"bobbing": SubResource("Animation_2ft1l")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3lmge"]
+atlas = ExtResource("10_3lmge")
+region = Rect2(0, 0, 410, 410)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4e718"]
+atlas = ExtResource("10_3lmge")
+region = Rect2(410, 0, 410, 410)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mjq3"]
+atlas = ExtResource("10_3lmge")
+region = Rect2(820, 0, 410, 410)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ihb4f"]
+atlas = ExtResource("10_3lmge")
+region = Rect2(1230, 0, 410, 410)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ghhut"]
+atlas = ExtResource("10_3lmge")
+region = Rect2(1640, 0, 410, 410)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5s6on"]
+atlas = ExtResource("10_3lmge")
+region = Rect2(2050, 0, 410, 410)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nqlt1"]
+atlas = ExtResource("10_3lmge")
+region = Rect2(2460, 0, 410, 410)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ogd8f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3lmge")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4e718")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4mjq3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ihb4f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ghhut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5s6on")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nqlt1")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="Level GUI" type="Node2D" unique_id=467917947]
+position = Vector2(319, 361)
+script = ExtResource("1_vvh8v")
+
+[node name="FadeBox" type="ColorRect" parent="." unique_id=520158766]
+z_index = 6
+z_as_relative = false
+offset_left = 329.0
+offset_top = -361.0
+offset_right = 1625.0
+offset_bottom = 935.0
+color = Color(0, 0, 0, 0)
+
+[node name="Gui Back" type="Sprite2D" parent="." unique_id=454183755]
+position = Vector2(5, 287)
+texture = ExtResource("2_eh1tm")
+
+[node name="Car_Frame" type="Sprite2D" parent="." unique_id=1318790225]
+z_index = 1
+z_as_relative = false
+position = Vector2(5, 642)
+texture = ExtResource("3_ibeg1")
+
+[node name="Car_Seats" type="Sprite2D" parent="Car_Frame" unique_id=1040439727]
+z_as_relative = false
+position = Vector2(0, -1)
+texture = ExtResource("4_vnik3")
+
+[node name="Display" type="AnimatedSprite2D" parent="." unique_id=1659944236]
+position = Vector2(319, 361)
+sprite_frames = SubResource("SpriteFrames_vnik3")
+autoplay = "default"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Display" unique_id=616505182]
+libraries/ = SubResource("AnimationLibrary_37ty5")
+autoplay = &"bobbing"
+
+[node name="TimerDisp" type="RichTextLabel" parent="Display" unique_id=613598717]
+offset_left = -153.0
+offset_top = -221.0
+offset_right = 155.0
+offset_bottom = -4.0
+theme_override_colors/default_color = Color(1, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("6_2ft1l")
+theme_override_font_sizes/normal_font_size = 170
+text = "0:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TimeGoalDisp" type="RichTextLabel" parent="Display" unique_id=2105688571]
+offset_left = -138.0
+offset_top = 226.0
+offset_right = 141.0
+offset_bottom = 313.0
+theme_override_fonts/normal_font = ExtResource("7_37ty5")
+theme_override_font_sizes/normal_font_size = 75
+text = "Goal:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LevelNameDisp" type="RichTextLabel" parent="Display" unique_id=27774986]
+offset_left = -227.0
+offset_top = 87.0
+offset_right = 225.0
+offset_bottom = 169.0
+theme_override_fonts/normal_font = ExtResource("7_37ty5")
+theme_override_font_sizes/normal_font_size = 40
+text = "Level 1: Yield to Pedestrians"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Clipboard" type="Sprite2D" parent="." unique_id=1067593176]
+z_index = 7
+z_as_relative = false
+position = Vector2(962, 283)
+texture = ExtResource("5_vnik3")
+
+[node name="Score Calc Disp" type="RichTextLabel" parent="Clipboard" unique_id=417688665]
+offset_left = -280.0
+offset_top = -424.0
+offset_right = 283.0
+offset_bottom = 149.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = -18
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/normal_font = ExtResource("9_4220r")
+theme_override_font_sizes/normal_font_size = 70
+bbcode_enabled = true
+text = "a
+a
+a
+a
+a
+a
+a"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Final Score Disp" type="RichTextLabel" parent="Clipboard" unique_id=473300782]
+offset_left = -213.0
+offset_top = 134.0
+offset_right = 247.0
+offset_bottom = 295.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("9_4220r")
+theme_override_font_sizes/normal_font_size = 80
+text = "Score: 000/1000"
+
+[node name="Rank Disp" type="AnimatedSprite2D" parent="Clipboard" unique_id=1889311485]
+position = Vector2(19, 391)
+scale = Vector2(0.7097561, 0.7097561)
+sprite_frames = SubResource("SpriteFrames_ogd8f")
+frame = 6
+frame_progress = 0.8221093

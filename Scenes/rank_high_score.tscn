@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://cg7cl8ttkboe1"]
+
+[ext_resource type="Script" uid="uid://b4rypqpnpspwt" path="res://Scenes/rank_high_score.gd" id="1_esafo"]
+[ext_resource type="Texture2D" uid="uid://dqkpuooqha06x" path="res://Assets/Images/ranks_tooltip.png" id="1_oew7t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w4bo2"]
+atlas = ExtResource("1_oew7t")
+region = Rect2(0, 0, 410, 349)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t61k3"]
+atlas = ExtResource("1_oew7t")
+region = Rect2(410, 0, 410, 349)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bb0f3"]
+atlas = ExtResource("1_oew7t")
+region = Rect2(820, 0, 410, 349)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b8oas"]
+atlas = ExtResource("1_oew7t")
+region = Rect2(1230, 0, 410, 349)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j20ph"]
+atlas = ExtResource("1_oew7t")
+region = Rect2(1640, 0, 410, 349)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o8k4e"]
+atlas = ExtResource("1_oew7t")
+region = Rect2(2050, 0, 410, 349)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0r44k"]
+atlas = ExtResource("1_oew7t")
+region = Rect2(2460, 0, 410, 349)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_esafo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w4bo2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t61k3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bb0f3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b8oas")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j20ph")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o8k4e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0r44k")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 0.0
+}]
+
+[node name="HighScoreTooltip" type="AnimatedSprite2D" unique_id=1614341049]
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_esafo")
+script = ExtResource("1_esafo")
