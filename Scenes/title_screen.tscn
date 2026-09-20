@@ -141,6 +141,7 @@ text = "Start"
 metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=655365313]
+z_index = 1000
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
