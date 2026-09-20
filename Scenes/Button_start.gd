@@ -10,6 +10,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 	
-	func _on_button_pressed():
-		get_tree().change_scene_to_file("res://Scenes/Levels/Level Select.tscn")
+func _on_button_pressed():
+		SceneTransition.change_scene("res://Scenes/Levels/Level Select.tscn")
+		print("yo its me the button bro")
 		
