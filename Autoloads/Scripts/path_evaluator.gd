@@ -16,7 +16,7 @@ var layout_dictionary = {
 	"level_12": "umbrella.png",
 	"level_13": "scribble.png",
 	"level_14": "man.png",
-	"level_15": "",
+	"level_15": "Verity.png",
 	"level_16": "",
 	"level_17": "",
 	"level_18": "",
