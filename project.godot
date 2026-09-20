@@ -28,7 +28,6 @@ GlobVar="*uid://s04ltpfl61bc"
 window/size/viewport_width=1944
 window/size/viewport_height=1296
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
 
 [input]
 
