@@ -1,15 +1,88 @@
 [gd_scene format=3 uid="uid://igxdm7gssy05"]
 
-[ext_resource type="Texture2D" uid="uid://ceinxi3yto1t8" path="res://Assets/Images/write_of_way.png" id="1_klylv"]
 [ext_resource type="Script" uid="uid://br405rxjmyi1l" path="res://Scenes/title_screen.gd" id="1_p3fck"]
+[ext_resource type="Texture2D" uid="uid://bv5kgbxladmbk" path="res://Assets/Images/Main Menu/main_menu_back.png" id="2_0061g"]
+[ext_resource type="Texture2D" uid="uid://cfklj157rt67d" path="res://Assets/Images/Main Menu/cloud1.png" id="3_8mikk"]
+[ext_resource type="Texture2D" uid="uid://d1xl3ydtmolnq" path="res://Assets/Images/Main Menu/cloud2.png" id="4_sqelc"]
+[ext_resource type="Texture2D" uid="uid://chgy2qiy2y656" path="res://Assets/Images/Main Menu/cloud3.png" id="5_w5sh6"]
+[ext_resource type="Texture2D" uid="uid://owdjgd0q84e" path="res://Assets/Images/Main Menu/main_menu_building.png" id="6_o1e67"]
+[ext_resource type="Texture2D" uid="uid://ctlnsx3qogar5" path="res://Assets/Images/Main Menu/main_menu_john.png" id="7_ycay6"]
+[ext_resource type="Texture2D" uid="uid://5qk43aotin4s" path="res://Assets/Images/Main Menu/main_menu_logo.png" id="8_bsy20"]
+[ext_resource type="Texture2D" uid="uid://buccj3n1dr8p5" path="res://Assets/Images/Main Menu/main_menu_start.png" id="9_07cxn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x2pfe"]
+atlas = ExtResource("7_ycay6")
+region = Rect2(0, 0, 350, 570)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1y01"]
+atlas = ExtResource("7_ycay6")
+region = Rect2(350, 0, 350, 570)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4blwa"]
+atlas = ExtResource("7_ycay6")
+region = Rect2(700, 0, 350, 570)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vqgqr"]
+atlas = ExtResource("7_ycay6")
+region = Rect2(1050, 0, 350, 570)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ogd8f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x2pfe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1y01")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4blwa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vqgqr")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 12.0
+}]
 
 [node name="Title_Screen" type="Node2D" unique_id=802357291]
 script = ExtResource("1_p3fck")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=729888305]
-position = Vector2(955.99994, 316.00003)
+[node name="Background" type="Sprite2D" parent="." unique_id=132021369]
+position = Vector2(972, 648)
+texture = ExtResource("2_0061g")
+
+[node name="Cloud1" type="Sprite2D" parent="." unique_id=2026914615]
+position = Vector2(972, 648)
+texture = ExtResource("3_8mikk")
+
+[node name="Cloud2" type="Sprite2D" parent="." unique_id=984948736]
+position = Vector2(972, 648)
+texture = ExtResource("4_sqelc")
+
+[node name="Cloud3" type="Sprite2D" parent="." unique_id=1143321146]
+position = Vector2(972, 648)
+texture = ExtResource("5_w5sh6")
+
+[node name="Building" type="Sprite2D" parent="." unique_id=1537171621]
+position = Vector2(972, 648)
+texture = ExtResource("6_o1e67")
+
+[node name="John" type="AnimatedSprite2D" parent="." unique_id=1736682461]
+position = Vector2(1418, 513)
+sprite_frames = SubResource("SpriteFrames_ogd8f")
+autoplay = "default"
+frame_progress = 0.038201362
+
+[node name="Logo" type="Sprite2D" parent="." unique_id=729888305]
+position = Vector2(527.00006, 357)
 scale = Vector2(0.8373174, 0.8373174)
-texture = ExtResource("1_klylv")
+texture = ExtResource("8_bsy20")
+
+[node name="Sign" type="Sprite2D" parent="." unique_id=1027915895]
+position = Vector2(419, 1050)
+texture = ExtResource("9_07cxn")
 
 [node name="Control" type="Control" parent="." unique_id=1675458193]
 layout_mode = 3
@@ -18,12 +91,13 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Button" type="Button" parent="Control" unique_id=1121766748]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -3.05
-anchor_top = -0.625
-anchor_right = 10.95
-anchor_bottom = 4.175
+anchor_left = -12.175
+anchor_top = 2.375
+anchor_right = -7.725
+anchor_bottom = 4.55
 offset_left = 622.0
 offset_top = 709.0
 offset_right = 1016.0
