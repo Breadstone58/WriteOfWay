@@ -36,7 +36,7 @@ var level_name = {
 	"level_8": "Jaywalkers",
 	"level_9": "180",
 	"level_10": "A Drift is a Move Your Car Makes",
-	"level_11": "Bricked Up",
+	"level_11": "Brick and Motor",
 	"level_12": "It's Raining, It's Pouring, the Driver is Turning",
 	"level_13": "Swerve City",
 	"level_14": "That's JUST a Guy",
