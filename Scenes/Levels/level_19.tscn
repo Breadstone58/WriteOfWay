@@ -452,7 +452,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 3.15),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1303, 103), Vector2(1307, 941)]
+"values": [Vector2(1473, 1073), Vector2(807, 1075)]
 }
 
 [sub_resource type="Animation" id="Animation_mucg7"]
@@ -466,10 +466,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 3.08),
+"times": PackedFloat32Array(0, 2.68),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1579, 991), Vector2(1113, 327)]
+"values": [Vector2(817, 417), Vector2(797, 1073)]
 }
 
 [sub_resource type="Animation" id="Animation_tdopa"]
@@ -483,15 +483,15 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2.97),
+"times": PackedFloat32Array(0, 2.84),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(989, 1003), Vector2(1501, 341)]
+"values": [Vector2(1471, 425), Vector2(1461, 1069)]
 }
 
 [sub_resource type="Animation" id="Animation_2iktx"]
 resource_name = "Move"
-length = 6.0333333
+length = 10.133333
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -500,10 +500,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 3.24),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 2.5, 5.1666665, 7.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(1758, 447), Vector2(1000, 685)]
+"values": [Vector2(1014, 85), Vector2(1568, 301), Vector2(1709, 896), Vector2(1568, 301)]
 }
 
 [sub_resource type="Animation" id="Animation_ic72l"]
@@ -622,10 +622,10 @@ position = Vector2(648.0001, 0)
 scale = Vector2(0.99999994, 0.99999994)
 tile_set = SubResource("TileSet_oyyby")
 format = 2
-layer_0/tile_data = PackedInt32Array(5, 65538, 0, 65541, 65538, 0, 65542, 65538, 0, 6, 65538, 0, 131078, 65538, 0, 196614, 65538, 0, 262150, 65538, 0, 327686, 2, 1, 131077, 65538, 0, 196613, 65538, 0, 262149, 65538, 0, 327685, 2, 1, 393221, 2, 1, 393222, 2, 1, 327687, 2, 0, 327688, 2, 0, 327689, 2, 0, 327690, 2, 0, 327691, 2, 0, 393223, 2, 0, 393224, 2, 0, 393225, 2, 0, 393226, 2, 0, 393227, 2, 0, 327684, 2, 0, 327683, 2, 0, 327682, 2, 0, 327681, 2, 0, 327680, 2, 0, 393216, 2, 0, 393217, 2, 0, 393218, 2, 0, 393219, 2, 0, 393220, 2, 0, 196615, 0, 0, 262151, 0, 1, 196612, 0, 0, 262148, 0, 1, 589833, 0, 2, 655369, 0, 3, 589826, 0, 2, 655362, 0, 3, 196609, 0, 2, 262145, 0, 3, 196618, 0, 2, 262154, 0, 3, 720900, 65537, 1, 720901, 65537, 1, 720902, 65537, 1, 720903, 65537, 1, 655364, 262145, 0, 655365, 262145, 0, 655366, 262145, 0, 655367, 262145, 0, 655368, 327681, 0, 720904, 327681, 1, 720899, 196609, 1, 655363, 196609, 0, 589824, 65537, 1342177281, 524288, 65537, 1342177281, 458753, 327681, 0, 458752, 262145, 0, 524289, 327681, 1, 589825, 327681, 1, 655361, 327681, 2, 655360, 262145, 2, 524298, 262145, 1342177282, 589834, 262145, 1342177282, 458762, 327681, 1610612736, 655370, 327681, 805306368, 655371, 327681, 1342177281, 458763, 327681, 1610612737, 524299, 65537, 1610612737, 589835, 65537, 1610612737)
+layer_0/tile_data = PackedInt32Array(655361, 2, 1, 655362, 2, 0, 655363, 2, 0, 655364, 2, 0, 655365, 2, 0, 655366, 2, 0, 655367, 2, 1, 262145, 2, 1, 262146, 2, 0, 262147, 2, 0, 262148, 2, 0, 262149, 2, 0, 262150, 2, 0, 262151, 2, 1, 589825, 65538, 0, 524289, 65538, 0, 458753, 65538, 0, 393217, 65538, 0, 327681, 65538, 0, 327687, 65538, 0, 393223, 65538, 0, 458759, 65538, 0, 524295, 65538, 0, 589831, 65538, 0, 720897, 262145, 0, 720898, 262145, 0, 720899, 262145, 0, 720900, 262145, 0, 720901, 262145, 0, 720902, 262145, 0, 720903, 262145, 0, 720896, 196609, 2, 655360, 196609, 1, 589824, 196609, 1, 524288, 196609, 1, 458752, 196609, 1, 393216, 196609, 1, 327680, 196609, 1, 262144, 196609, 1, 196608, 262145, 1, 589826, 196609, 2, 589827, 262145, 2, 589828, 262145, 2, 589829, 262145, 2, 327683, 262145, 805306370, 327684, 262145, 805306370, 327685, 262145, 805306370, 393222, 262145, 1610612738, 458758, 262145, 1610612738, 524294, 262145, 1610612738, 393218, 262145, 1342177282, 458754, 262145, 1342177282, 524290, 262145, 1342177282, 327686, 327681, 0, 589830, 327681, 2, 327682, 196609, 0, 393219, 65537, 1, 393220, 65537, 1, 393221, 65537, 1, 458757, 65537, 1, 458756, 65537, 1, 458755, 65537, 1, 524291, 65537, 1, 524292, 65537, 1, 524293, 65537, 1, 131072, 65537, 1342177281, 65536, 65537, 1342177281, 0, 65537, 1342177281, 1, 327681, 1, 65537, 327681, 1, 131073, 327681, 1, 196609, 327681, 2, 720904, 327681, 0, 131075, 0, 0, 196611, 0, 1, 589832, 0, 0, 655368, 0, 1)
 
 [node name="Car" parent="." unique_id=236793703 instance=ExtResource("10_ntf3k")]
-position = Vector2(1203, 954.99994)
+position = Vector2(1715, 167.00002)
 rotation = 1.5707964
 
 [node name="Pedestrian" parent="." unique_id=1425713004 instance=ExtResource("11_0d6li")]
@@ -636,17 +636,8 @@ jaywalker = true
 libraries/ = SubResource("AnimationLibrary_r74qd")
 autoplay = &"Move"
 
-[node name="Pedestrian2" parent="." unique_id=707552712 instance=ExtResource("11_0d6li")]
-position = Vector2(2292, 1106)
-jaywalker = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian2" unique_id=630405705]
-libraries/ = SubResource("AnimationLibrary_r74qd")
-autoplay = &"2"
-
 [node name="Pedestrian3" parent="." unique_id=1137896543 instance=ExtResource("11_0d6li")]
 position = Vector2(2292, 1106)
-jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian3" unique_id=1159239293]
 libraries/ = SubResource("AnimationLibrary_r74qd")
@@ -654,7 +645,6 @@ autoplay = &"3"
 
 [node name="Pedestrian4" parent="." unique_id=1051628933 instance=ExtResource("11_0d6li")]
 position = Vector2(2292, 1106)
-jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian4" unique_id=1764229782]
 libraries/ = SubResource("AnimationLibrary_r74qd")
@@ -662,7 +652,6 @@ autoplay = &"4"
 
 [node name="Pedestrian5" parent="." unique_id=1103056480 instance=ExtResource("11_0d6li")]
 position = Vector2(2292, 1106)
-jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian5" unique_id=1315317133]
 libraries/ = SubResource("AnimationLibrary_r74qd")

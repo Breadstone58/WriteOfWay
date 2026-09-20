@@ -20,14 +20,14 @@ var goal_times = {
 	"level_16": 20,
 	"level_17": 35,
 	"level_18": 60,
-	"level_19": 0,
+	"level_19": 60,
 	"level_20": 0,
 }
 
 var level_name = {
 	"level_0": "Mona Lisa",
 	"level_1": "Yield to Pedestrians",
-	"level_2": "Don't Be a Square",
+	"level_2": "Looping The Cubes",
 	"level_3": "Round and Round We Go",
 	"level_4": "Write Angles",
 	"level_5": "Pivot Point",
@@ -41,11 +41,11 @@ var level_name = {
 	"level_13": "Swerve City",
 	"level_14": "That's JUST a Guy",
 	"level_15": "Ask Me Anything",
-	"level_16": "Cupid's arrow straight through",
+	"level_16": "Affection Projectile",
 	"level_17": "Bro wanted a bite </3",
 	"level_18": "A blinding skyline",
-	"level_19": "",
-	"level_20": "",
+	"level_19": "My Darling, My Companion",
+	"level_20": "The Final Trial",
 }
 
 
@@ -69,7 +69,7 @@ var title_size = {
 	"level_16": 50,
 	"level_17": 50,
 	"level_18": 50,
-	"level_19": 0,
+	"level_19": 50,
 	"level_20": 0,
 }
 
