@@ -978,6 +978,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Clipboard" type="Sprite2D" parent="." unique_id=1067593176]
+visible = false
 z_index = 7
 z_as_relative = false
 position = Vector2(962, 283)
