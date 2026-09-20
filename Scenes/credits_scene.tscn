@@ -42,19 +42,35 @@ position = Vector2(972, 648)
 texture = ExtResource("4_u7lnj")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=201900531]
-offset_left = 262.0
-offset_top = 134.0
-offset_right = 1681.0
-offset_bottom = 1019.0
+offset_left = 280.0
+offset_top = 30.0
+offset_right = 1699.0
+offset_bottom = 1057.0
 color = Color(0, 0, 0, 0.7372549)
 
 [node name="Label" type="Label" parent="ColorRect" unique_id=334684347]
 layout_mode = 0
 offset_right = 1419.0
-offset_bottom = 885.0
+offset_bottom = 1027.0
 theme_override_fonts/font = ExtResource("6_nepx7")
 theme_override_font_sizes/font_size = 50
-text = "Credits"
+text = "Credits:
+Sean Hess - Director, Lead Programmer
+MJ Wilcox - Composer, Level Designer, Trailer Editor, Programmer
+JGPanther - Level Designer, Trailer Editor, Programmer, Voices
+Eppilem - Lead Artist
+
+Fonts Used:
+Ballpoint Signature
+Highway Gothic
+Seven Segment
+
+Additional Voices:
+@JustCallMeKyogre
+Sasha M.
+
+Submission for NC State 2026 Collegiate Game Jam
+Thank you for playing! "
 horizontal_alignment = 1
 vertical_alignment = 1
 
