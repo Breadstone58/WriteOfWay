@@ -9,6 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://ctlnsx3qogar5" path="res://Assets/Images/Main Menu/main_menu_john.png" id="7_ycay6"]
 [ext_resource type="Texture2D" uid="uid://5qk43aotin4s" path="res://Assets/Images/Main Menu/main_menu_logo.png" id="8_bsy20"]
 [ext_resource type="Texture2D" uid="uid://buccj3n1dr8p5" path="res://Assets/Images/Main Menu/main_menu_start.png" id="9_07cxn"]
+[ext_resource type="Texture2D" uid="uid://c2dachsmia5vv" path="res://Assets/Images/Main Menu/delete_save.png" id="10_8mikk"]
+[ext_resource type="Script" uid="uid://bn327oeo05va3" path="res://Scenes/delete_save.gd" id="11_o1e67"]
+[ext_resource type="Texture2D" uid="uid://blyl8iqik84iu" path="res://Assets/Images/Main Menu/save_warning.png" id="11_sqelc"]
+[ext_resource type="Script" uid="uid://cclum5jx3wo2r" path="res://Scenes/color_rect.gd" id="11_w5sh6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x2pfe"]
 atlas = ExtResource("7_ycay6")
@@ -100,6 +104,19 @@ texture = ExtResource("8_bsy20")
 position = Vector2(419, 1050)
 texture = ExtResource("9_07cxn")
 
+[node name="DeleteSave" type="Sprite2D" parent="." unique_id=1827619836]
+position = Vector2(-359.99988, 1076)
+scale = Vector2(0.83786404, 0.8378641)
+texture = ExtResource("10_8mikk")
+script = ExtResource("11_o1e67")
+
+[node name="DeleteSaveButton" type="Button" parent="DeleteSave" unique_id=343461799]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -284.0558
+offset_top = -247.05676
+offset_right = 287.636
+offset_bottom = 75.19116
+
 [node name="Control" type="Control" parent="." unique_id=1675458193]
 layout_mode = 3
 anchors_preset = 0
@@ -122,4 +139,43 @@ theme_override_font_sizes/font_size = 164
 text = "Start"
 metadata/_edit_use_anchors_ = true
 
+[node name="ColorRect" type="ColorRect" parent="." unique_id=655365313]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1546.0
+offset_top = 35.0
+offset_right = -68.0
+offset_bottom = 740.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_scale = Vector2(4, 4)
+color = Color(0, 0, 0, 0.8352941)
+script = ExtResource("11_w5sh6")
+
+[node name="WarningBox" type="Sprite2D" parent="ColorRect" unique_id=1567533267]
+position = Vector2(771.0001, 369)
+scale = Vector2(2.4107141, 2.4107144)
+texture = ExtResource("11_sqelc")
+
+[node name="DeleteSave" type="Button" parent="ColorRect/WarningBox" unique_id=368613429]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -177.95563
+offset_top = 41.06664
+offset_right = -33.600067
+offset_bottom = 118.63701
+
+[node name="DontDeleteSave" type="Button" parent="ColorRect/WarningBox" unique_id=2071590567]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 34.01474
+offset_top = 41.06664
+offset_right = 178.37027
+offset_bottom = 118.22218
+
+[connection signal="button_down" from="DeleteSave/DeleteSaveButton" to="ColorRect" method="_on_delete_save_button_button_down"]
 [connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]
+[connection signal="button_down" from="ColorRect/WarningBox/DeleteSave" to="DeleteSave" method="_on_delete_save_button_down"]
+[connection signal="button_down" from="ColorRect/WarningBox/DeleteSave" to="ColorRect" method="_on_delete_save_button_down"]
+[connection signal="button_down" from="ColorRect/WarningBox/DontDeleteSave" to="ColorRect" method="_on_dont_delete_save_button_down"]
