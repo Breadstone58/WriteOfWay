@@ -19,7 +19,7 @@ var goal_times = {
 	"level_15": 55,
 	"level_16": 20,
 	"level_17": 35,
-	"level_18": 0,
+	"level_18": 60,
 	"level_19": 0,
 	"level_20": 0,
 }
@@ -43,7 +43,7 @@ var level_name = {
 	"level_15": "Ask Me Anything",
 	"level_16": "Cupid's arrow straight through",
 	"level_17": "Bro wanted a bite </3",
-	"level_18": "",
+	"level_18": "A blinding skyline",
 	"level_19": "",
 	"level_20": "",
 }
@@ -68,7 +68,7 @@ var title_size = {
 	"level_15": 50,
 	"level_16": 50,
 	"level_17": 50,
-	"level_18": 0,
+	"level_18": 50,
 	"level_19": 0,
 	"level_20": 0,
 }
