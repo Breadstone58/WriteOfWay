@@ -274,6 +274,22 @@ region = Rect2(1500, 0, 250, 370)
 atlas = ExtResource("5_utq8r")
 region = Rect2(1750, 0, 250, 370)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_mb3ru"]
+atlas = ExtResource("5_utq8r")
+region = Rect2(2000, 0, 250, 370)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_551g3"]
+atlas = ExtResource("5_utq8r")
+region = Rect2(2250, 0, 250, 370)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7wlby"]
+atlas = ExtResource("5_utq8r")
+region = Rect2(2500, 0, 250, 370)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ulgy5"]
+atlas = ExtResource("5_utq8r")
+region = Rect2(2750, 0, 250, 370)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_ogd8f"]
 animations = [{
 "frames": [{
@@ -489,6 +505,18 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5r6fm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mb3ru")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_551g3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7wlby")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ulgy5")
 }],
 "loop": 1,
 "name": &"walk_blue",

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://4veqstnlv2l3" path="res://Scenes/Levels/level_0_button.gd" id="1_ev01q"]
 [ext_resource type="Texture2D" uid="uid://bmoa2shoq0gm6" path="res://Assets/Images/parking_lot.png" id="1_tseru"]
+[ext_resource type="Texture2D" uid="uid://dlxjrfjv4s0i8" path="res://Assets/Images/Tooltips/move_tooltip.png" id="1_x43ao"]
 [ext_resource type="Texture2D" uid="uid://cqu8x83dkxpoe" path="res://Assets/Images/parking_lot_border.png" id="2_6gg5s"]
 [ext_resource type="Texture2D" uid="uid://djsthupk0mhuw" path="res://icon.svg" id="2_dg6ua"]
 [ext_resource type="PackedScene" uid="uid://b1hf1a4452c42" path="res://Scenes/car.tscn" id="2_gxket"]
@@ -46,6 +47,7 @@
 [ext_resource type="Texture2D" uid="uid://ca2nw3wkgvlay" path="res://Assets/Cube_icon.png" id="42_1hhj3"]
 [ext_resource type="Script" uid="uid://bt2urmdj2kmbd" path="res://Scenes/Levels/level_20_button.gd" id="43_yte0v"]
 [ext_resource type="Texture2D" uid="uid://cheqo8l0tf461" path="res://Assets/Final_icon.png" id="44_ebcvh"]
+[ext_resource type="Texture2D" uid="uid://c7p0nx0x18ys3" path="res://Assets/Images/Tooltips/level_tooltip.png" id="48_mr72c"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ogd8f"]
 
@@ -55,6 +57,12 @@
 size = Vector2(113, 114.5)
 
 [node name="level select" type="Node2D" unique_id=1976467842]
+
+[node name="move_tooltip" type="Sprite2D" parent="." unique_id=1150046269]
+z_index = 1
+position = Vector2(494, 335)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("1_x43ao")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=960677373]
 position = Vector2(972, 648)
@@ -447,6 +455,11 @@ level = 19
 [node name="HighScoreTooltip20" parent="RankTooltips" unique_id=31950038 instance=ExtResource("21_v036f")]
 position = Vector2(1836, 1070.7999)
 level = 20
+
+[node name="enter_tooltip" type="Sprite2D" parent="." unique_id=1318757924]
+position = Vector2(460, 946.99994)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("48_mr72c")
 
 [connection signal="body_shape_entered" from="Area2D" to="Area2D" method="_on_body_shape_entered"]
 [connection signal="body_shape_entered" from="Area2D2" to="Area2D2" method="_on_body_shape_entered"]

@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://2sno2themyi6" path="res://Scenes/pedestrian.tscn" id="6_u40f0"]
 [ext_resource type="Texture2D" uid="uid://731oxyjw78x" path="res://Assets/Images/grass_sidewalk.png" id="7_u40f0"]
 [ext_resource type="Texture2D" uid="uid://dkk7u6gncvkvy" path="res://Assets/Images/transition.png" id="9_0x4y1"]
+[ext_resource type="Texture2D" uid="uid://bh6qdtch4w2jo" path="res://Assets/Images/Tooltips/ghost_tooltip.png" id="12_0x4y1"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q3bbs"]
 
@@ -574,3 +575,10 @@ position = Vector2(1289, 999)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian2" unique_id=811195326]
 libraries/ = SubResource("AnimationLibrary_r74qd")
 autoplay = &"ped_2"
+
+[node name="Tooltip_ghost" type="Sprite2D" parent="." unique_id=340804301]
+
+[node name="GhostTooltip" type="Sprite2D" parent="." unique_id=1715931773]
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(1278, 1179)
+texture = ExtResource("12_0x4y1")

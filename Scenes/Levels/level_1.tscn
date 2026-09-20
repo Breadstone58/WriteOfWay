@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://2sno2themyi6" path="res://Scenes/pedestrian.tscn" id="5_rb0md"]
 [ext_resource type="Texture2D" uid="uid://731oxyjw78x" path="res://Assets/Images/grass_sidewalk.png" id="7_u5ghp"]
 [ext_resource type="Texture2D" uid="uid://dkk7u6gncvkvy" path="res://Assets/Images/transition.png" id="9_hwvp3"]
+[ext_resource type="Texture2D" uid="uid://bmy1ca563shtw" path="res://Assets/Images/Tooltips/submit_tooltip.png" id="12_afv7b"]
+[ext_resource type="Texture2D" uid="uid://cc7u1vkl11ha6" path="res://Assets/Images/Tooltips/speed_tooltip.png" id="13_7r2dd"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q3bbs"]
 
@@ -537,3 +539,13 @@ position = Vector2(1356, 877)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian" unique_id=913902090]
 libraries/ = SubResource("AnimationLibrary_r74qd")
 autoplay = &"Move"
+
+[node name="Tooltip_submit" type="Sprite2D" parent="." unique_id=1762610651]
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(1121, 322)
+texture = ExtResource("12_afv7b")
+
+[node name="Tooltip_speed" type="Sprite2D" parent="." unique_id=613501794]
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(1067, 1090)
+texture = ExtResource("13_7r2dd")
