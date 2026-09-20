@@ -1,8 +1,6 @@
 extends AudioStreamPlayer
 
-var area = 0
-var game_start: bool = false
-
+@export var tracks: Array[AudioStream] = []
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	play_song()
@@ -15,6 +13,10 @@ func _level_select_entered():
 
 func play_song():
 	if playing == false:
+		stream = tracks[0]
+		play()
+		await finished
+		stream = tracks[1]
 		play()
 		
 func _level_start():

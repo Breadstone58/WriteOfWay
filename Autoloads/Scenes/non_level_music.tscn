@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://bmlqm7bdpx45q"]
 
+[ext_resource type="AudioStream" uid="uid://d2y686p2o2bm5" path="res://Assets/Sounds/Title_Intro.wav" id="2_21cme"]
+[ext_resource type="AudioStream" uid="uid://dgvf7j0nmor8g" path="res://Assets/Sounds/Title_loop.wav" id="3_xhvre"]
 [ext_resource type="Script" uid="uid://l6gjdomie872" path="res://Autoloads/Scenes/music_player.gd" id="3_xrrqv"]
 
 [node name="MusicPlayer" type="AudioStreamPlayer" unique_id=1498353498]
-autoplay = true
 script = ExtResource("3_xrrqv")
+tracks = Array[AudioStream]([ExtResource("2_21cme"), ExtResource("3_xhvre")])
