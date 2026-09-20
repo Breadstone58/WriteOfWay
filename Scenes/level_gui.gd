@@ -34,7 +34,7 @@ var level_name = {
 	"level_6": "The Perfect Angle",
 	"level_7": "The Pentagon",
 	"level_8": "Jaywalkers",
-	"level_9": "180",
+	"level_9": "New Jersey Drift",
 	"level_10": "A Drift is a Move Your Car Makes",
 	"level_11": "Brick and Motor",
 	"level_12": "It's Raining, It's Pouring, the Driver is Turning",
