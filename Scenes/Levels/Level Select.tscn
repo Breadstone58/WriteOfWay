@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cqu8x83dkxpoe" path="res://Assets/Images/parking_lot_border.png" id="2_6gg5s"]
 [ext_resource type="Texture2D" uid="uid://djsthupk0mhuw" path="res://icon.svg" id="2_dg6ua"]
 [ext_resource type="PackedScene" uid="uid://b1hf1a4452c42" path="res://Scenes/car.tscn" id="2_gxket"]
-[ext_resource type="Script" uid="uid://b3jmt0qdh2w6k" path="res://Scenes/Levels/Level_1_button.gd" id="3_2dc3q"]
+[ext_resource type="Script" uid="uid://b3jmt0qdh2w6k" path="res://Scenes/Levels/Level_1_Button.gd" id="3_2dc3q"]
 [ext_resource type="Script" uid="uid://c7envhka7ylm8" path="res://Scenes/Levels/level_2_button.gd" id="4_btrm8"]
 [ext_resource type="Script" uid="uid://vu101vf2bkj7" path="res://Scenes/Levels/level_3_button.gd" id="5_ev01q"]
 [ext_resource type="Texture2D" uid="uid://c4eoo08knfa5k" path="res://Assets/Images/Level Icons/Line_Icon.png" id="6_jkmto"]
@@ -134,12 +134,12 @@ collision_mask = 2
 script = ExtResource("5_ev01q")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D4" unique_id=1042232633]
-position = Vector2(1262, 170)
+position = Vector2(1770.2499, 174.9)
 scale = Vector2(0.10686717, 0.10686717)
 texture = ExtResource("10_pvybx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4" unique_id=1534978100]
-position = Vector2(1263, 169)
+position = Vector2(1771.2499, 173.9)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D5" type="Area2D" parent="." unique_id=1716523043]
@@ -147,12 +147,12 @@ collision_mask = 2
 script = ExtResource("6_mes4i")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D5" unique_id=1136051863]
-position = Vector2(1524.75, 176.25002)
+position = Vector2(1526.25, 492.15005)
 scale = Vector2(0.10686725, 0.10686725)
 texture = ExtResource("12_k7ynd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5" unique_id=882211923]
-position = Vector2(1523, 178)
+position = Vector2(1524.5, 493.90002)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D6" type="Area2D" parent="." unique_id=1978103787]
@@ -161,12 +161,12 @@ collision_mask = 2
 script = ExtResource("7_g4y4g")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D6" unique_id=592174900]
-position = Vector2(1797.25, 168.75)
+position = Vector2(1277.25, 483.65)
 scale = Vector2(0.11149697, 0.11381173)
 texture = ExtResource("14_ssk5v")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D6" unique_id=717824476]
-position = Vector2(1795, 167)
+position = Vector2(1275, 481.9)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D7" type="Area2D" parent="." unique_id=55110911]
@@ -174,12 +174,12 @@ collision_mask = 2
 script = ExtResource("8_o6thy")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D7" unique_id=1279939240]
-position = Vector2(759.00006, 497)
+position = Vector2(1520.25, 181.00003)
 scale = Vector2(0.11612655, 0.11458332)
 texture = ExtResource("16_ke3go")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D7" unique_id=120522799]
-position = Vector2(759, 493)
+position = Vector2(1520.25, 177.00003)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D8" type="Area2D" parent="." unique_id=1626319347]
@@ -200,12 +200,12 @@ collision_mask = 2
 script = ExtResource("10_vss88")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D9" unique_id=1606542130]
-position = Vector2(1270.0001, 498)
+position = Vector2(1265.0001, 180.00003)
 scale = Vector2(0.111496896, 0.111496896)
 texture = ExtResource("20_y6q1m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D9" unique_id=1541140856]
-position = Vector2(1269, 497)
+position = Vector2(1264, 179.00003)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D10" type="Area2D" parent="." unique_id=2019147008]
@@ -213,12 +213,12 @@ collision_mask = 2
 script = ExtResource("11_f63m1")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D10" unique_id=478398825]
-position = Vector2(1528, 491)
+position = Vector2(760.5, 486.00003)
 scale = Vector2(0.110339545, 0.112654306)
 texture = ExtResource("22_4ewpm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D10" unique_id=185771090]
-position = Vector2(1527, 492)
+position = Vector2(759.5, 487.00003)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D11" type="Area2D" parent="." unique_id=418041454]
@@ -226,12 +226,12 @@ collision_mask = 2
 script = ExtResource("12_vp670")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D11" unique_id=1767961179]
-position = Vector2(1764, 490.99997)
+position = Vector2(1261.25, 807)
 scale = Vector2(0.105324164, 0.105324164)
 texture = ExtResource("24_1hhj3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D11" unique_id=1592328029]
-position = Vector2(1762, 488)
+position = Vector2(1259.25, 804)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D12" type="Area2D" parent="." unique_id=560743942]
@@ -239,12 +239,12 @@ collision_mask = 2
 script = ExtResource("15_6gg5s")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D12" unique_id=1639892835]
-position = Vector2(751, 807)
+position = Vector2(1522.75, 804)
 scale = Vector2(0.09837961, 0.09837961)
 texture = ExtResource("26_yte0v")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D12" unique_id=742099912]
-position = Vector2(749, 808)
+position = Vector2(1520.75, 805)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D13" type="Area2D" parent="." unique_id=1437044837]
@@ -265,12 +265,12 @@ collision_mask = 2
 script = ExtResource("18_en283")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D14" unique_id=1918002122]
-position = Vector2(1271, 806)
+position = Vector2(748.75, 1132)
 scale = Vector2(0.10455249, 0.10455249)
 texture = ExtResource("30_d773r")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D14" unique_id=1046887415]
-position = Vector2(1270, 809)
+position = Vector2(747.75, 1135)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D15" type="Area2D" parent="." unique_id=547733453]
@@ -278,12 +278,12 @@ collision_mask = 2
 script = ExtResource("19_kkag3")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D15" unique_id=1497397946]
-position = Vector2(1520, 810)
+position = Vector2(1006, 1130)
 scale = Vector2(0.10185189, 0.10185189)
 texture = ExtResource("32_wkhbh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D15" unique_id=1895574538]
-position = Vector2(1520, 811)
+position = Vector2(1006, 1131)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D16" type="Area2D" parent="." unique_id=771541131]
@@ -305,12 +305,12 @@ collision_mask = 2
 script = ExtResource("35_pvybx")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D17" unique_id=828636120]
-position = Vector2(743, 1151)
+position = Vector2(742.75, 814.1001)
 scale = Vector2(0.10609567, 0.10609567)
 texture = ExtResource("36_k7ynd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D17" unique_id=909369617]
-position = Vector2(742, 1150)
+position = Vector2(739, 807.1001)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D18" type="Area2D" parent="." unique_id=1370441140]
@@ -319,12 +319,12 @@ collision_mask = 2
 script = ExtResource("37_ssk5v")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D18" unique_id=1737371569]
-position = Vector2(1010, 1153)
+position = Vector2(1774.75, 506.1001)
 scale = Vector2(0.10609567, 0.10609567)
 texture = ExtResource("38_ke3go")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D18" unique_id=932181687]
-position = Vector2(1012, 1154)
+position = Vector2(1776.75, 507.1001)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D19" type="Area2D" parent="." unique_id=1059516510]
@@ -385,19 +385,19 @@ position = Vector2(1078, 104)
 level = 2
 
 [node name="HighScoreTooltip3" parent="RankTooltips" unique_id=1574123894 instance=ExtResource("21_v036f")]
-position = Vector2(1320, 101)
+position = Vector2(1828.2498, 105.9)
 level = 3
 
 [node name="HighScoreTooltip4" parent="RankTooltips" unique_id=1623934373 instance=ExtResource("21_v036f")]
-position = Vector2(1586, 109)
+position = Vector2(1587.5, 424.9)
 level = 4
 
 [node name="HighScoreTooltip5" parent="RankTooltips" unique_id=762456435 instance=ExtResource("21_v036f")]
-position = Vector2(1852, 109)
+position = Vector2(1332, 423.89996)
 level = 5
 
 [node name="HighScoreTooltip6" parent="RankTooltips" unique_id=709341727 instance=ExtResource("21_v036f")]
-position = Vector2(819, 419.89996)
+position = Vector2(1580.2499, 103.90004)
 level = 6
 
 [node name="HighScoreTooltip7" parent="RankTooltips" unique_id=1047250508 instance=ExtResource("21_v036f")]
@@ -405,19 +405,19 @@ position = Vector2(1078, 420.89996)
 level = 7
 
 [node name="HighScoreTooltip8" parent="RankTooltips" unique_id=210689172 instance=ExtResource("21_v036f")]
-position = Vector2(1320, 417.89996)
+position = Vector2(1315, 99.900024)
 level = 8
 
 [node name="HighScoreTooltip9" parent="RankTooltips" unique_id=225926930 instance=ExtResource("21_v036f")]
-position = Vector2(1586, 425.89996)
+position = Vector2(818.5001, 420.9)
 level = 9
 
 [node name="HighScoreTooltip10" parent="RankTooltips" unique_id=1966423372 instance=ExtResource("21_v036f")]
-position = Vector2(1852, 425.89996)
+position = Vector2(1349.25, 741.89996)
 level = 10
 
 [node name="HighScoreTooltip11" parent="RankTooltips" unique_id=1939350765 instance=ExtResource("21_v036f")]
-position = Vector2(803, 747.9)
+position = Vector2(1574.75, 744.9)
 level = 11
 
 [node name="HighScoreTooltip12" parent="RankTooltips" unique_id=992183930 instance=ExtResource("21_v036f")]
@@ -425,11 +425,11 @@ position = Vector2(1062, 748.9)
 level = 12
 
 [node name="HighScoreTooltip13" parent="RankTooltips" unique_id=1545484188 instance=ExtResource("21_v036f")]
-position = Vector2(1304, 745.9)
+position = Vector2(781.7501, 1071.9)
 level = 13
 
 [node name="HighScoreTooltip14" parent="RankTooltips" unique_id=1841095569 instance=ExtResource("21_v036f")]
-position = Vector2(1570, 753.9)
+position = Vector2(1056.0001, 1073.9)
 level = 14
 
 [node name="HighScoreTooltip15" parent="RankTooltips" unique_id=375348993 instance=ExtResource("21_v036f")]
@@ -437,11 +437,11 @@ position = Vector2(1836, 753.9)
 level = 15
 
 [node name="HighScoreTooltip16" parent="RankTooltips" unique_id=1388398397 instance=ExtResource("21_v036f")]
-position = Vector2(803, 1064.7999)
+position = Vector2(800.0001, 721.9)
 level = 16
 
 [node name="HighScoreTooltip17" parent="RankTooltips" unique_id=1583582725 instance=ExtResource("21_v036f")]
-position = Vector2(1062, 1065.7999)
+position = Vector2(1826.75, 418.9001)
 level = 17
 
 [node name="HighScoreTooltip18" parent="RankTooltips" unique_id=2113971976 instance=ExtResource("21_v036f")]
