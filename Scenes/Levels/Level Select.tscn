@@ -47,7 +47,11 @@
 [ext_resource type="Texture2D" uid="uid://ca2nw3wkgvlay" path="res://Assets/Images/Level Icons/Cube_icon.png" id="42_1hhj3"]
 [ext_resource type="Script" uid="uid://bt2urmdj2kmbd" path="res://Scenes/Levels/level_20_button.gd" id="43_yte0v"]
 [ext_resource type="Texture2D" uid="uid://cheqo8l0tf461" path="res://Assets/Images/Level Icons/Final_icon.png" id="44_ebcvh"]
+[ext_resource type="Script" uid="uid://dgpivcgdjxxl7" path="res://Scenes/Levels/Main_Menu.gd" id="46_1ouw0"]
+[ext_resource type="Texture2D" uid="uid://dybor4f7fmh10" path="res://Assets/Levels/House.png" id="47_nqucp"]
+[ext_resource type="Script" uid="uid://qrgfqa07vtcd" path="res://Scenes/Levels/Quit.gd" id="48_c8yx2"]
 [ext_resource type="Texture2D" uid="uid://c7p0nx0x18ys3" path="res://Assets/Images/Tooltips/level_tooltip.png" id="48_mr72c"]
+[ext_resource type="Texture2D" uid="uid://b2npkht661cpc" path="res://Assets/Levels/Quit.png" id="49_byfyw"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ogd8f"]
 
@@ -369,6 +373,34 @@ texture = ExtResource("44_ebcvh")
 position = Vector2(1767, 1147)
 shape = SubResource("RectangleShape2D_oyyby")
 
+[node name="Area2D22" type="Area2D" parent="." unique_id=1691888669]
+position = Vector2(0, -12)
+collision_mask = 2
+script = ExtResource("46_1ouw0")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D22" unique_id=325811918]
+position = Vector2(281, 1189)
+scale = Vector2(0.10609567, 0.10609567)
+texture = ExtResource("47_nqucp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D22" unique_id=1713588357]
+position = Vector2(281, 1188)
+shape = SubResource("RectangleShape2D_oyyby")
+
+[node name="Area2D23" type="Area2D" parent="." unique_id=1746243457]
+position = Vector2(0, -12)
+collision_mask = 2
+script = ExtResource("48_c8yx2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D23" unique_id=360250503]
+position = Vector2(515, 1192)
+scale = Vector2(0.10609567, 0.10609567)
+texture = ExtResource("49_byfyw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D23" unique_id=1885531223]
+position = Vector2(516, 1191)
+shape = SubResource("RectangleShape2D_oyyby")
+
 [node name="Car" parent="." unique_id=236793703 instance=ExtResource("2_gxket")]
 position = Vector2(203, 660)
 rotation = 1.5707964
@@ -482,3 +514,5 @@ texture = ExtResource("48_mr72c")
 [connection signal="body_shape_entered" from="Area2D19" to="Area2D19" method="_on_body_shape_entered"]
 [connection signal="body_shape_entered" from="Area2D20" to="Area2D20" method="_on_body_shape_entered"]
 [connection signal="body_shape_entered" from="Area2D21" to="Area2D21" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="Area2D22" to="Area2D22" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="Area2D23" to="Area2D23" method="_on_body_shape_entered"]
