@@ -101,21 +101,20 @@ scale = Vector2(0.8373174, 0.8373174)
 texture = ExtResource("8_bsy20")
 
 [node name="Sign" type="Sprite2D" parent="." unique_id=1027915895]
-position = Vector2(419, 1050)
+position = Vector2(419, 1042)
 texture = ExtResource("9_07cxn")
 
 [node name="DeleteSave" type="Sprite2D" parent="." unique_id=1827619836]
-position = Vector2(-359.99988, 1076)
-scale = Vector2(0.83786404, 0.8378641)
+position = Vector2(418, 1324)
 texture = ExtResource("10_8mikk")
 script = ExtResource("11_o1e67")
 
 [node name="DeleteSaveButton" type="Button" parent="DeleteSave" unique_id=343461799]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = -284.0558
-offset_top = -247.05676
-offset_right = 287.636
-offset_bottom = 75.19116
+offset_left = -249.44397
+offset_top = -174.25256
+offset_right = 249.4437
+offset_bottom = -48.933838
 
 [node name="Control" type="Control" parent="." unique_id=1675458193]
 layout_mode = 3
@@ -128,9 +127,9 @@ self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -12.175
-anchor_top = 2.375
+anchor_top = 2.175
 anchor_right = -7.725
-anchor_bottom = 4.55
+anchor_bottom = 4.35
 offset_left = 622.0
 offset_top = 709.0
 offset_right = 1016.0

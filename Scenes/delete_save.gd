@@ -9,8 +9,8 @@ func _ready() -> void:
 		score_total += i
 	print(score_total)
 	if score_total != 140:
-		position.x = 1471
-		position.y = 1214
+		position.x = 418
+		position.y = 1324
 	else:
 		position.x = -360
 		position.y = 1076
