@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://qqrqhkeg2vty"]
 
 [ext_resource type="Script" uid="uid://bqrxw00jl5nxr" path="res://Scenes/level_gui.gd" id="1_vvh8v"]
-[ext_resource type="AudioStream" uid="uid://rq4her5fx2xn" path="res://Assets/Sounds/Rankings/Perfect.wav" id="2_0q1l0"]
+[ext_resource type="AudioStream" uid="uid://rq4her5fx2xn" path="res://Assets/Sounds/Rankings/perfect.wav" id="2_0q1l0"]
 [ext_resource type="Texture2D" uid="uid://h8lsp75su081" path="res://Assets/GUI/gui_back.png" id="2_eh1tm"]
 [ext_resource type="AudioStream" uid="uid://cl0xrxds2njvp" path="res://Assets/Sounds/Rankings/superb.wav" id="3_3sqbi"]
 [ext_resource type="Texture2D" uid="uid://dp4stfu44ccjb" path="res://Assets/GUI/car_front.png" id="3_ibeg1"]
@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://bs6t6mxbwivf8" path="res://Assets/GUI/clipboard.png" id="5_vnik3"]
 [ext_resource type="FontFile" uid="uid://dygjxuuo2ohr2" path="res://Assets/Fonts/Seven Segment.ttf" id="6_2ft1l"]
 [ext_resource type="AudioStream" uid="uid://dhbvqdlsj4nej" path="res://Assets/Sounds/Rankings/Ok.wav" id="6_nxwe8"]
-[ext_resource type="AudioStream" uid="uid://c6cq3yofu2hqa" path="res://Assets/Sounds/Rankings/I_guess_bro.wav" id="7_6krdj"]
+[ext_resource type="AudioStream" uid="uid://c6cq3yofu2hqa" path="res://Assets/Sounds/Rankings/i_guess_bro.wav" id="7_6krdj"]
 [ext_resource type="FontFile" uid="uid://d3h0xqvxgr2cq" path="res://Assets/Fonts/HWYGCOND.TTF" id="7_37ty5"]
 [ext_resource type="AudioStream" uid="uid://cwge2vjxts0nd" path="res://Assets/Sounds/Rankings/never_drive_again.wav" id="8_vfsgl"]
 [ext_resource type="FontFile" uid="uid://bybfa3axv1p6d" path="res://Assets/Fonts/Ballpoint Signature.otf" id="9_4220r"]

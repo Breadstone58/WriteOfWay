@@ -49,21 +49,37 @@ animations = [{
 [node name="Title_Screen" type="Node2D" unique_id=802357291]
 script = ExtResource("1_p3fck")
 
+[node name="Background" type="Sprite2D" parent="." unique_id=132021369]
+position = Vector2(972, 648)
+texture = ExtResource("2_0061g")
+
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=1655403208]
+repeat_size = Vector2(1944, 1296)
+autoscroll = Vector2(50, 0)
+repeat_times = 100
+follow_viewport = false
 
 [node name="Cloud1" type="Sprite2D" parent="Parallax2D" unique_id=2026914615]
 position = Vector2(972, 648)
 texture = ExtResource("3_8mikk")
 
-[node name="Background" type="Sprite2D" parent="." unique_id=132021369]
-position = Vector2(972, 648)
-texture = ExtResource("2_0061g")
+[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=1274920972]
+repeat_size = Vector2(1944, 1296)
+autoscroll = Vector2(130, 0)
+repeat_times = 100
+follow_viewport = false
 
-[node name="Cloud2" type="Sprite2D" parent="." unique_id=984948736]
+[node name="Cloud2" type="Sprite2D" parent="Parallax2D2" unique_id=984948736]
 position = Vector2(972, 648)
 texture = ExtResource("4_sqelc")
 
-[node name="Cloud3" type="Sprite2D" parent="." unique_id=1143321146]
+[node name="Parallax2D3" type="Parallax2D" parent="." unique_id=680739288]
+repeat_size = Vector2(1944, 1296)
+autoscroll = Vector2(180, 0)
+repeat_times = 100
+follow_viewport = false
+
+[node name="Cloud3" type="Sprite2D" parent="Parallax2D3" unique_id=1143321146]
 position = Vector2(972, 648)
 texture = ExtResource("5_w5sh6")
 
@@ -76,7 +92,7 @@ position = Vector2(1402, 552.00006)
 scale = Vector2(0.8457144, 0.8457144)
 sprite_frames = SubResource("SpriteFrames_ogd8f")
 autoplay = "default"
-frame_progress = 0.7382639
+frame_progress = 0.3068872
 
 [node name="Logo" type="Sprite2D" parent="." unique_id=729888305]
 position = Vector2(596, 373.00003)
