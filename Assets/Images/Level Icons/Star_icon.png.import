@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://uqpy7fky8pc3"
-path="res://.godot/imported/Squiggle_Icon.png-72d0b07624eb0ae0086f33be03570ac7.ctex"
+uid="uid://cshnnrt6lf73p"
+path="res://.godot/imported/Star_icon.png-2c1d3f91ac84adb0ea8d7f3427c26725.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Squiggle_Icon.png"
-dest_files=["res://.godot/imported/Squiggle_Icon.png-72d0b07624eb0ae0086f33be03570ac7.ctex"]
+source_file="res://Assets/Images/Level Icons/Star_icon.png"
+dest_files=["res://.godot/imported/Star_icon.png-2c1d3f91ac84adb0ea8d7f3427c26725.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgnlliv4iwqny"
-path="res://.godot/imported/Man_Icon.png-140e93d6eb9dd3f6da62202b1b82fe15.ctex"
+uid="uid://c4eoo08knfa5k"
+path="res://.godot/imported/Line_Icon.png-d99f89b859b8a48809dd1e1d94a3b67a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Man_Icon.png"
-dest_files=["res://.godot/imported/Man_Icon.png-140e93d6eb9dd3f6da62202b1b82fe15.ctex"]
+source_file="res://Assets/Images/Level Icons/Line_Icon.png"
+dest_files=["res://.godot/imported/Line_Icon.png-d99f89b859b8a48809dd1e1d94a3b67a.ctex"]
 
 [params]
 

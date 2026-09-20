@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtxe2xiese00d"
-path="res://.godot/imported/level_icon.png-879b947b52d632440155cc702a4a747c.ctex"
+uid="uid://bhe1n388f7v0l"
+path="res://.godot/imported/SquareSquiggle_Icon.png-a7cd288834ca180372cc44bcb8eb2cfd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/level_icon.png"
-dest_files=["res://.godot/imported/level_icon.png-879b947b52d632440155cc702a4a747c.ctex"]
+source_file="res://Assets/Images/Level Icons/SquareSquiggle_Icon.png"
+dest_files=["res://.godot/imported/SquareSquiggle_Icon.png-a7cd288834ca180372cc44bcb8eb2cfd.ctex"]
 
 [params]
 

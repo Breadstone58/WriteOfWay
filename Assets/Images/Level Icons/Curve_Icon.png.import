@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbhucldt3pik5"
-path="res://.godot/imported/Bricks_Icon.png-6c357a949e2b6ce96f68bf35b6c14505.ctex"
+uid="uid://h8i6uloc5v0y"
+path="res://.godot/imported/Curve_Icon.png-a3ece42e98e522c6156ccc4c308d9a80.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bricks_Icon.png"
-dest_files=["res://.godot/imported/Bricks_Icon.png-6c357a949e2b6ce96f68bf35b6c14505.ctex"]
+source_file="res://Assets/Images/Level Icons/Curve_Icon.png"
+dest_files=["res://.godot/imported/Curve_Icon.png-a3ece42e98e522c6156ccc4c308d9a80.ctex"]
 
 [params]
 

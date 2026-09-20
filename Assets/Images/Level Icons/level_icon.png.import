@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ce8v5i10pxfv"
-path="res://.godot/imported/Verity_Icon.png-6d0161e2182d8aadbda013a9cd65bfd5.ctex"
+uid="uid://dtxe2xiese00d"
+path="res://.godot/imported/level_icon.png-a9c15437cfcc2e081f821f8c41965256.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Verity_Icon.png"
-dest_files=["res://.godot/imported/Verity_Icon.png-6d0161e2182d8aadbda013a9cd65bfd5.ctex"]
+source_file="res://Assets/Images/Level Icons/level_icon.png"
+dest_files=["res://.godot/imported/level_icon.png-a9c15437cfcc2e081f821f8c41965256.ctex"]
 
 [params]
 
