@@ -193,3 +193,8 @@ func display_rank():
 	$RankSFX.stream = rank_sfx[rank]
 	$RankAudio.play()
 	$RankSFX.play()
+	var level_num = int(String(get_tree().current_scene.name)[-1])
+	print("Level: " + str(level_num))
+	print("High_score: " + str(GlobVar.high_scores[level_num-1]))
+	if rank < GlobVar.high_scores[level_num-1]:
+		GlobVar.high_scores[level_num-1] = rank
