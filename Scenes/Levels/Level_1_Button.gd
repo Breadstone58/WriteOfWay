@@ -3,6 +3,7 @@ extends Area2D
 func _ready() -> void:
 	GlobVar.rank_displayed = false
 	SignalBus.level_select.emit()
+	GlobVar.load_data()
 	
 func _process(_delta: float) -> void:
 	if Input.is_key_pressed(KEY_E) and get_overlapping_bodies().size() > 0:

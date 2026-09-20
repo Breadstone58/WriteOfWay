@@ -35,6 +35,7 @@
 [ext_resource type="Texture2D" uid="uid://c0pwou6wjaf64" path="res://Assets/GUI/gui_cloud_3.png" id="20_w6k3p"]
 [ext_resource type="Script" uid="uid://f4vdr2ewn8xg" path="res://Scenes/steve_stop_sign.gd" id="21_7va5q"]
 [ext_resource type="AudioStream" uid="uid://dg7t75c5mou4i" path="res://Assets/Sounds/writing_sound_effect.wav" id="21_nxwe8"]
+[ext_resource type="Texture2D" uid="uid://7twdeg0pafnp" path="res://Assets/GUI/stevestopsign_extra_frame.png" id="27_o35ek"]
 [ext_resource type="Texture2D" uid="uid://daw2tn00cqj2c" path="res://Assets/Images/Tooltips/exit_tooltip.png" id="34_5mkc7"]
 
 [sub_resource type="AudioStreamWAV" id="AudioStreamWAV_1fc3a"]
@@ -317,8 +318,8 @@ atlas = ExtResource("20_tcvno")
 region = Rect2(2500, 2500, 500, 500)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p1l2u"]
-atlas = ExtResource("20_tcvno")
-region = Rect2(3000, 2500, 500, 500)
+atlas = ExtResource("27_o35ek")
+region = Rect2(0, 0, 500, 500)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rg5lx"]
 atlas = ExtResource("20_tcvno")
@@ -930,7 +931,7 @@ script = ExtResource("13_p1nyl")
 [node name="SteveStopSign" type="AnimatedSprite2D" parent="Car_Frame/Car_Seats" unique_id=453719098]
 position = Vector2(-167, 4)
 sprite_frames = SubResource("SpriteFrames_1fc3a")
-animation = &"writing_results"
+animation = &"drophat"
 script = ExtResource("21_7va5q")
 
 [node name="Display" type="AnimatedSprite2D" parent="." unique_id=1659944236]
