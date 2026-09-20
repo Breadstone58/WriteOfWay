@@ -68,7 +68,7 @@ func _physics_process(delta):
 			max_speed = 300
 			acceleration = 300
 	if Input.is_action_just_pressed("reset"):
-		get_tree().reload_current_scene()
+		SceneTransition.change_scene(get_tree().current_scene.scene_file_path)
 	if Input.is_action_just_pressed("menu"):
-		get_tree().change_scene_to_file("res://Scenes/Levels/Level Select.tscn")
+		SceneTransition.change_scene("res://Scenes/Levels/Level Select.tscn")
 		
