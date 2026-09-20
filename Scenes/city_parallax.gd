@@ -1,11 +1,12 @@
 extends Parallax2D
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+var rotation_flip = 1
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	autoscroll.x = 800 * Input.get_axis("turn_left", "turn_right")
+	if Input.is_action_pressed("backward"):
+		rotation_flip = -1
+	else:
+		rotation_flip = 1
+	autoscroll.x = 800 * Input.get_axis("turn_left", "turn_right") * rotation_flip
