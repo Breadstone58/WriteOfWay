@@ -27,8 +27,8 @@
 [ext_resource type="Texture2D" uid="uid://coqp27xjtdlmw" path="res://Assets/Pentagon_Icon.png" id="18_yspar"]
 [ext_resource type="Script" uid="uid://bmb4ihui75rhd" path="res://Scenes/Levels/Level_14_button.gd" id="19_kkag3"]
 [ext_resource type="Script" uid="uid://d32fg1g04nvqe" path="res://Scenes/Levels/Level_15_button.gd" id="20_v036f"]
-[ext_resource type="PackedScene" uid="uid://cg7cl8ttkboe1" path="res://Scenes/rank_high_score.tscn" id="21_v036f"]
 [ext_resource type="Texture2D" uid="uid://h8i6uloc5v0y" path="res://Assets/Curve_Icon.png" id="20_y6q1m"]
+[ext_resource type="PackedScene" uid="uid://cg7cl8ttkboe1" path="res://Scenes/rank_high_score.tscn" id="21_v036f"]
 [ext_resource type="Texture2D" uid="uid://dl21b2skyifg3" path="res://Assets/S_Icon.png" id="22_4ewpm"]
 [ext_resource type="Texture2D" uid="uid://cshnnrt6lf73p" path="res://Assets/Star_icon.png" id="24_1hhj3"]
 [ext_resource type="Texture2D" uid="uid://cbhucldt3pik5" path="res://Assets/Bricks_Icon.png" id="26_yte0v"]
@@ -36,7 +36,7 @@
 [ext_resource type="Texture2D" uid="uid://uqpy7fky8pc3" path="res://Assets/Squiggle_Icon.png" id="30_d773r"]
 [ext_resource type="Texture2D" uid="uid://bgnlliv4iwqny" path="res://Assets/Man_Icon.png" id="32_wkhbh"]
 [ext_resource type="Texture2D" uid="uid://ce8v5i10pxfv" path="res://Assets/Verity_Icon.png" id="34_x43ao"]
-[ext_resource type="Script" uid="uid://c40hpr2q5wo01" path="res://Scenes/Levels/level_16_button.gd" id="35_pvybx"]
+[ext_resource type="Script" uid="uid://c40hpr2q5wo01" path="res://Scenes/Levels/Level_16_button.gd" id="35_pvybx"]
 [ext_resource type="Texture2D" uid="uid://drhmclh2pibb8" path="res://Assets/Heart_icon.png" id="36_k7ynd"]
 [ext_resource type="Script" uid="uid://dmqhw2rw5uxg8" path="res://Scenes/Levels/level_17_button.gd" id="37_ssk5v"]
 [ext_resource type="Texture2D" uid="uid://dttkk3lohp5ir" path="res://Assets/Pizza_icon.png" id="38_ke3go"]
@@ -148,6 +148,7 @@ position = Vector2(1523, 178)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D6" type="Area2D" parent="." unique_id=1978103787]
+position = Vector2(0, 9)
 collision_mask = 2
 script = ExtResource("7_g4y4g")
 
@@ -291,6 +292,7 @@ position = Vector2(1780, 809)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D17" type="Area2D" parent="." unique_id=373426202]
+position = Vector2(0, -12)
 collision_mask = 2
 script = ExtResource("35_pvybx")
 
@@ -304,6 +306,7 @@ position = Vector2(742, 1150)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D18" type="Area2D" parent="." unique_id=1370441140]
+position = Vector2(0, -12)
 collision_mask = 2
 script = ExtResource("37_ssk5v")
 
@@ -317,6 +320,7 @@ position = Vector2(1012, 1154)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D19" type="Area2D" parent="." unique_id=1059516510]
+position = Vector2(0, -12)
 collision_mask = 2
 script = ExtResource("39_y6q1m")
 
@@ -330,6 +334,7 @@ position = Vector2(1253, 1153)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D20" type="Area2D" parent="." unique_id=2043782885]
+position = Vector2(0, -12)
 collision_mask = 2
 script = ExtResource("41_4ewpm")
 
@@ -343,6 +348,7 @@ position = Vector2(1516, 1147)
 shape = SubResource("RectangleShape2D_oyyby")
 
 [node name="Area2D21" type="Area2D" parent="." unique_id=2066697636]
+position = Vector2(0, -12)
 collision_mask = 2
 script = ExtResource("43_yte0v")
 
@@ -365,6 +371,82 @@ collision_mask = 5
 [node name="HighScoreTooltip" parent="RankTooltips" unique_id=1614341049 instance=ExtResource("21_v036f")]
 position = Vector2(819, 103.000015)
 level = 1
+
+[node name="HighScoreTooltip2" parent="RankTooltips" unique_id=1595376172 instance=ExtResource("21_v036f")]
+position = Vector2(1078, 104)
+level = 2
+
+[node name="HighScoreTooltip3" parent="RankTooltips" unique_id=1574123894 instance=ExtResource("21_v036f")]
+position = Vector2(1320, 101)
+level = 3
+
+[node name="HighScoreTooltip4" parent="RankTooltips" unique_id=1623934373 instance=ExtResource("21_v036f")]
+position = Vector2(1586, 109)
+level = 4
+
+[node name="HighScoreTooltip5" parent="RankTooltips" unique_id=762456435 instance=ExtResource("21_v036f")]
+position = Vector2(1852, 109)
+level = 5
+
+[node name="HighScoreTooltip6" parent="RankTooltips" unique_id=709341727 instance=ExtResource("21_v036f")]
+position = Vector2(819, 419.89996)
+level = 6
+
+[node name="HighScoreTooltip7" parent="RankTooltips" unique_id=1047250508 instance=ExtResource("21_v036f")]
+position = Vector2(1078, 420.89996)
+level = 7
+
+[node name="HighScoreTooltip8" parent="RankTooltips" unique_id=210689172 instance=ExtResource("21_v036f")]
+position = Vector2(1320, 417.89996)
+level = 8
+
+[node name="HighScoreTooltip9" parent="RankTooltips" unique_id=225926930 instance=ExtResource("21_v036f")]
+position = Vector2(1586, 425.89996)
+level = 9
+
+[node name="HighScoreTooltip10" parent="RankTooltips" unique_id=1966423372 instance=ExtResource("21_v036f")]
+position = Vector2(1852, 425.89996)
+level = 10
+
+[node name="HighScoreTooltip11" parent="RankTooltips" unique_id=1939350765 instance=ExtResource("21_v036f")]
+position = Vector2(803, 747.9)
+level = 11
+
+[node name="HighScoreTooltip12" parent="RankTooltips" unique_id=992183930 instance=ExtResource("21_v036f")]
+position = Vector2(1062, 748.9)
+level = 12
+
+[node name="HighScoreTooltip13" parent="RankTooltips" unique_id=1545484188 instance=ExtResource("21_v036f")]
+position = Vector2(1304, 745.9)
+level = 13
+
+[node name="HighScoreTooltip14" parent="RankTooltips" unique_id=1841095569 instance=ExtResource("21_v036f")]
+position = Vector2(1570, 753.9)
+level = 14
+
+[node name="HighScoreTooltip15" parent="RankTooltips" unique_id=375348993 instance=ExtResource("21_v036f")]
+position = Vector2(1836, 753.9)
+level = 15
+
+[node name="HighScoreTooltip16" parent="RankTooltips" unique_id=1388398397 instance=ExtResource("21_v036f")]
+position = Vector2(803, 1064.7999)
+level = 16
+
+[node name="HighScoreTooltip17" parent="RankTooltips" unique_id=1583582725 instance=ExtResource("21_v036f")]
+position = Vector2(1062, 1065.7999)
+level = 17
+
+[node name="HighScoreTooltip18" parent="RankTooltips" unique_id=2113971976 instance=ExtResource("21_v036f")]
+position = Vector2(1304, 1062.7999)
+level = 18
+
+[node name="HighScoreTooltip19" parent="RankTooltips" unique_id=1977706581 instance=ExtResource("21_v036f")]
+position = Vector2(1570, 1070.7999)
+level = 19
+
+[node name="HighScoreTooltip20" parent="RankTooltips" unique_id=31950038 instance=ExtResource("21_v036f")]
+position = Vector2(1836, 1070.7999)
+level = 20
 
 [connection signal="body_shape_entered" from="Area2D" to="Area2D" method="_on_body_shape_entered"]
 [connection signal="body_shape_entered" from="Area2D2" to="Area2D2" method="_on_body_shape_entered"]

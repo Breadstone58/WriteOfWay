@@ -49,13 +49,15 @@ animations = [{
 [node name="Title_Screen" type="Node2D" unique_id=802357291]
 script = ExtResource("1_p3fck")
 
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1655403208]
+
+[node name="Cloud1" type="Sprite2D" parent="Parallax2D" unique_id=2026914615]
+position = Vector2(972, 648)
+texture = ExtResource("3_8mikk")
+
 [node name="Background" type="Sprite2D" parent="." unique_id=132021369]
 position = Vector2(972, 648)
 texture = ExtResource("2_0061g")
-
-[node name="Cloud1" type="Sprite2D" parent="." unique_id=2026914615]
-position = Vector2(972, 648)
-texture = ExtResource("3_8mikk")
 
 [node name="Cloud2" type="Sprite2D" parent="." unique_id=984948736]
 position = Vector2(972, 648)
@@ -70,13 +72,14 @@ position = Vector2(972, 648)
 texture = ExtResource("6_o1e67")
 
 [node name="John" type="AnimatedSprite2D" parent="." unique_id=1736682461]
-position = Vector2(1418, 513)
+position = Vector2(1402, 552.00006)
+scale = Vector2(0.8457144, 0.8457144)
 sprite_frames = SubResource("SpriteFrames_ogd8f")
 autoplay = "default"
-frame_progress = 0.038201362
+frame_progress = 0.7382639
 
 [node name="Logo" type="Sprite2D" parent="." unique_id=729888305]
-position = Vector2(527.00006, 357)
+position = Vector2(596, 373.00003)
 scale = Vector2(0.8373174, 0.8373174)
 texture = ExtResource("8_bsy20")
 
