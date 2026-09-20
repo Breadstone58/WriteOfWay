@@ -27,8 +27,12 @@
 [ext_resource type="AudioStream" uid="uid://bhd4h48yoei0i" path="res://Assets/Sounds/RankSFX/d_rank.wav" id="14_4embk"]
 [ext_resource type="Texture2D" uid="uid://c5kt5ugp4i0co" path="res://Assets/GUI/city_parallax_gui.png" id="16_4m01o"]
 [ext_resource type="Script" uid="uid://bgixujc3cavc6" path="res://Scenes/city_parallax.gd" id="16_q7ima"]
+[ext_resource type="Texture2D" uid="uid://dbvgq1w8rnwx0" path="res://Assets/GUI/gui_cloud_1.png" id="18_uxl4x"]
+[ext_resource type="Script" uid="uid://dtg60wtihy48a" path="res://Scenes/parallax_clouds_gui.gd" id="18_w4c12"]
+[ext_resource type="Texture2D" uid="uid://c27ne1drsdsec" path="res://Assets/GUI/gui_cloud_2.png" id="19_4embk"]
 [ext_resource type="Texture2D" uid="uid://cnpy0wuc1xi8y" path="res://Assets/GUI/SteveStopSign.png" id="20_tcvno"]
 [ext_resource type="AudioStream" uid="uid://c51mmrvv0rri0" path="res://Assets/Sounds/This Truly Was Our Write of Way.wav" id="20_ulgpf"]
+[ext_resource type="Texture2D" uid="uid://c0pwou6wjaf64" path="res://Assets/GUI/gui_cloud_3.png" id="20_w6k3p"]
 [ext_resource type="Script" uid="uid://f4vdr2ewn8xg" path="res://Scenes/steve_stop_sign.gd" id="21_7va5q"]
 [ext_resource type="AudioStream" uid="uid://dg7t75c5mou4i" path="res://Assets/Sounds/writing_sound_effect.wav" id="21_nxwe8"]
 
@@ -870,6 +874,34 @@ position = Vector2(329, 288)
 texture = ExtResource("16_4m01o")
 
 [node name="Parallax2D2" type="Parallax2D" parent="." unique_id=345133066]
+repeat_size = Vector2(1296, 1296)
+follow_viewport = false
+script = ExtResource("18_w4c12")
+base_speed = 50.0
+
+[node name="cloud_1" type="Sprite2D" parent="Parallax2D2" unique_id=1774949180]
+position = Vector2(329, -216.5)
+texture = ExtResource("18_uxl4x")
+
+[node name="Parallax2D3" type="Parallax2D" parent="." unique_id=249903999]
+repeat_size = Vector2(1296, 1296)
+follow_viewport = false
+script = ExtResource("18_w4c12")
+base_speed = 130.0
+
+[node name="cloud_2" type="Sprite2D" parent="Parallax2D3" unique_id=1913324211]
+position = Vector2(329, -216.5)
+texture = ExtResource("19_4embk")
+
+[node name="Parallax2D4" type="Parallax2D" parent="." unique_id=634148034]
+repeat_size = Vector2(1296, 1296)
+follow_viewport = false
+script = ExtResource("18_w4c12")
+base_speed = 180.0
+
+[node name="cloud_3" type="Sprite2D" parent="Parallax2D4" unique_id=402207610]
+position = Vector2(329, -216.5)
+texture = ExtResource("20_w6k3p")
 
 [node name="Car_Frame" type="Sprite2D" parent="." unique_id=1318790225]
 z_index = 11

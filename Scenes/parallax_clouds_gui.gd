@@ -1,11 +1,11 @@
 extends Parallax2D
 
 
+@export var base_speed: float = 0.0
+
 # Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	autoscroll.x = 800 * Input.get_axis("turn_left", "turn_right")
+	autoscroll.x = base_speed + 800 * Input.get_axis("turn_left", "turn_right")
