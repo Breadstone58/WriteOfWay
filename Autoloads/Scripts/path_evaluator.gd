@@ -17,11 +17,11 @@ var layout_dictionary = {
 	"level_13": "scribble.png",
 	"level_14": "man.png",
 	"level_15": "Verity.png",
-	"level_16": "",
-	"level_17": "",
-	"level_18": "",
-	"level_19": "",
-	"level_20": "",
+	"level_16": "Heart.png",
+	"level_17": "Pizza.png",
+	"level_18": "Towers.png",
+	"level_19": "Cube.png",
+	"level_20": "Final.png",
 }
 
 # Called when the node enters the scene tree for the first time.

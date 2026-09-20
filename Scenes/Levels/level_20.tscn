@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://06bogbyupfw0"]
 
 [ext_resource type="PackedScene" uid="uid://qqrqhkeg2vty" path="res://Scenes/level_gui.tscn" id="1_le2pw"]
-[ext_resource type="Texture2D" uid="uid://cn60jwdoi7heo" path="res://Assets/Levels/star.png" id="2_p0xib"]
+[ext_resource type="Texture2D" uid="uid://c03wqtxvbxd54" path="res://Assets/Levels/Final.png" id="2_le2pw"]
 [ext_resource type="Script" uid="uid://3wha3t74yl7n" path="res://Scenes/Levels/show_track.gd" id="3_7xwes"]
 [ext_resource type="Texture2D" uid="uid://b82kd1t7kwun6" path="res://Assets/Images/road.png" id="4_dd13t"]
 [ext_resource type="Texture2D" uid="uid://bi6ssowh6r36h" path="res://Assets/Images/border.png" id="5_swiw3"]
@@ -445,7 +445,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../Pedestrian3:position")
+tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -479,7 +479,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../Pedestrian5:position")
+tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -524,7 +524,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("../Pedestrian3:position")
+tracks/1/path = NodePath(".:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -536,7 +536,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("../Pedestrian5:position")
+tracks/2/path = NodePath(".:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -556,7 +556,7 @@ _data = {
 &"RESET": SubResource("Animation_ic72l")
 }
 
-[node name="level_10" type="Node2D" unique_id=2136935647]
+[node name="level_20" type="Node2D" unique_id=2136935647]
 
 [node name="Level GUI" parent="." unique_id=467917947 instance=ExtResource("1_le2pw")]
 
@@ -605,7 +605,7 @@ shape = SubResource("WorldBoundaryShape2D_4xhwt")
 modulate = Color(1, 1, 1, 0.33333334)
 z_index = 1
 z_as_relative = false
-texture = ExtResource("2_p0xib")
+texture = ExtResource("2_le2pw")
 script = ExtResource("3_7xwes")
 
 [node name="Sprite2D" type="Sprite2D" parent="Camera2D/Road" unique_id=1573863391]
@@ -629,7 +629,7 @@ position = Vector2(1203, 954.99994)
 rotation = 1.5707964
 
 [node name="Pedestrian" parent="." unique_id=1425713004 instance=ExtResource("11_v3tx4")]
-position = Vector2(1758, 447)
+position = Vector2(2292, 1106)
 jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian" unique_id=913902090]
@@ -637,7 +637,7 @@ libraries/ = SubResource("AnimationLibrary_r74qd")
 autoplay = &"Move"
 
 [node name="Pedestrian2" parent="." unique_id=707552712 instance=ExtResource("11_v3tx4")]
-position = Vector2(833, 438)
+position = Vector2(2292, 1106)
 jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian2" unique_id=630405705]
@@ -645,7 +645,7 @@ libraries/ = SubResource("AnimationLibrary_r74qd")
 autoplay = &"2"
 
 [node name="Pedestrian3" parent="." unique_id=1137896543 instance=ExtResource("11_v3tx4")]
-position = Vector2(1303, 103)
+position = Vector2(2292, 1106)
 jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian3" unique_id=1159239293]
@@ -653,7 +653,7 @@ libraries/ = SubResource("AnimationLibrary_r74qd")
 autoplay = &"3"
 
 [node name="Pedestrian4" parent="." unique_id=1051628933 instance=ExtResource("11_v3tx4")]
-position = Vector2(1579, 991)
+position = Vector2(2292, 1106)
 jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian4" unique_id=1764229782]
@@ -661,7 +661,7 @@ libraries/ = SubResource("AnimationLibrary_r74qd")
 autoplay = &"4"
 
 [node name="Pedestrian5" parent="." unique_id=1103056480 instance=ExtResource("11_v3tx4")]
-position = Vector2(989, 1003)
+position = Vector2(2292, 1106)
 jaywalker = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Pedestrian5" unique_id=1315317133]
