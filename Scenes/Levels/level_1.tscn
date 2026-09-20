@@ -11,7 +11,10 @@
 [ext_resource type="PackedScene" uid="uid://2sno2themyi6" path="res://Scenes/pedestrian.tscn" id="5_rb0md"]
 [ext_resource type="Texture2D" uid="uid://731oxyjw78x" path="res://Assets/Images/grass_sidewalk.png" id="7_u5ghp"]
 [ext_resource type="Texture2D" uid="uid://dkk7u6gncvkvy" path="res://Assets/Images/transition.png" id="9_hwvp3"]
+[ext_resource type="Texture2D" uid="uid://bu8es85hsk7ho" path="res://Assets/Images/grass_sidewalk_overlay.png" id="10_3628d"]
+[ext_resource type="Texture2D" uid="uid://cg3k1xwy5q382" path="res://Assets/Images/sidewalk_corners.png" id="11_irw6p"]
 [ext_resource type="Texture2D" uid="uid://bmy1ca563shtw" path="res://Assets/Images/Tooltips/submit_tooltip.png" id="12_afv7b"]
+[ext_resource type="Texture2D" uid="uid://cifbroext6m68" path="res://Assets/Images/shrubs.png" id="12_irw6p"]
 [ext_resource type="Texture2D" uid="uid://cc7u1vkl11ha6" path="res://Assets/Images/Tooltips/speed_tooltip.png" id="13_7r2dd"]
 [ext_resource type="Texture2D" uid="uid://c7c6mht0yn1l5" path="res://Assets/Images/Tooltips/goal_tooltip.png" id="14_k2mw1"]
 
@@ -417,12 +420,67 @@ texture_region_size = Vector2i(108, 108)
 0:1/0 = 0
 1:1/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_31phq"]
+texture = ExtResource("10_3628d")
+texture_region_size = Vector2i(108, 108)
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+1:0/0 = 0
+1:1/0 = 0
+1:2/0 = 0
+2:0/0 = 0
+2:1/0 = 0
+2:2/0 = 0
+3:0/0 = 0
+3:1/0 = 0
+3:2/0 = 0
+4:0/0 = 0
+4:1/0 = 0
+4:2/0 = 0
+5:0/0 = 0
+5:1/0 = 0
+5:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7hll7"]
+texture = ExtResource("11_irw6p")
+texture_region_size = Vector2i(108, 108)
+0:0/0 = 0
+1:0/0 = 0
+1:1/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fayjm"]
+texture = ExtResource("12_irw6p")
+texture_region_size = Vector2i(108, 108)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_oyyby"]
 tile_size = Vector2i(108, 108)
 sources/2 = SubResource("TileSetAtlasSource_1ih7c")
 sources/0 = SubResource("TileSetAtlasSource_rb0md")
 sources/1 = SubResource("TileSetAtlasSource_hwvp3")
 sources/3 = SubResource("TileSetAtlasSource_afv7b")
+sources/4 = SubResource("TileSetAtlasSource_31phq")
+sources/5 = SubResource("TileSetAtlasSource_7hll7")
+sources/8 = SubResource("TileSetAtlasSource_fayjm")
 
 [sub_resource type="Animation" id="Animation_2iktx"]
 resource_name = "Move"
@@ -528,7 +586,7 @@ position = Vector2(648.0001, 0)
 scale = Vector2(0.99999994, 0.99999994)
 tile_set = SubResource("TileSet_oyyby")
 format = 2
-layer_0/tile_data = PackedInt32Array(524294, 65538, 0, 458758, 65538, 0, 393222, 65538, 0, 327686, 65538, 0, 262150, 65538, 0, 327685, 0, 3, 262149, 0, 2, 196614, 3, 0, 589831, 262145, 0, 589832, 262145, 0, 589833, 262145, 0, 589834, 262145, 0, 589835, 327681, 0, 589829, 262145, 0, 589828, 262145, 0, 589827, 262145, 0, 589826, 262145, 0, 589825, 262145, 0, 589824, 262145, 0, 720896, 65537, 0, 720897, 65537, 0, 720898, 65537, 0, 720899, 65537, 0, 720900, 65537, 0, 720901, 65537, 0, 720902, 65537, 0, 720903, 65537, 0, 720904, 65537, 0, 720905, 65537, 0, 720906, 262145, 1, 720907, 327681, 1, 589830, 3, 1, 196613, 262145, 2, 196612, 262145, 2, 196611, 262145, 2, 196610, 262145, 2, 196609, 262145, 2, 196608, 262145, 2, 196615, 262145, 2, 196616, 262145, 2, 196617, 262145, 2, 196618, 262145, 2, 196619, 262145, 2, 131072, 262145, 1, 131073, 262145, 1, 131074, 262145, 1, 131075, 262145, 1, 131076, 262145, 1, 131077, 262145, 1, 131078, 262145, 1, 131079, 262145, 1, 131080, 262145, 1, 131081, 262145, 1, 131082, 262145, 1, 131083, 262145, 1, 65536, 65537, 2, 0, 65537, 1, 1, 65537, 1, 2, 65537, 1, 3, 65537, 1, 4, 65537, 1, 5, 65537, 1, 6, 65537, 1, 7, 65537, 1, 8, 65537, 1, 9, 65537, 1, 10, 65537, 1, 65546, 65537, 2, 11, 65537, 1, 65547, 65537, 2, 65545, 65537, 2, 65544, 65537, 2, 65543, 65537, 2, 65542, 65537, 2, 65541, 65537, 2, 65540, 65537, 2, 65539, 65537, 2, 65538, 65537, 2, 65537, 65537, 2, 655360, 262145, 1, 655361, 262145, 1, 655362, 262145, 1, 655363, 262145, 1, 655364, 262145, 1, 655365, 262145, 1, 655366, 262145, 1, 655367, 262145, 1, 655368, 262145, 1, 655369, 262145, 1, 655370, 262145, 1, 655371, 262145, 1)
+layer_0/tile_data = PackedInt32Array(524294, 65538, 0, 458758, 65538, 0, 393222, 65538, 0, 327686, 65538, 0, 262150, 65538, 0, 327685, 0, 3, 262149, 0, 2, 196614, 3, 0, 589831, 262145, 0, 589832, 262145, 0, 589833, 262145, 0, 589834, 262145, 0, 589835, 327681, 0, 589829, 262145, 0, 589828, 262145, 0, 589827, 262145, 0, 589826, 262145, 0, 589825, 262145, 0, 589824, 262145, 0, 720896, 65537, 0, 720897, 262152, 0, 720898, 65537, 0, 720899, 65537, 0, 720900, 65537, 0, 720901, 65537, 0, 720902, 262152, 0, 720903, 65537, 0, 720904, 65537, 0, 720905, 131076, 0, 720906, 262145, 1, 720907, 327681, 1, 589830, 3, 1, 196613, 262145, 2, 196612, 262145, 2, 196611, 262145, 2, 196610, 262145, 2, 196609, 262145, 2, 196608, 262145, 2, 196615, 262145, 2, 196616, 262145, 2, 196617, 262145, 2, 196618, 262145, 2, 196619, 262145, 2, 131072, 262145, 1, 131073, 262145, 1, 131074, 262145, 1, 131075, 262145, 1, 131076, 262145, 1, 131077, 262145, 1, 131078, 262145, 1, 131079, 262145, 1, 131080, 262145, 1, 131081, 262145, 1, 131082, 262145, 1, 131083, 262145, 1, 65536, 4, 2, 0, 65537, 1, 1, 65537, 1, 2, 262152, 0, 3, 65537, 1, 4, 65537, 1, 5, 65537, 1, 6, 65537, 1, 7, 65537, 1, 8, 65537, 1, 9, 65544, 0, 10, 65537, 1, 65546, 262152, 2, 11, 65537, 1, 65547, 131076, 2, 65545, 65537, 2, 65544, 262152, 2, 65543, 65537, 2, 65542, 65537, 2, 65541, 65537, 2, 65540, 65537, 2, 65539, 65544, 2, 65538, 65537, 2, 65537, 65544, 2, 655360, 262145, 1, 655361, 262145, 1, 655362, 262145, 1, 655363, 262145, 1, 655364, 262145, 1, 655365, 262145, 1, 655366, 262145, 1, 655367, 262145, 1, 655368, 262145, 1, 655369, 262145, 1, 655370, 262145, 1, 655371, 262145, 1)
 
 [node name="Car" parent="." unique_id=236793703 instance=ExtResource("4_jv26f")]
 position = Vector2(823.00006, 649)

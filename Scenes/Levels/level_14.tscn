@@ -10,7 +10,11 @@
 [ext_resource type="Texture2D" uid="uid://v20jcfnklsih" path="res://Assets/Images/crosswalks_tiles.webp" id="8_kyka5"]
 [ext_resource type="Texture2D" uid="uid://dkk7u6gncvkvy" path="res://Assets/Images/transition.png" id="9_n42jr"]
 [ext_resource type="PackedScene" uid="uid://b1hf1a4452c42" path="res://Scenes/car.tscn" id="10_4mr2p"]
+[ext_resource type="Texture2D" uid="uid://bu8es85hsk7ho" path="res://Assets/Images/grass_sidewalk_overlay.png" id="10_nmtjr"]
+[ext_resource type="Texture2D" uid="uid://no0mue6vlfrt" path="res://Assets/Images/evilass1tileswithcorners.png" id="11_plykb"]
 [ext_resource type="PackedScene" uid="uid://2sno2themyi6" path="res://Scenes/pedestrian.tscn" id="11_wdatr"]
+[ext_resource type="Texture2D" uid="uid://cifbroext6m68" path="res://Assets/Images/shrubs.png" id="12_hg75l"]
+[ext_resource type="Texture2D" uid="uid://xvak72n5myk4" path="res://Assets/Images/1tileedgesidewalk.png" id="13_kyka5"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q3bbs"]
 
@@ -414,12 +418,89 @@ texture_region_size = Vector2i(108, 108)
 0:1/0 = 0
 1:1/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n42jr"]
+texture = ExtResource("10_nmtjr")
+texture_region_size = Vector2i(108, 108)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4mr2p"]
+texture = ExtResource("11_plykb")
+texture_region_size = Vector2i(108, 108)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wdatr"]
+texture = ExtResource("12_hg75l")
+texture_region_size = Vector2i(108, 108)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vndsj"]
+texture = ExtResource("13_kyka5")
+texture_region_size = Vector2i(108, 108)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_oyyby"]
 tile_size = Vector2i(108, 108)
 sources/2 = SubResource("TileSetAtlasSource_1ih7c")
 sources/0 = SubResource("TileSetAtlasSource_rb0md")
 sources/1 = SubResource("TileSetAtlasSource_hwvp3")
 sources/3 = SubResource("TileSetAtlasSource_afv7b")
+sources/4 = SubResource("TileSetAtlasSource_n42jr")
+sources/5 = SubResource("TileSetAtlasSource_4mr2p")
+sources/6 = SubResource("TileSetAtlasSource_wdatr")
+sources/7 = SubResource("TileSetAtlasSource_vndsj")
 
 [sub_resource type="Animation" id="Animation_bla2a"]
 resource_name = "2"
@@ -622,7 +703,7 @@ position = Vector2(648.0001, 0)
 scale = Vector2(0.99999994, 0.99999994)
 tile_set = SubResource("TileSet_oyyby")
 format = 2
-layer_0/tile_data = PackedInt32Array(393216, 2, 0, 393217, 2, 0, 393218, 2, 0, 393219, 2, 0, 393220, 2, 0, 393221, 2, 0, 393222, 2, 0, 393223, 2, 0, 393224, 2, 0, 393225, 2, 0, 393226, 2, 0, 393227, 2, 0, 262154, 0, 0, 327690, 0, 1, 655364, 65536, 0, 720900, 65536, 1, 655367, 65536, 0, 720903, 65536, 1, 589826, 327681, 1, 655362, 327681, 1, 720898, 327681, 2, 720897, 65537, 1, 720896, 65537, 1, 655360, 65537, 1, 655361, 65537, 1, 589825, 65537, 1, 589824, 65537, 1, 524290, 327681, 0, 524289, 262145, 0, 524288, 262145, 0, 720907, 65537, 1, 655371, 65537, 1, 589835, 65537, 1, 589834, 65537, 1, 655370, 65537, 1, 720906, 65537, 1, 720905, 196609, 2, 655369, 196609, 1, 589833, 196609, 1, 524297, 196609, 0, 524298, 262145, 0, 524299, 262145, 0, 131072, 262145, 2, 131073, 262145, 2, 131074, 262145, 2, 131075, 262145, 2, 131076, 327681, 2, 65540, 262145, 0, 131079, 196609, 2, 131080, 262145, 2, 131081, 262145, 2, 131082, 262145, 2, 131083, 262145, 2, 65541, 262145, 0, 65542, 262145, 0, 65543, 262145, 0, 65536, 262145, 0, 65537, 262145, 0, 65538, 262145, 0, 65539, 262145, 0, 65544, 262145, 0, 65545, 262145, 0, 65546, 262145, 0, 65547, 262145, 0, 5, 65537, 1, 6, 65537, 1, 0, 65537, 1, 1, 65537, 1, 2, 65537, 1, 3, 65537, 1, 4, 65537, 1, 7, 65537, 1, 8, 65537, 1, 9, 65537, 1, 10, 65537, 1, 11, 65537, 1, 262144, 0, 2, 327680, 0, 3)
+layer_0/tile_data = PackedInt32Array(393216, 2, 0, 393217, 2, 0, 393218, 2, 0, 393219, 2, 0, 393220, 2, 0, 393221, 2, 0, 393222, 2, 0, 393223, 2, 0, 393224, 2, 0, 393225, 2, 0, 393226, 2, 0, 393227, 2, 0, 262154, 0, 0, 327690, 0, 1, 655364, 65536, 0, 720900, 65536, 1, 655367, 65536, 0, 720903, 65536, 1, 589826, 327681, 1, 655362, 327681, 1, 720898, 327681, 1, 720897, 131076, 1, 720896, 65542, 1, 655360, 65542, 1, 655361, 131076, 1, 589825, 131076, 0, 589824, 65540, 0, 524290, 327681, 0, 524289, 262145, 0, 524288, 262145, 0, 720907, 262150, 1, 655371, 262150, 1, 589835, 65540, 0, 589834, 4, 0, 655370, 4, 1, 720906, 4, 1, 720905, 196609, 1, 655369, 196609, 1, 589833, 196609, 1, 524297, 196609, 0, 524298, 262145, 0, 524299, 262145, 0, 131072, 65543, 0, 131073, 65543, 0, 131074, 5, 2, 65540, 65543, 0, 131081, 5, 1, 131082, 65543, 0, 131083, 65543, 0, 65541, 65543, 0, 65542, 65543, 0, 65543, 65543, 0, 65536, 65542, 1, 65537, 65542, 1, 65538, 196612, 0, 65539, 196613, 1, 65544, 196613, 0, 65545, 327684, 0, 65546, 262150, 1, 65547, 262150, 1, 5, 65537, 1, 6, 65537, 1, 0, 65537, 1, 1, 65537, 1, 2, 65537, 1, 3, 65542, 1, 4, 65537, 1, 7, 65537, 1, 8, 262150, 1, 9, 65537, 1, 10, 65537, 1, 11, 65537, 1, 262144, 0, 2, 327680, 0, 3, 131080, 196609, 2, 131075, 327681, 2)
 
 [node name="Car" parent="." unique_id=236793703 instance=ExtResource("10_4mr2p")]
 position = Vector2(999, 440.99994)

@@ -10,7 +10,12 @@
 [ext_resource type="PackedScene" uid="uid://b1hf1a4452c42" path="res://Scenes/car.tscn" id="5_dl55b"]
 [ext_resource type="PackedScene" uid="uid://2sno2themyi6" path="res://Scenes/pedestrian.tscn" id="6_osqx1"]
 [ext_resource type="Texture2D" uid="uid://731oxyjw78x" path="res://Assets/Images/grass_sidewalk.png" id="7_osqx1"]
+[ext_resource type="Texture2D" uid="uid://cifbroext6m68" path="res://Assets/Images/shrubs.png" id="8_8dmpc"]
 [ext_resource type="Texture2D" uid="uid://dkk7u6gncvkvy" path="res://Assets/Images/transition.png" id="9_sy7oa"]
+[ext_resource type="Texture2D" uid="uid://bu8es85hsk7ho" path="res://Assets/Images/grass_sidewalk_overlay.png" id="10_md4x4"]
+[ext_resource type="Texture2D" uid="uid://cv5t57etyen4m" path="res://Assets/Images/sidewalk_bettercorners.png" id="11_1hf40"]
+[ext_resource type="Texture2D" uid="uid://xvak72n5myk4" path="res://Assets/Images/1tileedgesidewalk.png" id="12_13yca"]
+[ext_resource type="Texture2D" uid="uid://no0mue6vlfrt" path="res://Assets/Images/evilass1tileswithcorners.png" id="13_8dmpc"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q3bbs"]
 
@@ -269,6 +274,28 @@ texture_region_size = Vector2i(108, 108)
 4:2/0 = 0
 5:2/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r8neg"]
+texture = ExtResource("8_8dmpc")
+texture_region_size = Vector2i(108, 108)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1ih7c"]
 texture = ExtResource("4_4ahh4")
 texture_region_size = Vector2i(108, 108)
@@ -414,12 +441,76 @@ texture_region_size = Vector2i(108, 108)
 0:1/0 = 0
 1:1/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_13yca"]
+texture = ExtResource("10_md4x4")
+texture_region_size = Vector2i(108, 108)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8dmpc"]
+texture = ExtResource("11_1hf40")
+texture_region_size = Vector2i(108, 108)
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_anjjd"]
+texture = ExtResource("12_13yca")
+texture_region_size = Vector2i(108, 108)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ocbj8"]
+texture = ExtResource("13_8dmpc")
+texture_region_size = Vector2i(108, 108)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_oyyby"]
 tile_size = Vector2i(108, 108)
 sources/2 = SubResource("TileSetAtlasSource_1ih7c")
 sources/0 = SubResource("TileSetAtlasSource_4ahh4")
 sources/1 = SubResource("TileSetAtlasSource_md4x4")
 sources/3 = SubResource("TileSetAtlasSource_1hf40")
+sources/4 = SubResource("TileSetAtlasSource_13yca")
+sources/6 = SubResource("TileSetAtlasSource_8dmpc")
+sources/8 = SubResource("TileSetAtlasSource_anjjd")
+sources/9 = SubResource("TileSetAtlasSource_ocbj8")
+sources/10 = SubResource("TileSetAtlasSource_r8neg")
 
 [sub_resource type="Animation" id="Animation_2iktx"]
 resource_name = "Move"
@@ -555,7 +646,7 @@ position = Vector2(648.0001, 0)
 scale = Vector2(0.99999994, 0.99999994)
 tile_set = SubResource("TileSet_oyyby")
 format = 2
-layer_0/tile_data = PackedInt32Array(393216, 262145, 1, 393217, 65539, 0, 393218, 2, 0, 393219, 2, 0, 393220, 2, 0, 393221, 2, 0, 393222, 2, 0, 393223, 2, 0, 393224, 2, 0, 393225, 2, 0, 393226, 65539, 1, 393227, 262145, 1, 0, 65537, 1, 1, 65537, 2, 2, 65537, 2, 3, 65537, 2, 4, 65537, 2, 5, 65537, 2, 6, 65537, 2, 7, 65537, 2, 8, 65537, 2, 9, 65537, 2, 10, 65537, 2, 11, 65537, 1, 65536, 131073, 1, 131072, 131073, 1, 196608, 131073, 1, 262144, 131073, 1, 524288, 131073, 1, 589824, 131073, 1, 655360, 131073, 1, 720896, 65537, 1, 720897, 65537, 0, 720898, 65537, 0, 720899, 65537, 0, 720900, 65537, 0, 720901, 65537, 0, 720902, 65537, 0, 720903, 65537, 0, 720904, 65537, 0, 720905, 65537, 0, 720906, 65537, 0, 720907, 65537, 1, 655371, 1, 1, 589835, 1, 1, 524299, 1, 1, 262155, 1, 1, 196619, 1, 1, 131083, 1, 1, 65547, 1, 1, 458752, 262145, 1, 327680, 262145, 1, 327691, 262145, 1, 458763, 262145, 1, 524298, 196609, 1, 589834, 196609, 1, 655370, 262145, 1, 655369, 262145, 0, 655368, 262145, 0, 655367, 262145, 0, 655366, 262145, 0, 655365, 262145, 0, 655364, 262145, 0, 655363, 262145, 0, 655362, 262145, 0, 655361, 262145, 1, 589825, 327681, 1, 524289, 327681, 1, 262154, 196609, 1, 196618, 196609, 1, 131082, 196609, 1, 65546, 262145, 1, 65545, 262145, 2, 65544, 262145, 2, 65543, 262145, 2, 262145, 327681, 1, 196609, 327681, 1, 131073, 327681, 1, 65537, 262145, 1, 65538, 262145, 2, 65539, 262145, 2, 65540, 262145, 2, 65541, 262145, 2, 65542, 262145, 2, 327681, 327681, 1, 458753, 327681, 1, 458762, 196609, 1, 327690, 196609, 1, 458754, 0, 0, 524290, 0, 1)
+layer_0/tile_data = PackedInt32Array(393216, 262145, 1, 393217, 65539, 0, 393218, 2, 0, 393219, 2, 0, 393220, 2, 0, 393221, 2, 0, 393222, 2, 0, 393223, 2, 0, 393224, 2, 0, 393225, 2, 0, 393226, 65539, 1, 393227, 262145, 1, 0, 65537, 1, 1, 65540, 1, 2, 65537, 2, 3, 65537, 2, 4, 196612, 0, 5, 262148, 0, 6, 262148, 0, 7, 327684, 0, 8, 65537, 2, 9, 65537, 2, 10, 65540, 1, 11, 65546, 1, 65536, 65540, 1, 131072, 131073, 1, 196608, 131073, 1, 262144, 131073, 1, 524288, 131073, 1, 589824, 327690, 1, 655360, 65540, 1, 720896, 65546, 1, 720897, 65540, 1, 720898, 65537, 0, 720899, 65537, 0, 720900, 196612, 2, 720901, 262148, 2, 720902, 262148, 2, 720903, 327684, 2, 720904, 65537, 0, 720905, 65537, 0, 720906, 65540, 1, 720907, 262154, 1, 655371, 65540, 1, 589835, 1, 1, 524299, 1, 1, 262155, 1, 1, 196619, 196618, 1, 131083, 1, 1, 65547, 65540, 1, 458752, 196612, 2, 327680, 196612, 0, 327691, 327684, 0, 458763, 327684, 2, 524298, 131080, 1, 589834, 131080, 1, 655370, 131080, 2, 655369, 65544, 0, 655368, 65544, 0, 655367, 196617, 1, 655366, 262145, 0, 655365, 262145, 0, 655364, 196617, 0, 655363, 65544, 0, 655362, 65544, 0, 655361, 8, 2, 589825, 131080, 1, 524289, 131080, 1, 262154, 131080, 1, 196618, 131080, 1, 131082, 131080, 1, 65546, 131080, 0, 65545, 65544, 0, 65544, 65544, 0, 65543, 9, 1, 262145, 131080, 1, 196609, 131080, 1, 131073, 131080, 1, 65537, 8, 0, 65538, 65544, 0, 65539, 65544, 0, 65540, 9, 2, 65541, 262145, 2, 65542, 262145, 2, 327681, 131081, 1, 458753, 131081, 2, 458762, 65545, 2, 327690, 65545, 1, 458754, 0, 0, 524290, 0, 1)
 
 [node name="Car" parent="." unique_id=236793703 instance=ExtResource("5_dl55b")]
 position = Vector2(938.99994, 309.99994)
