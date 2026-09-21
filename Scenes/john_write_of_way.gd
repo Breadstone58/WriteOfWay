@@ -22,6 +22,8 @@ func _process(delta: float) -> void:
 			animation = "left"
 		elif Input.is_action_pressed("increase_speed"):
 			animation = "forward"
+		elif Input.is_action_pressed("forward"):
+			animation = "forward"
 		else:
 			animation = "idle"
 	else:

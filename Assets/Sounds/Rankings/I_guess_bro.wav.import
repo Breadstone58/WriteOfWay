@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c6cq3yofu2hqa"
-path="res://.godot/imported/I_guess_bro.wav-be9a65c44ce5eb9b5bdd6aa67b45fbc8.sample"
+path="res://.godot/imported/i_guess_bro.wav-01f767e214344dfdcc8e18864d409710.sample"
 
 [deps]
 
-source_file="res://Assets/Sounds/Rankings/I_guess_bro.wav"
-dest_files=["res://.godot/imported/I_guess_bro.wav-be9a65c44ce5eb9b5bdd6aa67b45fbc8.sample"]
+source_file="res://Assets/Sounds/Rankings/i_guess_bro.wav"
+dest_files=["res://.godot/imported/i_guess_bro.wav-01f767e214344dfdcc8e18864d409710.sample"]
 
 [params]
 

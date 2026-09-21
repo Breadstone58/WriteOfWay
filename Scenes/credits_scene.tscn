@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://bfbidrpantatw"]
+
+[ext_resource type="Texture2D" uid="uid://de10b2ktbyvma" path="res://Assets/Images/Main Menu/credits_background.png" id="1_nepx7"]
+[ext_resource type="Texture2D" uid="uid://cfklj157rt67d" path="res://Assets/Images/Main Menu/cloud1.png" id="2_nepx7"]
+[ext_resource type="Texture2D" uid="uid://d1xl3ydtmolnq" path="res://Assets/Images/Main Menu/cloud2.png" id="3_l7w5s"]
+[ext_resource type="Texture2D" uid="uid://chgy2qiy2y656" path="res://Assets/Images/Main Menu/cloud3.png" id="4_u7lnj"]
+[ext_resource type="Texture2D" uid="uid://p2prtl8uibtj" path="res://Assets/Images/Main Menu/back_credits.png" id="6_l7w5s"]
+[ext_resource type="FontFile" uid="uid://d3h0xqvxgr2cq" path="res://Assets/Fonts/HWYGCOND.TTF" id="6_nepx7"]
+[ext_resource type="Script" uid="uid://dgk0ujprbdbr3" path="res://Scenes/button_back.gd" id="7_l7w5s"]
+
+[node name="Credits Scene" type="Node2D" unique_id=1017803784]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=651924551]
+position = Vector2(972, 648)
+texture = ExtResource("1_nepx7")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1681960337]
+repeat_size = Vector2(1944, 1296)
+autoscroll = Vector2(50, 0)
+follow_viewport = false
+
+[node name="Cloud1" type="Sprite2D" parent="Parallax2D" unique_id=1736461737]
+position = Vector2(972, 648)
+texture = ExtResource("2_nepx7")
+
+[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=1134223172]
+repeat_size = Vector2(1944, 1296)
+autoscroll = Vector2(130, 0)
+follow_viewport = false
+
+[node name="Cloud2" type="Sprite2D" parent="Parallax2D2" unique_id=1463959487]
+position = Vector2(972, 648)
+texture = ExtResource("3_l7w5s")
+
+[node name="Parallax2D3" type="Parallax2D" parent="." unique_id=743410883]
+repeat_size = Vector2(1944, 1296)
+autoscroll = Vector2(180, 0)
+follow_viewport = false
+
+[node name="Cloud3" type="Sprite2D" parent="Parallax2D3" unique_id=1701777833]
+position = Vector2(972, 648)
+texture = ExtResource("4_u7lnj")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=201900531]
+offset_left = 280.0
+offset_top = 30.0
+offset_right = 1699.0
+offset_bottom = 1057.0
+color = Color(0, 0, 0, 0.7372549)
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=334684347]
+layout_mode = 0
+offset_right = 1419.0
+offset_bottom = 1027.0
+theme_override_fonts/font = ExtResource("6_nepx7")
+theme_override_font_sizes/font_size = 50
+text = "Credits:
+Sean Hess - Director, Lead Programmer
+MJ Wilcox - Composer, Level Designer, Trailer Editor, Programmer
+JGPanther - Level Designer, Trailer Editor, Programmer, Voices
+Eppilem - Lead Artist
+
+Fonts Used:
+Ballpoint Signature
+Highway Gothic
+Seven Segment
+
+Additional Voices:
+@JustCallMeKyogre
+Sasha M.
+
+Submission for NC State 2026 Collegiate Game Jam
+Thank you for playing! "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Back" type="Sprite2D" parent="." unique_id=190873660]
+position = Vector2(239.01315, 1175)
+scale = Vector2(1.3421053, 1.3421053)
+texture = ExtResource("6_l7w5s")
+
+[node name="Button" type="Button" parent="Back" unique_id=1583909868]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -164.67647
+offset_top = -68.54907
+offset_right = 163.16664
+offset_bottom = 57.372498
+script = ExtResource("7_l7w5s")
+
+[connection signal="button_down" from="Back/Button" to="Back/Button" method="_on_button_down"]

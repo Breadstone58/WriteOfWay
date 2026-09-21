@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://26yb12twqkkr"]
+
+[ext_resource type="Script" uid="uid://c7k8knha81peo" path="res://Scenes/scene_transition.gd" id="1_crfs3"]
+
+[sub_resource type="Animation" id="Animation_vin40"]
+resource_name = "DISSOLVE"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("dissolve_rect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_8sxkv"]
+resource_name = "RESET"
+length = 0.00999999999999999
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("dissolve_rect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sd3nk"]
+_data = {
+&"DISSOLVE": SubResource("Animation_vin40"),
+&"RESET": SubResource("Animation_8sxkv")
+}
+
+[node name="SceneTransition" type="CanvasLayer" unique_id=824209061]
+script = ExtResource("1_crfs3")
+
+[node name="dissolve_rect" type="ColorRect" parent="." unique_id=264770487]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=455114843]
+libraries/ = SubResource("AnimationLibrary_sd3nk")
