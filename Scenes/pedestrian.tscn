@@ -536,6 +536,7 @@ stream_2/stream = ExtResource("7_ejkm5")
 z_index = 5
 z_as_relative = false
 scale = Vector2(0.5, 0.5)
+collision_layer = 4
 collision_mask = 2
 script = ExtResource("1_epmes")
 
