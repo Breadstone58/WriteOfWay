@@ -14,7 +14,7 @@ var drawing_active = true
 func _ready():
 	set_collision_layer_value(2,true)
 	oil_line = Line2D.new()
-	oil_line.width = 12
+	oil_line.width = 20
 	oil_line.default_color = Color.BLACK
 	oil_line.antialiased = true
 	oil_line.z_index = 3

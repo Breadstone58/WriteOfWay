@@ -90,4 +90,4 @@ menu={
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-environment/defaults/default_clear_color=Color(0, 0, 0, 1)
+environment/defaults/default_clear_color=Color(0.6949163, 0.6949163, 0.69491625, 1)

@@ -3,9 +3,323 @@
 [ext_resource type="Script" uid="uid://dybnmhv61iprl" path="res://Scenes/car.gd" id="1_go66d"]
 [ext_resource type="Texture2D" uid="uid://cawgsbenf2p3f" path="res://Assets/Images/Car.webp" id="2_go66d"]
 [ext_resource type="Texture2D" uid="uid://w406ytks8o5n" path="res://Assets/Images/White Circle.png" id="3_1sfmx"]
+[ext_resource type="Texture2D" uid="uid://dj0syc8hrx1b3" path="res://Assets/Images/Car_animated.png" id="4_u41r7"]
+[ext_resource type="Texture2D" uid="uid://b3w3286dvob25" path="res://Assets/Images/BoostAura.png" id="4_y3wrf"]
+[ext_resource type="Script" uid="uid://dkc7m2a1qkf2n" path="res://Scenes/CarAnimations.gd" id="5_aky6y"]
+[ext_resource type="Script" uid="uid://bg7qa3qqr43wc" path="res://Scenes/CarBoost.gd" id="5_argdw"]
+[ext_resource type="AudioStream" uid="uid://6h4oc54bcbgp" path="res://Assets/Sounds/DeltaruneCarRevPlaceholder.wav" id="7_aqss3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ogd8f"]
 size = Vector2(86.250015, 148.74997)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_15bpq"]
+atlas = ExtResource("4_y3wrf")
+region = Rect2(0, 0, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7dpuy"]
+atlas = ExtResource("4_y3wrf")
+region = Rect2(220, 0, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pkuty"]
+atlas = ExtResource("4_y3wrf")
+region = Rect2(440, 0, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57vaf"]
+atlas = ExtResource("4_y3wrf")
+region = Rect2(660, 0, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_af8kn"]
+atlas = ExtResource("4_y3wrf")
+region = Rect2(880, 0, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ht70k"]
+atlas = ExtResource("4_y3wrf")
+region = Rect2(1100, 0, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qnkeg"]
+atlas = ExtResource("4_y3wrf")
+region = Rect2(1320, 0, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_saw6q"]
+atlas = ExtResource("4_y3wrf")
+region = Rect2(1540, 0, 220, 300)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hjb8m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_15bpq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7dpuy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pkuty")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_57vaf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_af8kn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ht70k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qnkeg")
+}],
+"loop": 1,
+"name": &"boost",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_saw6q")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_y3wrf"]
+resource_name = "Boost"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BoostEffect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_argdw"]
+resource_name = "BoostOFF"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BoostEffect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_lh2yg"]
+resource_name = "RESET"
+length = 0.009999999999999998
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BoostEffect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6c0gb"]
+_data = {
+&"Boost": SubResource("Animation_y3wrf"),
+&"BoostOFF": SubResource("Animation_argdw"),
+&"RESET": SubResource("Animation_lh2yg")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqss3"]
+atlas = ExtResource("4_u41r7")
+region = Rect2(1100, 600, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y3wrf"]
+atlas = ExtResource("4_u41r7")
+region = Rect2(0, 900, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_argdw"]
+atlas = ExtResource("4_u41r7")
+region = Rect2(220, 900, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lh2yg"]
+atlas = ExtResource("4_u41r7")
+region = Rect2(440, 900, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6c0gb"]
+atlas = ExtResource("4_u41r7")
+region = Rect2(660, 900, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rbggc"]
+atlas = ExtResource("4_u41r7")
+region = Rect2(0, 600, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_87q0h"]
+atlas = ExtResource("4_u41r7")
+region = Rect2(220, 600, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_grpfm"]
+atlas = ExtResource("4_u41r7")
+region = Rect2(440, 600, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ya17"]
+atlas = ExtResource("4_u41r7")
+region = Rect2(660, 600, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eyx42"]
+atlas = ExtResource("4_u41r7")
+region = Rect2(880, 600, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dxmcv"]
+atlas = ExtResource("4_u41r7")
+region = Rect2(1100, 0, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gwpom"]
+atlas = ExtResource("4_u41r7")
+region = Rect2(660, 300, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0l1c"]
+atlas = ExtResource("4_u41r7")
+region = Rect2(880, 300, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wnwp3"]
+atlas = ExtResource("4_u41r7")
+region = Rect2(1100, 300, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwcbd"]
+atlas = ExtResource("4_u41r7")
+region = Rect2(0, 300, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqorx"]
+atlas = ExtResource("4_u41r7")
+region = Rect2(220, 300, 220, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qogxl"]
+atlas = ExtResource("4_u41r7")
+region = Rect2(440, 300, 220, 300)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lfxu0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aqss3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y3wrf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_argdw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lh2yg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6c0gb")
+}],
+"loop": 0,
+"name": &"backward",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rbggc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_87q0h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_grpfm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ya17")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eyx42")
+}],
+"loop": 0,
+"name": &"forward",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dxmcv")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gwpom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u0l1c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wnwp3")
+}],
+"loop": 0,
+"name": &"left",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xwcbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uqorx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qogxl")
+}],
+"loop": 0,
+"name": &"right",
+"speed": 12.0
+}]
+
+[sub_resource type="Animation" id="Animation_6c0gb"]
+resource_name = "BOOST"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1.5720325, 1.5720325, 1.5720325, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_15bpq"]
+resource_name = "RESET"
+length = 0.009999999999999998
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7dpuy"]
+_data = {
+&"BOOST": SubResource("Animation_6c0gb"),
+&"RESET": SubResource("Animation_15bpq")
+}
 
 [node name="Car" type="CharacterBody2D" unique_id=236793703]
 z_index = 4
@@ -15,6 +329,7 @@ collision_layer = 2
 script = ExtResource("1_go66d")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1154406391]
+visible = false
 position = Vector2(0, -98.75)
 texture = ExtResource("2_go66d")
 
@@ -30,3 +345,32 @@ scale = Vector2(0.99999994, 0.99999994)
 [node name="Ping" type="Sprite2D" parent="." unique_id=704840464]
 position = Vector2(0, -103.74999)
 texture = ExtResource("3_1sfmx")
+
+[node name="BoostEffect" type="AnimatedSprite2D" parent="." unique_id=1342845237]
+modulate = Color(1, 1, 1, 0)
+visibility_layer = 2
+z_index = 3
+scale = Vector2(0.99999994, 0.99999994)
+sprite_frames = SubResource("SpriteFrames_hjb8m")
+animation = &"boost"
+autoplay = "idle"
+offset = Vector2(0, -98.75)
+script = ExtResource("5_argdw")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="BoostEffect" unique_id=2040076333]
+scale = Vector2(0.99999994, 0.99999994)
+stream = ExtResource("7_aqss3")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BoostEffect" unique_id=1997662801]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_6c0gb")
+
+[node name="AnimatedCar" type="AnimatedSprite2D" parent="." unique_id=1150292759]
+sprite_frames = SubResource("SpriteFrames_lfxu0")
+animation = &"backward"
+autoplay = "idle"
+offset = Vector2(0, -98.75)
+script = ExtResource("5_aky6y")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedCar" unique_id=1638318684]
+libraries/ = SubResource("AnimationLibrary_7dpuy")
